@@ -14,7 +14,7 @@ def processMainLoopException(e, urls, urlExemplarChunks):
         print("--------")
         print(type(e))
         print(str(e.args))
-        print("--------")
+        print("-------- ")
         try:
             print("getting most recent taxonomyRelations.db ...")
             subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
