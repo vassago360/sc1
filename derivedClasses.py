@@ -473,7 +473,7 @@ class cursor(sqlite3.Cursor):
             if not self.getAllItems():
                 self.execute(""" DELETE FROM sentence WHERE sentence_col="%s" """ % (item))
     def deleteNecessaryRows(self, otherC):
-        import pdb ; pdb.set_trace()
+        #import pdb ; pdb.set_trace()
         #whatever WS-TP-Support rows are in self -- delete those corresponding items in otherC
         self.execute(""" SELECT * FROM deleteWSTPSupport """)
         for row in self.getRows():

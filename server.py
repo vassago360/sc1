@@ -3,10 +3,10 @@ import createInitialDatabase
 
 def processMainLoopException(e):
         print("ERROR with server")
-        print("-------- ")
+        print(" -------- ")
         print(type(e))
         print(str(e.args))
-        print("-------- ")
+        print(" -------- ")
         if "backUpTaxonomy.db" in os.listdir(os.getcwd()):
             shutil.copyfile("backUpTaxonomy.db", "taxonomyRelations.db")
         else:
