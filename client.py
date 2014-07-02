@@ -137,29 +137,19 @@ def removeBadURLs(urls):
 def main():
     open("printOuts.txt", "w+").close()
     open('exceptions', 'w+').close()
-    #createInitialDatabase.run()
     try:
         print("getting most recent taxonomyRelations.db ...")
         subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
-    except:
-        print("error getting taxonomyRelations.db <<<<<< ")
-    urls = getWikipediaArticles()
-    urls = removeBadURLs(urls)
-    print("working with " + str(len(urls)))
-    urlExemplarChunks = divideURLsInChunks(urls, 1) #list of lists
-    extraURLs = []
-    for urls in urlExemplarChunks:
-        #import pdb ; pdb.set_trace()
-        #urls = ['http://en.wikipedia.org/wiki/Overlay_journal', 'http://en.wikipedia.org/wiki/Auburn_University_at_Montgomery', 'http://en.wikipedia.org/wiki/Schema_crosswalk', 'http://en.wikipedia.org/wiki/Leisure_studies', 'http://en.wikipedia.org/wiki/Texas_Culinary_Academy', 'http://en.wikipedia.org/wiki/Palo_Alto_College', 'http://en.wikipedia.org/wiki/Southern_University_Law_Center', 'http://en.wikipedia.org/wiki/Academic_genealogy', 'http://en.wikipedia.org/wiki/Catawba_Valley_Community_College', 'http://en.wikipedia.org/wiki/Children%E2%80%99s_rights_education', 'http://en.wikipedia.org/wiki/TECHWR-L']
-        #urls += ['http://en.wikipedia.org/wiki/Catawba_Valley_Community_College', 'http://en.wikipedia.org/wiki/Auburn_University_at_Montgomery', 'http://en.wikipedia.org/wiki/Schema_crosswalk', 'http://en.wikipedia.org/wiki/Leisure_studies', 'http://en.wikipedia.org/wiki/Texas_Culinary_Academy', 'http://en.wikipedia.org/wiki/Palo_Alto_College', 'http://en.wikipedia.org/wiki/Southern_University_Law_Center', 'http://en.wikipedia.org/wiki/Academic_genealogy']
-        try:
+        urls = getWikipediaArticles()
+        urls = removeBadURLs(urls)
+        print("working with " + str(len(urls)))
+        urlExemplarChunks = divideURLsInChunks(urls, 4) #list of lists
+        extraURLs = []
+        for urls in urlExemplarChunks:
             print("processing (" + str(len(urls + extraURLs)) + ") " + str(urls + extraURLs))
             enoughToWorkWith = extractRelations.run(urls + extraURLs)
-            try:
-                print("getting most recent taxonomyRelations.db ...")
-                subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
-            except:
-                print("error getting taxonomyRelations.db <<<<<< ")
+            print("getting most recent taxonomyRelations.db ...")
+            subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
             if not enoughToWorkWith:
                 extraURLs += urls
             if enoughToWorkWith:
@@ -171,21 +161,21 @@ def main():
                 extraURLs = []
                 time.sleep(80)
                 #MLN2
-                try:
-                    print("getting most recent taxonomyRelations.db ...")
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
-                except:
-                    print("error getting taxonomyRelations.db <<<<<< ")
+                print("getting most recent taxonomyRelations.db ...")
+                subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
                 mln2experiment.run(tPsThatChangeC2)
                 subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTR' + str(random.randrange(100000)) + '.db', shell=True)
                 os.remove(os.getcwd() + "/transportedTR.db")
                 time.sleep(60)
-        except Exception as e:
+    except Exception as e:
+        if urls and urlExemplarChunks and extraURLs:
             processMainLoopException(e, urls, urlExemplarChunks)
-            if len(extraURLs) > 2:
-                extraURLs = extraURLs[:-2]
-            else:
-                extraURLs = []
+        elif urls and urlExemplarChunks:
+            processMainLoopException(e, urls, urlExemplarChunks)
+        elif urls:
+            processMainLoopException(e, urls, [])
+        else:
+            processMainLoopException(e, [], [])
     #createTaxonomy.run()
 
 
