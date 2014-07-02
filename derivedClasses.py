@@ -134,8 +134,8 @@ class cursor(sqlite3.Cursor):
         self.execute(""" SELECT DISTINCT wordSense_col FROM patterns WHERE pattern_type="%s" AND wordSense_col NOT NULL   """ % (textualPattern))
         wordSenses = self.getAllItems()
         if len(wordSenses) == 0:
-            import pdb ; pdb.set_trace()
             print("ERROR: No wordSense found for tP: " + str(textualPattern))
+            raise NameError("ERROR: No wordSense found for tP: " + str(textualPattern))
         if (len(wordSenses) > 1) and (not all):
             print("WARNING: Multiple wordSenses found for tP: " + str(textualPattern) + "  There are: " + str(wordSenses))
         if all:

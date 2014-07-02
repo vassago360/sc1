@@ -3,10 +3,10 @@ import createInitialDatabase
 
 def processMainLoopException(e):
         print("ERROR with server")
-        print("--------")
+        print("-------- ")
         print(type(e))
         print(str(e.args))
-        print("--------")
+        print("-------- ")
         if "backUpTaxonomy.db" in os.listdir(os.getcwd()):
             shutil.copyfile("backUpTaxonomy.db", "taxonomyRelations.db")
         else:
@@ -47,13 +47,13 @@ def main():
             subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
             subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelations.db  ', shell=True)
             subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv taxonomyRelations1.db taxonomyRelations.db ', shell=True)
-            time.sleep(15)
+            time.sleep(5)
             conn2 = sqlite3.connect("taxonomyRelations.db")
             c2 = conn2.cursor(cursor)
             c2.execute("pragma foreign_keys = ON")
             c2.printDB()
             shutil.copyfile("taxonomyRelations.db", "backUpTaxonomy.db")
-            time.sleep(40)
+            time.sleep(25)
     except Exception as e:
         processMainLoopException(e)
 
