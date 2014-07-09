@@ -477,7 +477,7 @@ class cursor(sqlite3.Cursor):
         #whatever WS-TP-Support rows are in self -- delete those corresponding items in otherC
         self.execute(""" SELECT * FROM deleteWSTPSupport """)
         for row in self.getRows():
-            otherC.execute(""" DELETE FROM patterns WHERE wordSense_col=%s and pattern_type="%s" and support_col="%s" """ % row)
+            otherC.execute(""" DELETE FROM patterns WHERE wordSense_col=%s and pattern_type="%s" and support_col="%s" """ % tuple(row))
     def findIfThereAnotherSentenceWithSupport(self, sI, sentence):
         self.execute(r'select sentence_col from patterns where support_col="%s" ' % (sI))
         for retrievedSentence in self.getAllItems():
@@ -492,34 +492,35 @@ class cursor(sqlite3.Cursor):
             self.execute("""SELECT * FROM patterns WHERE pattern_type="%s" """ % tP)
             if len(self.getAllItems()) == 0:
                 self.execute("""DELETE FROM textualPattern WHERE pattern_type="%s" """ % tP)
-        #wordSenses
-        self.execute("""SELECT id_col FROM wordSenses""")
-        wSs = self.getAllItems()
-        for wS in wSs:
-            self.execute(""" SELECT * FROM patterns WHERE wordSense_col=%s """ % wS)
-            if len(self.getAllItems()) == 0:
-                self.execute(""" DELETE FROM wordSenses WHERE id_col=%s """ % wS)
-        #support
-        self.execute("SELECT support_col FROM support")
-        sIs = self.getAllItems()
-        for sI in sIs:
-            self.execute(""" SELECT * FROM patterns WHERE support_col="%s" """ % sI)
-            if len(self.getAllItems()) == 0:
-                self.execute(""" DELETE FROM support WHERE support_col="%s" """ % sI)
-        #features
-        self.execute("SELECT feature_col FROM feature")
-        features = self.getAllItems()
-        for feature in features:
-            self.execute(""" SELECT * FROM patterns WHERE feature_col="%s" """ % feature)
-            if len(self.getAllItems()) == 0:
-                self.execute(""" DELETE FROM feature WHERE feature_col="%s" """ % feature)
-        #sentence
-        self.execute("SELECT sentence_col FROM sentence")
-        sentences = self.getAllItems()
-        for sentence in sentences:
-            self.execute(""" SELECT * FROM patterns WHERE sentence_col="%s" """ % sentence)
-            if len(self.getAllItems()) == 0:
-                self.execute(""" DELETE FROM sentence WHERE sentence_col="%s" """ % sentence)
+        if random.choice([0,0,0,1]):
+            #wordSenses
+            self.execute("""SELECT id_col FROM wordSenses""")
+            wSs = self.getAllItems()
+            for wS in wSs:
+                self.execute(""" SELECT * FROM patterns WHERE wordSense_col=%s """ % wS)
+                if len(self.getAllItems()) == 0:
+                    self.execute(""" DELETE FROM wordSenses WHERE id_col=%s """ % wS)
+            #support
+            self.execute("SELECT support_col FROM support")
+            sIs = self.getAllItems()
+            for sI in sIs:
+                self.execute(""" SELECT * FROM patterns WHERE support_col="%s" """ % sI)
+                if len(self.getAllItems()) == 0:
+                    self.execute(""" DELETE FROM support WHERE support_col="%s" """ % sI)
+            #features
+            self.execute("SELECT feature_col FROM feature")
+            features = self.getAllItems()
+            for feature in features:
+                self.execute(""" SELECT * FROM patterns WHERE feature_col="%s" """ % feature)
+                if len(self.getAllItems()) == 0:
+                    self.execute(""" DELETE FROM feature WHERE feature_col="%s" """ % feature)
+            #sentence
+            self.execute("SELECT sentence_col FROM sentence")
+            sentences = self.getAllItems()
+            for sentence in sentences:
+                self.execute(""" SELECT * FROM patterns WHERE sentence_col="%s" """ % sentence)
+                if len(self.getAllItems()) == 0:
+                    self.execute(""" DELETE FROM sentence WHERE sentence_col="%s" """ % sentence)
     def printDB(self):
         print("--------------------Database Print Out--------------------")
         print("Statistics: ")
