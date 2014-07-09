@@ -39,41 +39,41 @@ def processTransportedTR(fileName):
 def main():
     #createInitialDatabase.run()
     #import pdb ; pdb.set_trace()
-    #try:
-    while(True):
-        subprocess.call(r'scp st1298@eros.cs.txstate.edu:transportedTR*.db ./ ', shell=True)
-        subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm transportedTR*.db  ', shell=True)
-        processedSomething = False
-        for fileName in os.listdir(os.getcwd()):
-            if "transportedTR" in fileName:
-                print("processing " + fileName)
-                processedSomething = True
-                processTransportedTR(fileName)
-                os.remove(os.getcwd() + "/" + fileName)
-                #import pdb ; pdb.set_trace()
-        if processedSomething:
+    try:
+        while(True):
+            subprocess.call(r'scp st1298@eros.cs.txstate.edu:transportedTR*.db ./ ', shell=True)
+            subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm transportedTR*.db  ', shell=True)
+            processedSomething = False
+            for fileName in os.listdir(os.getcwd()):
+                if "transportedTR" in fileName:
+                    print("processing " + fileName)
+                    processedSomething = True
+                    processTransportedTR(fileName)
+                    os.remove(os.getcwd() + "/" + fileName)
+                    #import pdb ; pdb.set_trace()
+            if processedSomething:
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelations.db  ', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv taxonomyRelations1.db taxonomyRelations.db ', shell=True)
+            time.sleep(2)
+            conn2 = sqlite3.connect("taxonomyRelations.db")
+            c2 = conn2.cursor(cursor)
+            c2.execute("pragma foreign_keys = ON")
+            if random.choice([0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]):
+                c2.printDB()
+            elif random.choice([0,0,0,0,0,0,1]):
+                print("removing unused items in database...")
+                c2.removeItemsNotBeingUsed()
                 subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
                 subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelations.db  ', shell=True)
                 subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv taxonomyRelations1.db taxonomyRelations.db ', shell=True)
-        time.sleep(2)
-        conn2 = sqlite3.connect("taxonomyRelations.db")
-        c2 = conn2.cursor(cursor)
-        c2.execute("pragma foreign_keys = ON")
-        if random.choice([0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]):
-            c2.printDB()
-        elif random.choice([0,0,0,0,0,0,1]):
-            print("removing unused items in database...")
-            c2.removeItemsNotBeingUsed()
-            subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
-            subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelations.db  ', shell=True)
-            subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv taxonomyRelations1.db taxonomyRelations.db ', shell=True)
-        else:
-            print("sleeping...")
-            time.sleep(15)
-        shutil.copyfile("taxonomyRelations.db", "backUpTaxonomy.db")
+            else:
+                print("sleeping...")
+                time.sleep(15)
+            shutil.copyfile("taxonomyRelations.db", "backUpTaxonomy.db")
 
-    """except Exception as e:
-        processMainLoopException(e)"""
+    except Exception as e:
+        processMainLoopException(e)
 
 if __name__ == "__main__":
     main()
