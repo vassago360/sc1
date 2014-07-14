@@ -71,8 +71,8 @@ def processMainLoopException(e, urls, urlExemplarChunks):
 
 def getWikipediaArticles():
     urls = pickle.load( open('wikipediaArticles.p', 'rb') ) + oldUrls
-    urlLargeChunks = divideURLsInChunks(urls, int(len(urls)/14))
-    return urlLargeChunks[9]
+    urlLargeChunks = divideURLsInChunks(urls, int(len(urls)/5))
+    return urlLargeChunks[0]
 
 def divideURLsInChunks(urls, chunkSize):
     if chunkSize < 1:
@@ -138,6 +138,10 @@ def main():
     open("printOuts.txt", "w+").close()
     open('exceptions', 'w+').close()
     try:
+        urlExemplarChunks = None
+        extraURLs = None
+        urls = None
+        #initialize
         print("getting most recent taxonomyRelations.db ...")
         subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
         urls = getWikipediaArticles()
