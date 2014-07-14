@@ -1,4 +1,4 @@
-import sqlite3, re, shutil, subprocess, exemplarExtract, stanfordDepen, stanfordPOS, figerNER, boilerpipe.extract, pickle, os, urllib2, time, sys, numpy, nltk, random
+import sqlite3, re, shutil, subprocess, exemplarExtract, stanfordDepen, stanfordPOS, figerNER, boilerpipe.extract, pickle, os, urllib2, time, sys,  nltk, random, numpy
 #import igraph,
 
 #class graph(igraph.Graph):
@@ -47,6 +47,10 @@ class cursor(sqlite3.Cursor):
         for row in self:
             rows.append(list(row))
         return rows
+    def queryProducedAResponse(self):
+        for row in self:
+            return True
+        return False
     def getSupportFromRows(self, rows):
         #from a list of lists get 3rd element which is the support
         support = []
@@ -118,6 +122,17 @@ class cursor(sqlite3.Cursor):
                 return False
     def addURL(self, url):
         self.execute(""" INSERT OR IGNORE INTO urlsProcessed (url_col) VALUES ("%s") """ % (url))
+    def checkIfTPSIIsBeingUsed(self, tP, sI):
+        self.execute(""" SELECT * FROM PATTERNS WHERE pattern_type="%s" and support_col="%s"  """ % (tP, sI))
+        if self.getAllItems():
+            return True
+        else:
+            return False
+    def checkIfTwoRowsShareTPSISentence(self, row1, row2): #assumes the order of the columns index 2 is TP; index 3 is SI index5 is sentence ; index 1 is wordSense
+        if (row1[5] == row2[5]) and (row1[3] == row2[3]) and (row1[2] == row2[2]) and (row1[1] != row2[1]):
+            return True
+        else:
+            return False
     def copyOverURLsProcessed(self, otherC):
         #copy self's urls processed over to otherC
         self.execute(""" SELECT url_col FROM urlsProcessed """)
@@ -440,8 +455,11 @@ class cursor(sqlite3.Cursor):
                     otherC.execute(""" INSERT OR IGNORE INTO feature (feature_col) VALUES (%s) """ % row[3])
                     otherC.execute(""" INSERT OR IGNORE INTO sentence (sentence_col) VALUES (%s) """ % row[4])
                     otherC.execute(""" INSERT OR IGNORE INTO patterns (wordSense_col, pattern_type, support_col, feature_col, sentence_col) VALUES (%s, %s, %s, %s, %s) """ % tuple(row) )
-    def deleteRowsBasedOnUI(self, tP):
-        self.execute(""" DELETE FROM patterns WHERE pattern_type="%s" """ % (tP))
+    def deleteRowsBasedOnUI(self, tP, sI=None):
+        if sI:
+            self.execute(""" DELETE FROM patterns WHERE pattern_type="%s" and support_col="%s" """ % (tP, sI))
+        else:
+            self.execute(""" DELETE FROM patterns WHERE pattern_type="%s" """ % (tP))
         #wordSenses
         self.execute(""" SELECT id_col FROM wordSenses""")
         for item in self.getAllItems():
@@ -490,7 +508,7 @@ class cursor(sqlite3.Cursor):
         tPs = self.getAllItems()
         for tP in tPs:
             self.execute("""SELECT * FROM patterns WHERE pattern_type="%s" """ % tP)
-            if len(self.getAllItems()) == 0:
+            if not self.queryProducedAResponse():
                 self.execute("""DELETE FROM textualPattern WHERE pattern_type="%s" """ % tP)
         if random.choice([0,0,0,1]):
             #wordSenses
@@ -498,29 +516,39 @@ class cursor(sqlite3.Cursor):
             wSs = self.getAllItems()
             for wS in wSs:
                 self.execute(""" SELECT * FROM patterns WHERE wordSense_col=%s """ % wS)
-                if len(self.getAllItems()) == 0:
+                if not self.queryProducedAResponse():
                     self.execute(""" DELETE FROM wordSenses WHERE id_col=%s """ % wS)
             #support
             self.execute("SELECT support_col FROM support")
             sIs = self.getAllItems()
             for sI in sIs:
                 self.execute(""" SELECT * FROM patterns WHERE support_col="%s" """ % sI)
-                if len(self.getAllItems()) == 0:
+                if not self.queryProducedAResponse():
                     self.execute(""" DELETE FROM support WHERE support_col="%s" """ % sI)
             #features
             self.execute("SELECT feature_col FROM feature")
             features = self.getAllItems()
             for feature in features:
                 self.execute(""" SELECT * FROM patterns WHERE feature_col="%s" """ % feature)
-                if len(self.getAllItems()) == 0:
+                if not self.queryProducedAResponse():
                     self.execute(""" DELETE FROM feature WHERE feature_col="%s" """ % feature)
             #sentence
             self.execute("SELECT sentence_col FROM sentence")
             sentences = self.getAllItems()
             for sentence in sentences:
-                self.execute(""" SELECT * FROM patterns WHERE sentence_col="%s" """ % sentence)
-                if len(self.getAllItems()) == 0:
+                self.execute(""" SELECT pattern_type, support_col, sentence_col FROM patterns WHERE sentence_col="%s" """ % sentence)
+                if not self.queryProducedAResponse():
                     self.execute(""" DELETE FROM sentence WHERE sentence_col="%s" """ % sentence)
+            #remove duplicate tuples
+            self.execute(""" SELECT * FROM patterns """)
+            rows = self.getRows()
+            uniqueRows = []
+            for row in rows:
+                for uRow in uniqueRows:
+                    if self.checkIfTwoRowsShareTPSISentence(row, uRow):
+                        self.execute(""" DELETE FROM patterns WHERE id_col="%s" """ % (row[0]))
+                    else:
+                        uniqueRows.append(row)
     def printDB(self):
         print("--------------------Database Print Out--------------------")
         print("Statistics: ")
@@ -637,8 +665,6 @@ class cursor(sqlite3.Cursor):
                         print("\t%s | %s | %s | %s " % (tP, supportOCAndSentence[0], supportOCAndSentence[1], supportOCAndSentence[2]) )
                 print("")
         print("----------------------------------------------------------")
-
-
 
 if __name__ == "__main__":
     pass

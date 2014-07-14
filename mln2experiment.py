@@ -103,6 +103,10 @@ def determineIfWSShouldMerge(wS1, dictOwnerWSResultWStoProbs, allWordSenses):
     sumOfPercentsGoingElsewhere = 0.0
     sumOfPercentsGoingToSelf = 0.0
     for wS2 in allWordSenses:
+        try:
+            dictOwnerWSResultWStoProbs[(wS1, wS2)]
+        except:
+            import pdb ; pdb.set_trace()
         listOfPercents = dictOwnerWSResultWStoProbs[(wS1, wS2)]
         numberOfTuples = len(listOfPercents)
         if wS1 == wS2:

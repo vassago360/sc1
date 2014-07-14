@@ -199,7 +199,7 @@ def enoughURLsToWorkWith(urls, exemplarRelationInfo):
         if distinctZeugmaReductionSituations > 300:
             print("distinctZeugmaReductionSituations > 300")
             import pdb ; pdb.set_trace()
-        if (distinctZeugmaReductionSituations >= 5) or (len(urls) > 2): #important during evalInput.  We want a consistant amount of wordSenses that a tP will be compared to (a parameter of the program so-to-speak)
+        if (distinctZeugmaReductionSituations >= 5) or (len(urls) > 5): #important during evalInput.  We want a consistant amount of wordSenses that a tP will be compared to (a parameter of the program so-to-speak)
             print("enough urls to work with.  there are " + str(distinctZeugmaReductionSituations) + " tps  in a zeugma/reduction situation.  But " + str(len(exemplarRelationInfo)) +  " extracted relations." )
             return True
         else:

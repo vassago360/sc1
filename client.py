@@ -72,7 +72,7 @@ def processMainLoopException(e, urls, urlExemplarChunks):
 def getWikipediaArticles():
     urls = pickle.load( open('wikipediaArticles.p', 'rb') ) + oldUrls
     urlLargeChunks = divideURLsInChunks(urls, int(len(urls)/14))
-    return urlLargeChunks[0]
+    return urlLargeChunks[9]
 
 def divideURLsInChunks(urls, chunkSize):
     if chunkSize < 1:
@@ -143,7 +143,7 @@ def main():
         urls = getWikipediaArticles()
         urls = removeBadURLs(urls)
         print("working with " + str(len(urls)))
-        urlExemplarChunks = divideURLsInChunks(urls, 6) #list of lists
+        urlExemplarChunks = divideURLsInChunks(urls, 3) #list of lists
         extraURLs = []
         for urls in urlExemplarChunks:
             print("processing (" + str(len(urls + extraURLs)) + ") " + str(urls + extraURLs))

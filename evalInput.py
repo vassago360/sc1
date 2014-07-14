@@ -382,6 +382,9 @@ def testMLN1(c1, c2, wordSenses):
     print("testing MLN1...")
     testQuery = createunivTestAndGetTestQuery(c1, c2, wordSenses)
     if testQuery:
+        tPListsWithSameVerb = c2.getTPsWithSameVerbButNothingElseAsWhatsInTheOtherDB(c1, includeWordSense=True, otherCHasWordSenses=False)
+        tPListWithSameTP = c1.getTPsWithSameTPButNothingElse(c2, includeWordSense=False, otherCHasWordSenses=True)
+        totalTPs = len(tPListsWithSameVerb) + len(tPListWithSameTP)
         print("testQuery: (" + str(len(testQuery)) + ") " + testQuery)
         subprocess.call(r""" alchemy/bin/infer -i univ-out.mln -e univ-test.db -r univ.results -q " """ + testQuery + r""" " -lazy 1 -lazyNoApprox 1 > testMLN1Output.txt """, shell=True)
         #subprocess.call(r""" alchemy/bin/infer -i univ-out.mln -e univ-test.db -r univ.results -q " """ + testQuery + r""" " -maxSteps 10 -mwsMaxSteps 100 """, shell=True)
