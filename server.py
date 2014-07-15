@@ -13,9 +13,14 @@ def processMainLoopException(e):
             print("no backUpTaxonomy.db to fall back on.")
         time.sleep(2)
         print("---------------------restart program---------------------")
-        for fileName in os.listdir(os.getcwd()):
-            if "transportedTR" in fileName:
-                os.remove(os.getcwd() + "/" + fileName)
+        if 'database is locked' in str(e.args):
+            for fileName in os.listdir(os.getcwd()):
+                if "db-journal" in fileName:
+                    os.remove(os.getcwd() + "/" + fileName)
+        else:
+            for fileName in os.listdir(os.getcwd()):
+                if "transportedTR" in fileName:
+                    os.remove(os.getcwd() + "/" + fileName)
         python = sys.executable
         os.execl(python, python, * sys.argv)
 
@@ -61,7 +66,7 @@ def main():
             c2.execute("pragma foreign_keys = ON")
             if random.choice([0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]):
                 c2.printDB()
-            elif random.choice([0,0,0,0,0,0,1]):
+            elif random.choice([0,0,0,0,0,1]):
                 print("removing unused items in database...")
                 c2.removeItemsNotBeingUsed()
                 subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
