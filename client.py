@@ -126,8 +126,6 @@ def main():
         extraURLs = None
         urls = None
         #initialize
-        print("getting most recent taxonomyRelations.db ...")
-        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
         urls = getWikipediaArticles()
         urls = removeBadAndAlreadyProcessedURLs(urls)
         print("working with " + str(len(urls)))
@@ -154,7 +152,7 @@ def main():
                 mln2experiment.run(tPsThatChangeC2)
                 subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTR' + str(random.randrange(100000)) + '.db', shell=True)
                 os.remove(os.getcwd() + "/transportedTR.db")
-                time.sleep(60)
+                time.sleep(2)
     except Exception as e:
         if urls and urlExemplarChunks and extraURLs:
             processMainLoopException(e, urls, urlExemplarChunks)
