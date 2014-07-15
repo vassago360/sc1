@@ -106,7 +106,7 @@ def determineIfWSShouldMerge(wS1, dictOwnerWSResultWStoProbs, allWordSenses):
         try:
             dictOwnerWSResultWStoProbs[(wS1, wS2)]
         except:
-            import pdb ; pdb.set_trace()
+            return None #combination of owner to result ws doesn't exist, therefore ignore that possible merge
         listOfPercents = dictOwnerWSResultWStoProbs[(wS1, wS2)]
         numberOfTuples = len(listOfPercents)
         if wS1 == wS2:
@@ -373,6 +373,7 @@ def moveTuplesBasedOnMLN2Clustering(c2, c3):
             dictOwnerWSResultWStoProbs[(ownerWS,resultWS)] = [prob]
     results.seek(0)
     #if one of wS wants to merge with another, return that wS
+    print("dictOwnerWSResultWStoProbs keys: " + str(dictOwnerWSResultWStoProbs.keys()))
     wSsNotToMoveTo = [] #don't allow a wSToMergeTo to also move (but another wS can move to an already modified wSToMergeTo (bigger is ok in a single iteration so-to-speak, but smaller isn't)
     for wS in allWordSenses:
         wSToMergeTo = determineIfWSShouldMerge(wS, dictOwnerWSResultWStoProbs, allWordSenses)
