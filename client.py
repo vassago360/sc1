@@ -71,7 +71,7 @@ def processMainLoopException(e, urls, urlExemplarChunks):
 
 def getWikipediaArticles():
     urls = pickle.load( open('wikipediaArticles.p', 'rb') ) + oldUrls
-    urlLargeChunks = divideURLsInChunks(urls, int(len(urls)/5))
+    urlLargeChunks = divideURLsInChunks(urls, int(len(urls)/14))
     return urlLargeChunks[0]
 
 def divideURLsInChunks(urls, chunkSize):
@@ -97,22 +97,6 @@ def removeURLsAlreadyProcessed(urls):
         urls.remove("")
     except:
         pass
-    """
-    urls.remove('http://en.wikipedia.org/wiki/University_of_Wisconsin%E2%80%93Extension')
-    urls.remove('http://en.wikipedia.org/wiki/University_of_North_Alabama')
-    urls.remove('http://en.wikipedia.org/wiki/Texas_A%26M_University_System')
-    urls.remove('http://en.wikipedia.org/wiki/Evanston_Township_High_School')
-    urls.remove('http://en.wikipedia.org/wiki/University_of_St._Thomas_(Texas)')
-    urls.remove('http://en.wikipedia.org/wiki/Lyndon_B._Johnson_School_of_Public_Affairs')
-    urls.remove('http://en.wikipedia.org/wiki/University_of_North_Dakota')
-    urls.remove('http://en.wikipedia.org/wiki/Hunter_College')
-    urls.remove('http://en.wikipedia.org/wiki/Interpretive_discussion')
-    urls.remove('http://en.wikipedia.org/wiki/Kod%C3%A1ly_Method')
-    urls.remove('http://en.wikipedia.org/wiki/Challenge-Based_Learning')
-    urls.remove('http://en.wikipedia.org/wiki/University_of_Florida')
-    urls.remove('http://en.wikipedia.org/wiki/Air_University_(United_States_Air_Force)')
-    urls.remove('http://en.wikipedia.org/wiki/Jefferson_Davis_Community_College')"""
-
     c.close()
     conn.commit()
     return urls
@@ -126,7 +110,7 @@ def getBadURLs():
         pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
     return badURLs
 
-def removeBadURLs(urls):
+def removeBadAndAlreadyProcessedURLs(urls):
     badURLs = getBadURLs()
     for i, url in enumerate(urls):
         if url in badURLs:
@@ -145,7 +129,7 @@ def main():
         print("getting most recent taxonomyRelations.db ...")
         subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
         urls = getWikipediaArticles()
-        urls = removeBadURLs(urls)
+        urls = removeBadAndAlreadyProcessedURLs(urls)
         print("working with " + str(len(urls)))
         urlExemplarChunks = divideURLsInChunks(urls, 3) #list of lists
         extraURLs = []
