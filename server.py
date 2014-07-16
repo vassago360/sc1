@@ -66,14 +66,20 @@ def main():
             c2.execute("pragma foreign_keys = ON")
             if random.choice([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]):
                 c2.printDB()
+                c2.close()
+                conn2.commit()
             elif random.choice([0,0,0,0,0,1]):
                 print("removing unused items in database...")
                 c2.removeItemsNotBeingUsed()
+                c2.close()
+                conn2.commit()
                 subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
                 subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelations.db  ', shell=True)
                 subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv taxonomyRelations1.db taxonomyRelations.db ', shell=True)
             else:
                 print("sleeping...")
+                c2.close()
+                conn2.commit()
                 time.sleep(15)
             shutil.copyfile("taxonomyRelations.db", "backUpTaxonomy.db")
 

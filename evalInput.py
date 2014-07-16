@@ -366,7 +366,6 @@ def findAndAddUncomparableWordSenses(c1,c2, c3):
         c1.deleteRowsBasedOnUI(tPToAdd)
     return tPsToAddSameTPAndSI
 
-
 def trainMLN1(c1, c2):
     print("training MLN1...")
     createunivMLN()
@@ -378,19 +377,53 @@ def trainMLN1(c1, c2):
         #subprocess.call([r""" alchemy/bin/learnwts -i univ.mln -o univ-out.mln -t univ-train.db -d -ne wordSense -maxSteps 20 -dNumIter 20 > trainMLN1Output.txt """], shell=True)
     return wordSenses
 
-def testMLN1(c1, c2, wordSenses):
+def findLastIndex(s, subString):
+    index = -1
+    while(True):
+        if s.find(subString, index+1) == -1:
+            return index
+        else:
+            index = s.find(subString, index+1)
+
+def findFirstIndex(s, subString):
+    return s.find(subString, 0)
+
+def separateQueryIntoParts(query, numberOfQueryParts):
+    queryIntoParts = []
+    lengthOfEachQueryPart = int(len(query)/numberOfQueryParts)
+    for i in range(numberOfQueryParts):
+        queryPart = query[lengthOfEachQueryPart*i:lengthOfEachQueryPart*(i+1)]
+        if (findFirstIndex(queryPart, ";") != -1) and (findLastIndex(queryPart, ";") != -1):
+            queryPart = queryPart[findFirstIndex(queryPart, ";")+1:findLastIndex(queryPart, ";")+1]
+        queryIntoParts.append(queryPart)
+    return queryIntoParts
+
+def testMLN1(c1, c2, wordSenses, testQueryPartToDo):
     print("testing MLN1...")
     testQuery = createunivTestAndGetTestQuery(c1, c2, wordSenses)
     if testQuery:
-        tPListsWithSameVerb = c2.getTPsWithSameVerbButNothingElseAsWhatsInTheOtherDB(c1, includeWordSense=True, otherCHasWordSenses=False)
-        tPListWithSameTP = c1.getTPsWithSameTPButNothingElse(c2, includeWordSense=False, otherCHasWordSenses=True)
-        totalTPs = len(tPListsWithSameVerb) + len(tPListWithSameTP)
-        print("testQuery: (" + str(len(testQuery)) + ") " + testQuery)
-        subprocess.call(r""" alchemy/bin/infer -i univ-out.mln -e univ-test.db -r univ.results -q " """ + testQuery + r""" " -lazy 1 -lazyNoApprox 1 > testMLN1Output.txt """, shell=True)
+        print("testQuery total: (" + str(len(testQuery)) + ") ")
+        if len(testQuery) > 125000:
+            numberOfQueryParts = int(len(testQuery)/110000.0)+1
+            testQuery = separateQueryIntoParts(testQuery, numberOfQueryParts)[testQueryPartToDo]
+            print("testQuery to be evaluated: (" + str(len(testQuery)) + ") " + " part " + str(testQueryPartToDo) + "of " + str(numberOfQueryParts-1) + " (max)")
+            subprocess.call(r""" alchemy/bin/infer -i univ-out.mln -e univ-test.db -r univ.results -q " """ + testQuery + r""" " -lazy 1 -lazyNoApprox 1 > testMLN1Output.txt """, shell=True)
+            if numberOfQueryParts == testQueryPartToDo+1:
+                testQueryPartToDo = -1
+                return testQueryPartToDo
+            else:
+                testQueryPartToDo += 1
+                return testQueryPartToDo
+        else:
+            subprocess.call(r""" alchemy/bin/infer -i univ-out.mln -e univ-test.db -r univ.results -q " """ + testQuery + r""" " -lazy 1 -lazyNoApprox 1 > testMLN1Output.txt """, shell=True)
+            testQueryPartToDo = -1
+            return testQueryPartToDo
         #subprocess.call(r""" alchemy/bin/infer -i univ-out.mln -e univ-test.db -r univ.results -q " """ + testQuery + r""" " -maxSteps 10 -mwsMaxSteps 100 """, shell=True)
     else:
         print("no testing will be done, because there is no query")
         open("univ.results", "w+").close()
+        testQueryPartToDo = -1
+        return testQueryPartToDo
 
 def addHighProbableWordSenses(c1, c2, c3):
     #look at univ.results, get high probable belongsIn() or sameWordSense(), get and look at the tokens and add them to taxonomyRelations db
@@ -484,8 +517,16 @@ def run():
     tPsThatChangeC2 = []
     tPsThatChangeC2 += findAndAddUncomparableWordSenses(c1,c2, c3)
     wordSenses = trainMLN1(c1, c2)
-    testMLN1(c1, c2, wordSenses)
-    tPsThatChangeC2 += addHighProbableWordSenses(c1, c2, c3)
+    conn1.commit()
+    c1.close()
+    #test and add high probable word senses
+    testQueryPartToDo = 0
+    while testQueryPartToDo != -1:
+        conn1 = sqlite3.connect('inputRelations.db')
+        c1 = conn1.cursor(cursor)
+        testQueryPartToDo = testMLN1(c1, c2, wordSenses, testQueryPartToDo)
+        tPsThatChangeC2 += addHighProbableWordSenses(c1, c2, c3)
+        c1.close()
     c1.copyOverURLsProcessed(c3)
     #display taxonomy.db and close
     #print("-----Input Afterwards-----")

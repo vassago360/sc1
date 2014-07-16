@@ -161,6 +161,20 @@ class cursor(sqlite3.Cursor):
         self.execute(""" SELECT wordSense_col FROM patterns WHERE pattern_type="%s" and support_col="%s" """ % (tP, sI))
         wordSense = self.getFirstItem()
         return wordSense[0]
+    def getWSsGroupAccordingToSameVerbs(self):
+        wSs = self.getWordSenses()
+        dictVerbToWSs = dict()
+        for wS in wSs[:]:
+            tps = self.getTPsOfAWordSense(wS)
+            if len(tps) < 1:
+                wSs.remove(wS)
+            else:
+                verb = re.split(r'_+', tps[0].__str__())[0]
+                if verb in dictVerbToWSs.keys():
+                    dictVerbToWSs[verb].append(wS)
+                else:
+                    dictVerbToWSs[verb] = [wS]
+        return dictVerbToWSs
     def getTPsSIsOfAWordSense(self, wordSense):
         self.execute("select pattern_type, support_col from patterns where wordSense_col=%s" % wordSense)
         return self.getRows()

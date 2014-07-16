@@ -35,9 +35,7 @@ def getTuplesForMLN2(c2, wSs):
         for tP in tPs:
             TP_WS_S_S_F_List = c2.getListOfTPsAndWSsAndSentencesAndSupportAndFeatures(tP, wS)
             for TP_WS_S_S_F in TP_WS_S_S_F_List:
-                sentence = TP_WS_S_S_F[2]
-                if not sentenceIncluded(sentence, all_TP_WS_S_S_Fs):
-                    all_TP_WS_S_S_Fs.append(TP_WS_S_S_F)
+                all_TP_WS_S_S_Fs.append(TP_WS_S_S_F)
     return all_TP_WS_S_S_Fs
 
 def removeQuotesFrontOrBack(l):
@@ -328,23 +326,60 @@ def trainMLN2(c2, addedTPs):
     createunivMLN()
     wordSenses = createUnivTrain(c2, addedTPs)
     if len(wordSenses) == 1:
-        subprocess.call([r""" alchemy/bin/learnwts -i univ.mln -o univ-out.mln -t univ-train.db -g -gNoEqualPredWt 1 -ne wordSense -maxSteps 30 -gMaxIter 150 > trainMLN2Output.txt """], shell=True)
+        subprocess.call(r""" alchemy/bin/learnwts -i univ.mln -o univ-out.mln -t univ-train.db -g -gNoEqualPredWt 1 -ne wordSense -maxSteps 30 -gMaxIter 150 > trainMLN2Output.txt """, shell=True)
     else:
         #subprocess.call([r"""alchemy/bin/learnstruct -i univ.mln -o univ-out.mln -t univ-train.db -ne wordSense > trainMLN2Output.txt """], shell=True)
-        subprocess.call([r""" alchemy/bin/learnwts -i univ.mln -o univ-out.mln -t univ-train.db -ne wordSense -maxSteps 20 -gMaxIter 100 > trainMLN2Output.txt """], shell=True)
+        subprocess.call(r""" alchemy/bin/learnwts -i univ.mln -o univ-out.mln -t univ-train.db -ne wordSense -maxSteps 20 -gMaxIter 100 > trainMLN2Output.txt """, shell=True)
         #subprocess.call([r""" alchemy/bin/learnwts -i univ.mln -o univ-out.mln -t univ-train.db -d -ne wordSense -maxSteps 20 -dNumIter 20 > trainMLN1Output.txt """], shell=True)
     return wordSenses
 
-def testMLN2(c2, addedTPs):
+def findLastIndex(s, subString):
+    index = -1
+    while(True):
+        if s.find(subString, index+1) == -1:
+            return index
+        else:
+            index = s.find(subString, index+1)
+
+def findFirstIndex(s, subString):
+    return s.find(subString, 0)
+
+def separateQueryIntoParts(query, numberOfQueryParts):
+    queryIntoParts = []
+    lengthOfEachQueryPart = int(len(query)/numberOfQueryParts)
+    for i in range(numberOfQueryParts):
+        queryPart = query[lengthOfEachQueryPart*i:lengthOfEachQueryPart*(i+1)]
+        if (findFirstIndex(queryPart, ";") != -1) and (findLastIndex(queryPart, ";") != -1):
+            queryPart = queryPart[findFirstIndex(queryPart, ";")+1:findLastIndex(queryPart, ";")+1]
+        queryIntoParts.append(queryPart)
+    return queryIntoParts
+
+def testMLN2(c2, addedTPs, testQueryPartToDo):
     print("testing MLN2...")
     testQuery = createUnivTestAndGetTestQuery(c2, addedTPs)
     if testQuery:
-        print("testQuery: (" + str(len(testQuery)) + ") " + testQuery)
-        subprocess.call(r""" alchemy/bin/infer -i univ-out.mln -e univ-test.db -r univ.results -q " """ + testQuery + r""" " -lazy -maxSteps 20 -mwsMaxSteps 200 > testMLN2Output.txt """, shell=True)
+        print("testQuery total: (" + str(len(testQuery)) + ") ")
+        if len(testQuery) > 125000:
+            numberOfQueryParts = int(len(testQuery)/110000.0)+1
+            testQuery = separateQueryIntoParts(testQuery, numberOfQueryParts)[testQueryPartToDo]
+            print("testQuery to be evaluated: (" + str(len(testQuery)) + ") " + " part " + str(testQueryPartToDo) + "of " + str(numberOfQueryParts-1) + " (max)")
+            subprocess.call(r""" alchemy/bin/infer -i univ-out.mln -e univ-test.db -r univ.results -q " """ + testQuery + r""" " -lazy -maxSteps 20 -mwsMaxSteps 200 > testMLN2Output.txt """, shell=True)
+            if numberOfQueryParts == testQueryPartToDo+1:
+                testQueryPartToDo = -1
+                return testQueryPartToDo
+            else:
+                testQueryPartToDo += 1
+                return testQueryPartToDo
+        else:
+            subprocess.call(r""" alchemy/bin/infer -i univ-out.mln -e univ-test.db -r univ.results -q " """ + testQuery + r""" " -lazy -maxSteps 20 -mwsMaxSteps 200 > testMLN2Output.txt """, shell=True)
+            testQueryPartToDo = -1
+            return testQueryPartToDo
         #subprocess.call(r""" alchemy/bin/infer -i univ-out.mln -e univ-test.db -r univ.results -q " """ + testQuery + r""" " -maxSteps 10 -mwsMaxSteps 100 """, shell=True)
     else:
         print("no testing will be done, because there is no query")
         open("univ.results", "w+").close()
+        testQueryPartToDo = -1
+        return testQueryPartToDo
 
 def moveTuplesBasedOnMLN2Clustering(c2, c3):
     changesToTupleAssignments = False
@@ -436,7 +471,6 @@ def uniqueTPsBasedOnVerb(c2, addedTPs):
                 uniqueTPs.remove(tP2)
     return uniqueTPs
 
-
 def run(addedTPs):
     conn2 = sqlite3.connect("taxonomyRelations.db")
     c2 = conn2.cursor(cursor)
@@ -447,8 +481,11 @@ def run(addedTPs):
     print("running mln2...")
     for tP in uniqueTPsBasedOnVerb(c2, addedTPs):
         trainMLN2(c2, [tP])
-        testMLN2(c2, [tP])
-        moveOrMerge = moveTuplesBasedOnMLN2Clustering(c2, c3)
+        moveOrMerge = False
+        testQueryPartToDo = 0
+        while (not moveOrMerge) and (testQueryPartToDo != -1):
+            testQueryPartToDo = testMLN2(c2, [tP], testQueryPartToDo)
+            moveOrMerge = moveTuplesBasedOnMLN2Clustering(c2, c3)
     #####
     conn2.commit()
     c2.close()
