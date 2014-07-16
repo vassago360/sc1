@@ -64,7 +64,7 @@ def main():
             conn2 = sqlite3.connect("taxonomyRelations.db")
             c2 = conn2.cursor(cursor)
             c2.execute("pragma foreign_keys = ON")
-            if random.choice([0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]):
+            if random.choice([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]):
                 c2.printDB()
             elif random.choice([0,0,0,0,0,1]):
                 print("removing unused items in database...")
