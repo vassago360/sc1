@@ -58,4 +58,7 @@ for verb in dictVerbToWSs.keys():
                 for tP in dictWSToTPs[wS]:
                     supportOCAndSentences = c2.getListOfSupportOCAndSentences(tP, wS)
                     for supportOCAndSentence in supportOCAndSentences:
-                        print("\t\t%s | %s " % (tP, supportOCAndSentence[2]) )
+                        sentence = supportOCAndSentence[2]
+                        sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
+                        sentence = re.sub(r"""[+]""", ' ', sentence)
+                        print("\t\t%s | %s " % (tP, sentence) )
