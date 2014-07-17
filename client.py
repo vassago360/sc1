@@ -90,7 +90,7 @@ def addBadURLs(urls):
         badURLs += urls
         print("adding " + str(urls) + " to the bad wikipedia articles.")
         pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
-        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" ' + 'badWikipediaArticles' + str(random.randrange(100000)) + '.p', shell=True)
+        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" ' + 'transportedBW' + str(random.randrange(100000)) + '.p', shell=True)
 
 def getBadURLs():
     try:

@@ -54,6 +54,7 @@ def processBadWikipediaArticles(fileName):
         badURLs = []
         pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
     badURLs += badURLsToBeAdded
+    badURLs = list(set(badURLs))
     pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
 
 def main():
