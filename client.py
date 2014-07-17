@@ -102,6 +102,8 @@ def main():
         extraURLs = None
         urls = None
         #initialize
+        print("getting most recent taxonomyRelations.db ...")
+        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
         urls = getWikipediaArticles()
         urls = removeBadAndAlreadyProcessedURLs(urls)
         print("working with " + str(len(urls)))
