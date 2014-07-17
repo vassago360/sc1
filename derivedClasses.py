@@ -524,7 +524,7 @@ class cursor(sqlite3.Cursor):
             self.execute("""SELECT * FROM patterns WHERE pattern_type="%s" """ % tP)
             if not self.queryProducedAResponse():
                 self.execute("""DELETE FROM textualPattern WHERE pattern_type="%s" """ % tP)
-        if random.choice([0,0,0,1]):
+        if random.choice([1]):
             #wordSenses
             self.execute("""SELECT id_col FROM wordSenses""")
             wSs = self.getAllItems()
@@ -556,13 +556,14 @@ class cursor(sqlite3.Cursor):
             #remove duplicate tuples
             self.execute(""" SELECT * FROM patterns """)
             rows = self.getRows()
-            uniqueRows = []
+            uniqueRows = ["foobar"]
             for row in rows:
                 for uRow in uniqueRows:
                     if self.checkIfTwoRowsShareTPSISentence(row, uRow):
                         self.execute(""" DELETE FROM patterns WHERE id_col="%s" """ % (row[0]))
-                    else:
-                        uniqueRows.append(row)
+                        break
+                if not self.checkIfTwoRowsShareTPSISentence(uniqueRows[-1:][0], row):
+                    uniqueRows.append(row)
     def printDB(self):
         print("--------------------Database Print Out--------------------")
         print("Statistics: ")

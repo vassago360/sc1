@@ -47,11 +47,15 @@ dictVerbToWSs = c2.getWSsGroupAccordingToSameVerbs()
 print("2nd part done.")
 
 for verb in dictVerbToWSs.keys():
-    if len(dictVerbToWSs[verb]) > 1:
+    if len(dictVerbToWSs[verb]) > 0:
         print(str(verb) + ": ")
+        countTP = 0
         for wS in dictVerbToWSs[verb]:
-            print("\t" + str(wS))
-            for tP in dictWSToTPs[wS]:
-                supportOCAndSentences = c2.getListOfSupportOCAndSentences(tP, wS)
-                for supportOCAndSentence in supportOCAndSentences:
-                    print("\t\t%s | %s " % (tP, supportOCAndSentence[0]) )
+            countTP += len(dictWSToTPs[wS])
+        if countTP > 5:
+            for wS in dictVerbToWSs[verb]:
+                print("\t" + str(wS))
+                for tP in dictWSToTPs[wS]:
+                    supportOCAndSentences = c2.getListOfSupportOCAndSentences(tP, wS)
+                    for supportOCAndSentence in supportOCAndSentences:
+                        print("\t\t%s | %s " % (tP, supportOCAndSentence[2]) )
