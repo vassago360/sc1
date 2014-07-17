@@ -76,7 +76,6 @@ def main():
                     subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" badWikipediaArticles1.p  ', shell=True)
                     subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm badWikipediaArticles.p  ', shell=True)
                     subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv badWikipediaArticles1.p badWikipediaArticles.p ', shell=True)
-            time.sleep(2)
             #process transportedTR*.db
             subprocess.call(r'scp st1298@eros.cs.txstate.edu:transportedTR*.db ./ ', shell=True)
             subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm transportedTR*.db  ', shell=True)
