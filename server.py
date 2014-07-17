@@ -66,7 +66,7 @@ def main():
             subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm badWikipediaArticles*.p  ', shell=True)
             processedSomething = False
             for fileName in os.listdir(os.getcwd()):
-                if "badWikipediaArticles" in fileName:
+                if "transportedBW" in fileName:
                     print("processing " + fileName)
                     processedSomething = True
                     processBadWikipediaArticles(fileName)
