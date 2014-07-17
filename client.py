@@ -29,20 +29,6 @@ def processMainLoopException(e, urls):
                 shutil.copyfile("backUpTaxonomy.db", "taxonomyRelations.db")
             else:
                 print("no backUpTaxonomy.db to fall back on.")
-                import pdb ; pdb.set_trace()
-        try:
-            shutil.copyfile(os.getcwd() + '/exemplarOutput/backupSave.p', os.getcwd() + '/exemplarOutput/save.p')
-        except IOError:
-            #### delete everything in exemplarOutput folder
-            folder = os.getcwd() + '/exemplarOutput'
-            for the_file in os.listdir(folder):
-                file_path = os.path.join(folder, the_file)
-                try:
-                    if os.path.isfile(file_path):
-                        os.unlink(file_path)
-                except Exception, e:
-                    print e
-            ####
         deleteInputTextFolderFiles()
         #say urls are bad
         addBadURLs(urls)
