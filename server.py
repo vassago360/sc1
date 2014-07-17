@@ -57,14 +57,26 @@ def processBadWikipediaArticles(fileName):
     badURLs = list(set(badURLs))
     pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
 
+def uploadBadWikipediaArticles():
+    try:
+        badURLs = pickle.load( open('badWikipediaArticles.p', 'rb') )
+    except:
+        print("Error loading bad wikipedia urls.  Recreating bad urls list...")
+        badURLs = []
+        pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
+    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" badWikipediaArticles1.p  ', shell=True)
+    subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm badWikipediaArticles.p  ', shell=True)
+    subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv badWikipediaArticles1.p badWikipediaArticles.p ', shell=True)
+
 def main():
     #createInitialDatabase.run()
     #import pdb ; pdb.set_trace()
+    uploadBadWikipediaArticles()
     try:
         while(True):
             #process badURLs
-            subprocess.call(r'scp st1298@eros.cs.txstate.edu:badWikipediaArticles*.p ./ ', shell=True)
-            subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm badWikipediaArticles*.p  ', shell=True)
+            subprocess.call(r'scp st1298@eros.cs.txstate.edu:transportedBW*.p ./ ', shell=True)
+            subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm transportedBW*.p  ', shell=True)
             processedSomething = False
             for fileName in os.listdir(os.getcwd()):
                 if "transportedBW" in fileName:
