@@ -120,6 +120,7 @@ def main():
         urls = removeBadAndAlreadyProcessedURLs(urls)
         print("working with " + str(len(urls)))
         urlExemplarChunks = divideURLsInChunks(urls, 3) #list of lists
+        random.shuffle(urlExemplarChunks) #reduce chance of multiple clients processing exact same urls at same time
         extraURLs = []
         for urls in urlExemplarChunks:
             urls = removeBadAndAlreadyProcessedURLs(urls)
