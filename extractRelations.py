@@ -96,28 +96,6 @@ def updateSQLRelationsDB(c, patternTuples, typeOfUpdate):
             if not sqlStatementCount(c):
                 c.execute("""insert or ignore into patterns (pattern_type, support_col, feature_col, sentence_col) values ("%s", "%s", "%s", "%s")""" % (replaceSpaceWithPlus(patternTuple[0]), replaceSpaceWithPlus(patternTuple[1]), replaceSpaceWithPlus(patternTuple[2]), replaceSpaceWithPlus(patternTuple[3])))
 
-def loadExemplarDict():
-    try:
-        exemplarDict = pickle.load( open( os.getcwd() + '/exemplarOutput/save.p', 'rb') )
-    except:
-        print("ERROR: recreating exemplarOutputPickle...")
-        exemplarDict = dict()
-        pickle.dump( exemplarDict, open( os.getcwd() + '/exemplarOutput/save.p', "wb" ) )
-    return exemplarDict
-
-def saveExemplarDict(exemplarDict, url):
-    highestVal = 0
-    fileNames = os.listdir(os.getcwd() + '/exemplarOutput')
-    for fileName in fileNames:
-        if 'exemplarOutput' in fileName:
-            val = int(re.split(r'_', fileName)[1])
-            if val > highestVal:
-                highestVal = val
-    newFileName = os.getcwd() + '/exemplarOutput/exemplarOutput_' + str(highestVal + 1)
-    shutil.copyfile("exemplarOutput.txt", newFileName)
-    exemplarDict[url] = newFileName
-    pickle.dump( exemplarDict, open( os.getcwd() + '/exemplarOutput/save.p', "wb" ) )
-
 def deleteInputTextFolderFiles():
     filelist = [ f for f in os.listdir(os.getcwd() + '/exemplar-master/inputText') ]
     for f in filelist:

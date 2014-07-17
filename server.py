@@ -41,11 +41,42 @@ def processTransportedTR(fileName):
     conn2.commit()
     c2.close()
 
+def processBadWikipediaArticles(fileName):
+    try:
+        badURLsToBeAdded = pickle.load( open(fileName, 'rb') )
+    except:
+        print("Error loading " + fileName)
+        badURLsToBeAdded = []
+    try:
+        badURLs = pickle.load( open('badWikipediaArticles.p', 'rb') )
+    except:
+        print("Error loading bad wikipedia urls.  Recreating bad urls list...")
+        badURLs = []
+        pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
+    badURLs += badURLsToBeAdded
+    pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
+
 def main():
     #createInitialDatabase.run()
     #import pdb ; pdb.set_trace()
     try:
         while(True):
+            #process badURLs
+            subprocess.call(r'scp st1298@eros.cs.txstate.edu:badWikipediaArticles*.p ./ ', shell=True)
+            subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm badWikipediaArticles*.p  ', shell=True)
+            processedSomething = False
+            for fileName in os.listdir(os.getcwd()):
+                if "badWikipediaArticles" in fileName:
+                    print("processing " + fileName)
+                    processedSomething = True
+                    processBadWikipediaArticles(fileName)
+                    os.remove(os.getcwd() + "/" + fileName)
+            if processedSomething:
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" badWikipediaArticles1.p  ', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm badWikipediaArticles.p  ', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv badWikipediaArticles1.p badWikipediaArticles.p ', shell=True)
+            time.sleep(2)
+            #process transportedTR*.db
             subprocess.call(r'scp st1298@eros.cs.txstate.edu:transportedTR*.db ./ ', shell=True)
             subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm transportedTR*.db  ', shell=True)
             processedSomething = False
@@ -55,7 +86,6 @@ def main():
                     processedSomething = True
                     processTransportedTR(fileName)
                     os.remove(os.getcwd() + "/" + fileName)
-                    #import pdb ; pdb.set_trace()
             if processedSomething:
                     subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
                     subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelations.db  ', shell=True)

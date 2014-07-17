@@ -8,7 +8,12 @@ oldUrls = ['http://en.wikipedia.org/wiki/Alberta', 'http://en.wikipedia.org/wiki
         'http://en.wikipedia.org/wiki/Alberta_Eugenics_Board', 'http://en.wikipedia.org/wiki/Percy_Erskine_Nobbs', 'http://en.wikipedia.org/wiki/Frank_Darling_%28architect%29',
         'http://en.wikipedia.org/wiki/University_of_Alberta']
 
-def processMainLoopException(e, urls, urlExemplarChunks):
+def deleteInputTextFolderFiles():
+    filelist = [ f for f in os.listdir(os.getcwd() + '/exemplar-master/inputText') ]
+    for f in filelist:
+        os.remove(os.getcwd() + '/exemplar-master/inputText/' + f)
+
+def processMainLoopException(e, urls):
         print("ERROR processing " + str(urls) + " will restore taxonomyRelations.db to last successful iteration and continue with next URL.")
         #import pdb ; pdb.set_trace()
         print("--------")
@@ -38,41 +43,20 @@ def processMainLoopException(e, urls, urlExemplarChunks):
                 except Exception, e:
                     print e
             ####
-        try:
-            f = open('exceptions', 'r+')
-        except:
-            print("Error loading exceptions. recreating....")
-            f = open('exceptions', 'w+')
-        import cleanUp
-        f.read()
-        f.write('\n')
-        f.write(str(urls))
-        f.write(str(type(e)))
-        f.write(str(e.args))
-        f.write("-----------")
-        f.close()
-        if 'database is locked' in str(e.args):
-            urlExemplarChunks.append(urls) #try it again later
-        else:
-            try:
-                badURLs = pickle.load( open('badWikipediaArticles.p', 'rb') )
-            except:
-                print("Error loading bad wikipedia urls.  Recreating bad urls list...")
-                badURLs = []
-                pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
-            badURLs += urls
-            print("adding " + str(urls) + " to the bad wikipedia articles.")
-            pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
+        deleteInputTextFolderFiles()
+        #say urls are bad
+        addBadURLs(urls)
         #restart program because it's likely the database is locked
         print("---------------------restart program---------------------")
-        time.sleep(10)
+        time.sleep(5)
         python = sys.executable
         os.execl(python, python, * sys.argv)
 
 def getWikipediaArticles():
     urls = pickle.load( open('wikipediaArticles.p', 'rb') ) + oldUrls
-    urlLargeChunks = divideURLsInChunks(urls, int(len(urls)/14))
-    return urlLargeChunks[0]
+    #urlLargeChunks = divideURLsInChunks(urls, int(len(urls)/2))
+    #return urlLargeChunks[1]
+    return urls
 
 def divideURLsInChunks(urls, chunkSize):
     if chunkSize < 1:
@@ -101,8 +85,16 @@ def removeURLsAlreadyProcessed(urls):
     conn.commit()
     return urls
 
+def addBadURLs(urls):
+        badURLs = getBadURLs()
+        badURLs += urls
+        print("adding " + str(urls) + " to the bad wikipedia articles.")
+        pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
+        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" ' + 'badWikipediaArticles' + str(random.randrange(100000)) + '.p', shell=True)
+
 def getBadURLs():
     try:
+        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat badWikipediaArticles.p > badWikipediaArticles.p', shell=True)
         badURLs = pickle.load( open('badWikipediaArticles.p', 'rb') )
     except:
         print("Error loading bad wikipedia urls.  Recreating bad urls list...")
@@ -112,17 +104,15 @@ def getBadURLs():
 
 def removeBadAndAlreadyProcessedURLs(urls):
     badURLs = getBadURLs()
-    for i, url in enumerate(urls):
+    for url in urls[:]:
         if url in badURLs:
-            urls[i] = ""
+            urls.remove(url)
     urls = removeURLsAlreadyProcessed(urls)
     return urls
 
 def main():
     open("printOuts.txt", "w+").close()
-    open('exceptions', 'w+').close()
     try:
-        urlExemplarChunks = None
         extraURLs = None
         urls = None
         #initialize
@@ -132,6 +122,7 @@ def main():
         urlExemplarChunks = divideURLsInChunks(urls, 3) #list of lists
         extraURLs = []
         for urls in urlExemplarChunks:
+            urls = removeBadAndAlreadyProcessedURLs(urls)
             print("processing (" + str(len(urls + extraURLs)) + ") " + str(urls + extraURLs))
             enoughToWorkWith = extractRelations.run(urls + extraURLs)
             print("getting most recent taxonomyRelations.db ...")
@@ -154,14 +145,12 @@ def main():
                 os.remove(os.getcwd() + "/transportedTR.db")
                 time.sleep(2)
     except Exception as e:
-        if urls and urlExemplarChunks and extraURLs:
-            processMainLoopException(e, urls, urlExemplarChunks)
-        elif urls and urlExemplarChunks:
-            processMainLoopException(e, urls, urlExemplarChunks)
+        if extraURLs:
+            processMainLoopException(e, extraURLs)
         elif urls:
-            processMainLoopException(e, urls, [])
+            processMainLoopException(e, urls)
         else:
-            processMainLoopException(e, [], [])
+            processMainLoopException(e, [])
     #createTaxonomy.run()
 
 
