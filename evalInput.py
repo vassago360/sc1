@@ -510,8 +510,8 @@ def run():
     conn3, c3 = extractRelations.createDB("transportedTR.db")
     ####################################
     #do stuff
-    print("-----Input Beforehand-----")
-    c1.printDB()
+    #print("-----Input Beforehand-----")
+    #c1.printDB()
     #print("-----Database Beforehand-----")
     #c2.printDB()
     tPsThatChangeC2 = []
@@ -527,6 +527,8 @@ def run():
         testQueryPartToDo = testMLN1(c1, c2, wordSenses, testQueryPartToDo)
         tPsThatChangeC2 += addHighProbableWordSenses(c1, c2, c3)
         c1.close()
+    conn1 = sqlite3.connect('inputRelations.db')
+    c1 = conn1.cursor(cursor)
     c1.copyOverURLsProcessed(c3)
     #display taxonomy.db and close
     #print("-----Input Afterwards-----")
