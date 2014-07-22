@@ -42,7 +42,7 @@ for wS in wSs:
 
 print("1st part done.")
 
-dictVerbToWSs = c2.getWSsGroupAccordingToSameVerbs()
+dictVerbToWSs = c2.getDictVerbToWSs()
 
 print("2nd part done.")
 

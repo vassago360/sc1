@@ -1,8 +1,8 @@
-import sqlite3, re, shutil, subprocess, exemplarExtract, stanfordDepen, stanfordPOS, figerNER, boilerpipe.extract, pickle, os, urllib2, time, sys,  nltk, random, numpy
-#import igraph,
+import sqlite3, re, shutil, subprocess, exemplarExtract, stanfordDepen, stanfordPOS, figerNER, boilerpipe.extract, pickle, os, urllib2, time, sys,  nltk, random#, numpy
+import igraph
 
-#class graph(igraph.Graph):
-#    pass
+class graph(igraph.Graph):
+    pass
 
 class cursor(sqlite3.Cursor):
     def removeDuplicates(self, listOfLists):
@@ -161,7 +161,7 @@ class cursor(sqlite3.Cursor):
         self.execute(""" SELECT wordSense_col FROM patterns WHERE pattern_type="%s" and support_col="%s" """ % (tP, sI))
         wordSense = self.getFirstItem()
         return wordSense[0]
-    def getWSsGroupAccordingToSameVerbs(self):
+    def getDictVerbToWSs(self):
         wSs = self.getWordSenses()
         dictVerbToWSs = dict()
         for wS in wSs[:]:
@@ -175,6 +175,31 @@ class cursor(sqlite3.Cursor):
                 else:
                     dictVerbToWSs[verb] = [wS]
         return dictVerbToWSs
+    def getDictWSToTPs(self):
+        wSs = self.getWordSenses()
+        ###
+        dictWSToTPs = dict()
+        for wS in wSs:
+            tps = self.getTPsOfAWordSense(wS)
+            if (len(tps) >= 1):
+                dictWSToTPs[wS] = tps
+        return dictWSToTPs
+    def getDictVerbsToSupportItems(self):
+        dictVerbsToSupportItems = dict()
+        dictWSToTPs = self.getDictWSToTPs()
+        dictVerbToWSs = self.getDictVerbToWSs()
+        print('first part done')
+        for verb in dictVerbToWSs.keys():
+            for wS in dictVerbToWSs[verb]:
+                for tP in dictWSToTPs[wS]:
+                    supportOCAndSentences = self.getListOfSupportOCAndSentences(tP, wS)
+                    for supportOCAndSentence in supportOCAndSentences:
+                        support = supportOCAndSentence[0]
+                        if verb in dictVerbsToSupportItems.keys():
+                            dictVerbsToSupportItems[verb].append(support)
+                        else:
+                            dictVerbsToSupportItems[verb] = [support]
+        return dictVerbsToSupportItems
     def getTPsSIsOfAWordSense(self, wordSense):
         self.execute("select pattern_type, support_col from patterns where wordSense_col=%s" % wordSense)
         return self.getRows()

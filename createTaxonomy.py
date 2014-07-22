@@ -237,8 +237,13 @@ def run():
     print('-------------------------------------------------------')
     igraph.plot(g, **genVisualStyle(g))
     ########################################
+    #attempt to do the application
+    dictVerbsToSupportItems = c.getDictVerbsToSupportItems()
+
+    ########################################
     conn.commit()
     c.close()
+
 
 def main():
     pass
