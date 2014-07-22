@@ -48,17 +48,23 @@ print("2nd part done.")
 
 for verb in dictVerbToWSs.keys():
     if len(dictVerbToWSs[verb]) > 0:
-        print(str(verb) + ": ")
+        toPrint = False
         countTP = 0
         for wS in dictVerbToWSs[verb]:
             countTP += len(dictWSToTPs[wS])
-        if countTP > 5:
+        if countTP > 4:
+            toPrint = True
+        if toPrint:
+            print("")
+            print("----------------- " + str(verb) + " -----------------")
             for wS in dictVerbToWSs[verb]:
-                print("\t" + str(wS))
+                #print("\t" + str(wS))
+                count = 0
                 for tP in dictWSToTPs[wS]:
                     supportOCAndSentences = c2.getListOfSupportOCAndSentences(tP, wS)
                     for supportOCAndSentence in supportOCAndSentences:
+                        count += 1
                         sentence = supportOCAndSentence[2]
                         sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
                         sentence = re.sub(r"""[+]""", ' ', sentence)
-                        print("\t\t%s | %s " % (tP, sentence) )
+                        print("%s.%s |  %s " % (wS, count, sentence) )

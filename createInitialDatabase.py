@@ -181,8 +181,10 @@ def assignAllTPsWordSenses(c):
             c.updateRowsBasedOnUIwWSAndCopyOver(wS, tP, sI=None, otherC=None)
 
 def run():
-    import cleanUp
-    extractRelations.run(['wikiUofA.txt'], checkIfURLsHaveAlreadyBeenProcessed=False)
+    #extractRelations.run(['wikiUofA.txt'], checkIfURLsHaveAlreadyBeenProcessed=False)
+    conn, c = extractRelations.createDB("inputRelations.db")
+    c.close()
+    conn.commit()
     shutil.copyfile("inputRelations.db", "taxonomyRelations.db")
     ######################
     conn = sqlite3.connect("taxonomyRelations.db")

@@ -1,8 +1,8 @@
-import sqlite3, re, shutil, subprocess, exemplarExtract, stanfordDepen, stanfordPOS, figerNER, boilerpipe.extract, pickle, os, urllib2, time, sys,  nltk, random#, numpy
-import igraph
+import sqlite3, re, shutil, subprocess, exemplarExtract, stanfordDepen, stanfordPOS, figerNER, boilerpipe.extract, pickle, os, urllib2, time, sys,  nltk, random, numpy
+#import igraph
 
-class graph(igraph.Graph):
-    pass
+#class graph(igraph.Graph):
+#    pass
 
 class cursor(sqlite3.Cursor):
     def removeDuplicates(self, listOfLists):
