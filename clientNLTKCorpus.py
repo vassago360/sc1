@@ -112,9 +112,6 @@ def main():
         #initialize
         print("getting most recent taxonomyRelations.db ...")
         subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
-    except Exception as e:
-        processMainLoopException(e, [])
-    try:
         extraURLs = None
         urls = None
         urls = getBrownArticles()
@@ -123,6 +120,9 @@ def main():
         urlExemplarChunks = divideURLsInChunks(urls, 30) #list of lists
         random.shuffle(urlExemplarChunks) #reduce chance of multiple clients processing exact same urls at same time
         extraURLs = []
+    except Exception as e:
+        processMainLoopException(e, [])
+    try:
         for urls in urlExemplarChunks:
             urls = removeBadAndAlreadyProcessedURLs(urls)
             print("processing (" + str(len(urls + extraURLs)) + ") " + str(urls + extraURLs))
