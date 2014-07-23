@@ -98,6 +98,7 @@ def main():
                     processedSomething = True
                     processTransportedTR(fileName)
                     os.remove(os.getcwd() + "/" + fileName)
+            #if processedSomething or True:
             if processedSomething:
                     subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
                     subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelations.db  ', shell=True)
