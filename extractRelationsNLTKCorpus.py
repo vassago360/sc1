@@ -130,6 +130,7 @@ def getExemplarRelations(urls):
             extractedText = url #make each sentence (url) a doc
             extractedText = extractedText.encode('unicode_escape')
             extractedText = removeLongSentences(extractedText)
+            print("sentence:    " + extractedText)
             f2 = open(os.getcwd() + '/exemplar-master/inputText/inputText_' + str(count) + '.txt', 'w+')
             f2.write(extractedText)
             f2.close()
