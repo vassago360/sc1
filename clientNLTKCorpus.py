@@ -109,11 +109,14 @@ def removeBadAndAlreadyProcessedURLs(urls):
 def main():
     open("printOuts.txt", "w+").close()
     try:
-        extraURLs = None
-        urls = None
         #initialize
         print("getting most recent taxonomyRelations.db ...")
         subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
+    except Exception as e:
+        processMainLoopException(e, [])
+    try:
+        extraURLs = None
+        urls = None
         urls = getBrownArticles()
         urls = removeBadAndAlreadyProcessedURLs(urls)
         print("working with " + str(len(urls)))
