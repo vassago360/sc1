@@ -70,7 +70,7 @@ def uploadBadWikipediaArticles():
 
 def main():
     #createInitialDatabase.run()
-    #badURLs = []
+    badURLs = []
     #pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
     #import pdb ; pdb.set_trace()
     uploadBadWikipediaArticles()
