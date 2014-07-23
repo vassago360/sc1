@@ -395,7 +395,11 @@ class cursor(sqlite3.Cursor):
     def getNextAvailableWordSense(self):
         self.execute(""" SELECT max(id_col) FROM wordSenses """)
         lastWordSense = self.getFirstItem()[0]
-        nextAvailableWordSense = lastWordSense + 1
+        if lastWordSense:
+            nextAvailableWordSense = lastWordSense + 1
+        else:
+            print("WARNING: There were no wordSenses in database.  Writing to wordSense #1")
+            nextAvailableWordSense = 1
         return nextAvailableWordSense
     def getNextAvailableWordSenseMin1000000(self):
         self.execute(""" SELECT max(id_col) FROM wordSenses """)
