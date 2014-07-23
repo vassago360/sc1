@@ -70,6 +70,8 @@ def uploadBadWikipediaArticles():
 
 def main():
     #createInitialDatabase.run()
+    #badURLs = []
+    #pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
     #import pdb ; pdb.set_trace()
     uploadBadWikipediaArticles()
     try:
@@ -98,8 +100,8 @@ def main():
                     processedSomething = True
                     processTransportedTR(fileName)
                     os.remove(os.getcwd() + "/" + fileName)
-            #if processedSomething or True:
-            if processedSomething:
+            if processedSomething or True:
+            #if processedSomething:
                     subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
                     subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelations.db  ', shell=True)
                     subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv taxonomyRelations1.db taxonomyRelations.db ', shell=True)
