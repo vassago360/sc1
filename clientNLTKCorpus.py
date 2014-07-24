@@ -125,7 +125,7 @@ def main():
         urls = getBrownArticles()
         urls = removeBadAndAlreadyProcessedURLs(urls)
         print("working with " + str(len(urls)))
-        urlExemplarChunks = divideURLsInChunks(urls, 5) #list of lists
+        urlExemplarChunks = divideURLsInChunks(urls, 1) #list of lists
         random.shuffle(urlExemplarChunks) #reduce chance of multiple clients processing exact same urls at same time
         extraURLs = []
     except Exception as e:
