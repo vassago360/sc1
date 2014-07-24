@@ -52,7 +52,7 @@ for verb in dictVerbToWSs.keys():
         countTP = 0
         for wS in dictVerbToWSs[verb]:
             countTP += len(dictWSToTPs[wS])
-        if countTP > 4:
+        if countTP > 0:
             toPrint = True
         if toPrint:
             print("")
