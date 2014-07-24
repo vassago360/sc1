@@ -46,7 +46,15 @@ def convertListToSentence(sent):
 
 def getBrownArticles():
     #url = sentence.  I left things "url" out of convenience.
-    urls = nltk.corpus.brown.sents()
+    urlsOriginal = nltk.corpus.brown.sents()
+    urls = []
+    for url in urlsOriginal:
+        if "made" in url:
+            urls.append(url)
+        elif "make" in url:
+            urls.append(url)
+        elif "makes" in url:
+            urls.append(url)
     urlsCopy = []
     for url in urls:
         urlsCopy.append(convertListToSentence(url))
@@ -117,7 +125,7 @@ def main():
         urls = getBrownArticles()
         urls = removeBadAndAlreadyProcessedURLs(urls)
         print("working with " + str(len(urls)))
-        urlExemplarChunks = divideURLsInChunks(urls, 30) #list of lists
+        urlExemplarChunks = divideURLsInChunks(urls, 5) #list of lists
         random.shuffle(urlExemplarChunks) #reduce chance of multiple clients processing exact same urls at same time
         extraURLs = []
     except Exception as e:
