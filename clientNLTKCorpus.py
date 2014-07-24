@@ -40,8 +40,15 @@ def processMainLoopException(e, urls):
 
 def convertListToSentence(sent):
     sentence = r""
-    for word in sent:
-        sentence += word + r" "
+    for i, word in enumerate(sent):
+        if i == (len(sent) - 2):
+            sentence += word + r""
+        elif (i == (len(sent) - 1)) and (sent.count(word) > 1):
+            return sentence
+        elif i == (len(sent) - 1):
+            sentence += word + r""
+        else:
+            sentence += word + r" "
     return sentence
 
 def getBrownArticles():
@@ -125,7 +132,7 @@ def main():
         urls = getBrownArticles()
         urls = removeBadAndAlreadyProcessedURLs(urls)
         print("working with " + str(len(urls)))
-        urlExemplarChunks = divideURLsInChunks(urls, 1) #list of lists
+        urlExemplarChunks = divideURLsInChunks(urls, 120) #list of lists
         random.shuffle(urlExemplarChunks) #reduce chance of multiple clients processing exact same urls at same time
         extraURLs = []
     except Exception as e:
