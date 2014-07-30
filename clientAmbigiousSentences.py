@@ -119,7 +119,7 @@ def main():
         extraURLs = None
         urls = None
         urls = getAmbigiousSentences()
-        import pdb ; pdb.set_trace()
+        #import pdb ; pdb.set_trace()
         urls = removeBadAndAlreadyProcessedURLs(urls)
         print("working with " + str(len(urls)))
         urlExemplarChunks = divideURLsInChunks(urls, 5) #list of lists
