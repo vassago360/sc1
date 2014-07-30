@@ -67,6 +67,9 @@ for verb in (dictVerbToWSs2.keys() + dictVerbToWSs1.keys()):
             verbs.append(firstWord)
 verbs.sort()
 
+verbs = ["argue","base","be","begin","bring","call","conduct","do","enter","follow","give","have","head","introduce","know","lead","live","make","move","operate","place","play","run","serve","succeed","take"]
+sentences = []
+
 for verb in verbs:
     printVerb = False
     if verb in dictVerbToWSs1.keys():
@@ -87,8 +90,9 @@ for verb in verbs:
                     for supportOCAndSentence in supportOCAndSentences:
                         count += 1
                         sentence = supportOCAndSentence[2]
-                        sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
                         sentence = re.sub(r"""[+]""", ' ', sentence)
+                        sentences.append(sentence)
+                        sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
                         print("%s%s.%s   %s" % ("1", wS, count, sentence) )
     if verb in dictVerbToWSs2.keys():
         sentCount = 0
@@ -108,10 +112,12 @@ for verb in verbs:
                     for supportOCAndSentence in supportOCAndSentences:
                         count += 1
                         sentence = supportOCAndSentence[2]
-                        sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
                         sentence = re.sub(r"""[+]""", ' ', sentence)
+                        sentences.append(sentence)
+                        sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
                         print("%s%s.%s   %s" % ("2", wS, count, sentence) )
 
+pickle.dump( sentences, open('ambigiousSentences.p', 'wb'))
 #import pdb ; pdb.set_trace()
 
 """for verb in dictVerbToWSs2.keys():
