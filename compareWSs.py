@@ -1,8 +1,5 @@
 from derivedClasses import *
 
-conn2 = sqlite3.connect("taxonomyRelations.db")
-c2 = conn2.cursor(cursor)
-
 """wSs = c2.getWordSenses()
 
 for wS in wSs[:]:
@@ -32,39 +29,103 @@ for i, wS1 in enumerate(wSs):
     print("")
     print("")"""
 
-wSs = c2.getWordSenses()
+conn1 = sqlite3.connect("dirtyLargeBrownTaxRelations.db")
+c1 = conn1.cursor(cursor)
 
-dictWSToTPs = dict()
-for wS in wSs:
+conn2 = sqlite3.connect("dirtyLargeTaxRelations.db")
+c2 = conn2.cursor(cursor)
+
+wSs1 = c1.getWordSenses()
+wSs2 = c2.getWordSenses()
+
+dictWSToTPs1 = dict()
+for wS in wSs1:
+    tps = c1.getTPsOfAWordSense(wS)
+    if (len(tps) >= 1):
+        dictWSToTPs1[wS] = tps
+
+dictWSToTPs2 = dict()
+for wS in wSs2:
     tps = c2.getTPsOfAWordSense(wS)
     if (len(tps) >= 1):
-        dictWSToTPs[wS] = tps
+        dictWSToTPs2[wS] = tps
 
 print("1st part done.")
 
-dictVerbToWSs = c2.getDictVerbToWSs()
+dictVerbToWSs1 = c1.getDictVerbToWSs()
+dictVerbToWSs2 = c2.getDictVerbToWSs()
 
 print("2nd part done.")
 
-for verb in dictVerbToWSs.keys():
-    if len(dictVerbToWSs[verb]) > 0:
-        toPrint = False
-        countTP = 0
-        for wS in dictVerbToWSs[verb]:
-            countTP += len(dictWSToTPs[wS])
-        if countTP > 0:
-            toPrint = True
-        if toPrint:
-            print("")
-            print("----------------- " + str(verb) + " -----------------")
-            for wS in dictVerbToWSs[verb]:
-                #print("\t" + str(wS))
+verbs = []
+verbSiblings = []
+for verb in (dictVerbToWSs2.keys() + dictVerbToWSs1.keys()):
+    if ("+" in verb) and not (verb in verbSiblings):
+        verbSiblings.append(verb)
+        firstWord = re.split(r"[+]", verb)[0]
+        if not (firstWord in verbs):
+            verbs.append(firstWord)
+verbs.sort()
+
+for verb in verbs:
+    printVerb = False
+    if verb in dictVerbToWSs1.keys():
+        sentCount = 0
+        for wS in dictVerbToWSs1[verb]:
+            for tP in dictWSToTPs1[wS]:
+                supportOCAndSentences = c1.getListOfSupportOCAndSentences(tP, wS)
+                for supportOCAndSentence in supportOCAndSentences:
+                    sentCount += 1
+        if sentCount > 1:
+            if not printVerb:
+                    print("\n----------------- " + str(verb) + " -----------------")
+                    printVerb = True
+            for wS in dictVerbToWSs1[verb]:
                 count = 0
-                for tP in dictWSToTPs[wS]:
+                for tP in dictWSToTPs1[wS]:
+                    supportOCAndSentences = c1.getListOfSupportOCAndSentences(tP, wS)
+                    for supportOCAndSentence in supportOCAndSentences:
+                        count += 1
+                        sentence = supportOCAndSentence[2]
+                        sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
+                        sentence = re.sub(r"""[+]""", ' ', sentence)
+                        print("%s%s.%s   %s" % ("1", wS, count, sentence) )
+    if verb in dictVerbToWSs2.keys():
+        sentCount = 0
+        for wS in dictVerbToWSs2[verb]:
+            for tP in dictWSToTPs2[wS]:
+                supportOCAndSentences = c2.getListOfSupportOCAndSentences(tP, wS)
+                for supportOCAndSentence in supportOCAndSentences:
+                    sentCount += 1
+        if sentCount > 1:
+            if not printVerb:
+                    print("\n----------------- " + str(verb) + " -----------------")
+                    printVerb = True
+            for wS in dictVerbToWSs2[verb]:
+                count = 0
+                for tP in dictWSToTPs2[wS]:
                     supportOCAndSentences = c2.getListOfSupportOCAndSentences(tP, wS)
                     for supportOCAndSentence in supportOCAndSentences:
                         count += 1
                         sentence = supportOCAndSentence[2]
                         sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
                         sentence = re.sub(r"""[+]""", ' ', sentence)
-                        print("%s.%s |  %s " % (wS, count, sentence) )
+                        print("%s%s.%s   %s" % ("2", wS, count, sentence) )
+
+#import pdb ; pdb.set_trace()
+
+"""for verb in dictVerbToWSs2.keys():
+    print("\n----------------- " + str(verb) + " -----------------")
+    for wS in dictVerbToWSs2[verb]:
+        count = 0
+        for tP in dictWSToTPs2[wS]:
+            supportOCAndSentences = c2.getListOfSupportOCAndSentences(tP, wS)
+            for supportOCAndSentence in supportOCAndSentences:
+                count += 1
+                sentence = supportOCAndSentence[2]
+                sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
+                sentence = re.sub(r"[+]", ' ', sentence)
+                print("%s.%s |  %s " % (wS, count, sentence) )"""
+
+
+
