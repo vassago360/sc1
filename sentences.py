@@ -363,8 +363,9 @@ r"Olivetti took over Underwood , the U.S. typewriter maker , in late 1959 .",])
 #######
 sentences = []
 for verb in dictVerbToSentences.keys():
-    for sentence in dictVerbToSentences[verb]:
-        sentences.append(sentence)
+    for sents in dictVerbToSentences[verb]:
+        for sent in sents:
+            sentences.append(sent)
 pickle.dump( sentences, open('ambigiousSentences.p', 'wb'))
 
 
