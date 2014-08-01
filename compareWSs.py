@@ -92,8 +92,9 @@ for verb in verbs:
                         sentence = supportOCAndSentence[2]
                         sentence = re.sub(r"""[+]""", ' ', sentence)
                         sentences.append(sentence)
-                        sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
-                        print("%s%s.%s   %s" % ("1", wS, count, sentence) )
+                        #sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
+                        #print("%s%s.%s   %s" % ("1", wS, count, sentence) )
+                        print r'"' + sentence + r'", '
     if verb in dictVerbToWSs2.keys():
         sentCount = 0
         for wS in dictVerbToWSs2[verb]:
@@ -114,8 +115,9 @@ for verb in verbs:
                         sentence = supportOCAndSentence[2]
                         sentence = re.sub(r"""[+]""", ' ', sentence)
                         sentences.append(sentence)
-                        sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
-                        print("%s%s.%s   %s" % ("2", wS, count, sentence) )
+                        #sentence = re.sub(r"(-LRB-)(.|[+]){0,40}(-RRB-)", '', sentence)
+                        #print("%s%s.%s   %s" % ("2", wS, count, sentence) )
+                        print r'"' + sentence + r'", '
 
 pickle.dump( sentences, open('ambigiousSentences.p', 'wb'))
 #import pdb ; pdb.set_trace()
