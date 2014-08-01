@@ -1,4 +1,4 @@
-import pickle
+import pickle, random
 
 dictVerbToSentences = dict()
 
@@ -366,6 +366,7 @@ for verb in dictVerbToSentences.keys():
     for sents in dictVerbToSentences[verb]:
         for sent in sents:
             sentences.append(sent)
+random.shuffle(sentences)
 pickle.dump( sentences, open('ambigiousSentences.p', 'wb'))
 
 
