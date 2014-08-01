@@ -462,7 +462,7 @@ def addHighProbableWordSenses(c1, c2, c3):
         tPsWithSameVerb = c2.getTPsWithSameVerbButNothingElseOfATP(inputTP)
         tPsWithSameTP = c2.getTPsWithSameTPButNothingElseOfATP(c1, inputTP)
         #there are situations when a tp has both zuegma and reduction (multiple tps in taxonomy db that satify both conditions).  First do reduction, then zeugma, then if strictly reduction remove it, otherwise add a new wordsense
-        if zDiff > 0.5:
+        if zDiff >= 0.0:
             if biasedWordSense(inputTP, wordSense, c1, c2, "reduction"):
                 print("high prob reduction situation: " + "inputTP added: " + str(inputTP) + " wordSense: " + str(wordSense) + " zDiff: " + str(zDiff) + " comparable probabilities: " + str(l[-3:]))
                 c1.updateRowsBasedOnUIwWSAndCopyOver(wordSense, inputTP, inputSI, c3)
