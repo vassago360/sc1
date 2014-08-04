@@ -125,7 +125,7 @@ def main():
                 print("sleeping...")
                 c2.close()
                 conn2.commit()
-                time.sleep(5)
+                time.sleep(10)
             shutil.copyfile("taxonomyRelations.db", "backUpTaxonomy.db")
 
     except Exception as e:

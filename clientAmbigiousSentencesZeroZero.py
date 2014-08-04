@@ -1,5 +1,6 @@
 import extractRelationsNLTKCorpus, evalInputZero, mln2experimentZero, shutil, pickle, time, urllib2, sqlite3, sys
 from derivedClasses import *
+import sentences
 #import createTaxonomy
 
 oldUrls = ['http://en.wikipedia.org/wiki/Alberta', 'http://en.wikipedia.org/wiki/Edmonton', 'http://en.wikipedia.org/wiki/Canada', 'http://en.wikipedia.org/wiki/Alexander_Cameron_Rutherford',
