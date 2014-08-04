@@ -109,7 +109,7 @@ def main():
             conn2 = sqlite3.connect("taxonomyRelations.db")
             c2 = conn2.cursor(cursor)
             c2.execute("pragma foreign_keys = ON")
-            if random.choice([1,0,0,0,0]):
+            if random.choice([0,0,0,0,0]):
                 c2.printDB()
                 c2.close()
                 conn2.commit()
