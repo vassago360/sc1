@@ -136,7 +136,7 @@ def determineIfWSShouldMerge(wS1, dictOwnerWSResultWStoProbs, allWordSenses):
     allW2Percents.sort()
     zDiff = getZDifference(allW2Percents)
     if closestWS[0]:
-        if (zDiff > 0.0) and (closestWS[1] > 0.00035):
+        if (zDiff > 0.5) and (closestWS[1] > 0.1):
             return closestWS[0]
     return None
     """#evaluate each wS2

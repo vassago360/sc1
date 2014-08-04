@@ -145,11 +145,14 @@ def main():
                 extraURLs = []
                 time.sleep(80)
                 #MLN2
-                print("getting most recent taxonomyRelations.db ...")
-                subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
-                mln2experiment.run(tPsThatChangeC2)
-                subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTR' + str(random.randrange(100000)) + '.db', shell=True)
-                os.remove(os.getcwd() + "/transportedTR.db")
+                moveOrMerge = True
+                while moveOrMerge:
+                    time.sleep(60) #assumes the server will take no longer than 60 seconds to update/upload the database
+                    print("getting most recent taxonomyRelations.db ...")
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
+                    moveOrMerge = mln2experiment.run(tPsThatChangeC2)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTR' + str(random.randrange(100000)) + '.db', shell=True)
+                    os.remove(os.getcwd() + "/transportedTR.db")
                 time.sleep(2)
     except Exception as e:
         if extraURLs:

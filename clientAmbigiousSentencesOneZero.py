@@ -1,4 +1,4 @@
-import createInitialDatabase, extractRelations, evalInput, mln2experiment, shutil, pickle, time, urllib2, sqlite3, sys
+import extractRelationsNLTKCorpus, evalInputOne, mln2experimentZero, shutil, pickle, time, urllib2, sqlite3, sys
 from derivedClasses import *
 #import createTaxonomy
 
@@ -22,7 +22,7 @@ def processMainLoopException(e, urls):
         print("-------- ")
         try:
             print("getting most recent taxonomyRelations.db ...")
-            subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
+            subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsOneZero.db > taxonomyRelations.db', shell=True)
         except:
             print("error getting taxonomyRelations.db using backUpTaxonomy.db instead <<<<<< ")
             if "backUpTaxonomy.db" in os.listdir(os.getcwd()):
@@ -38,8 +38,22 @@ def processMainLoopException(e, urls):
         python = sys.executable
         os.execl(python, python, * sys.argv)
 
-def getWikipediaArticles():
-    urls = pickle.load( open('wikipediaArticles.p', 'rb') ) + oldUrls
+def convertListToSentence(sent):
+    sentence = r""
+    for i, word in enumerate(sent):
+        if i == (len(sent) - 2):
+            sentence += word + r""
+        elif (i == (len(sent) - 1)) and (sent.count(word) > 1):
+            return sentence
+        elif i == (len(sent) - 1):
+            sentence += word + r""
+        else:
+            sentence += word + r" "
+    return sentence
+
+def getAmbigiousSentences():
+    #url = sentence.  I left things "url" out of convenience.
+    urls = pickle.load( open('ambigiousSentences.p', 'rb') )
     #urlLargeChunks = divideURLsInChunks(urls, int(len(urls)/2))
     #return urlLargeChunks[1]
     return urls
@@ -76,11 +90,11 @@ def addBadURLs(urls):
         badURLs += urls
         print("adding " + str(urls) + " to the bad wikipedia articles.")
         pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
-        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" ' + 'transportedBW' + str(random.randrange(100000)) + '.p', shell=True)
+        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" ' + 'transportedBWOneZero' + str(random.randrange(100000)) + '.p', shell=True)
 
 def getBadURLs():
     try:
-        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat badWikipediaArticles.p > badWikipediaArticles.p', shell=True)
+        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat badWikipediaArticlesOneZero.p > badWikipediaArticles.p', shell=True)
         badURLs = pickle.load( open('badWikipediaArticles.p', 'rb') )
     except:
         print("Error loading bad wikipedia urls.  Recreating bad urls list...")
@@ -99,40 +113,45 @@ def removeBadAndAlreadyProcessedURLs(urls):
 def main():
     open("printOuts.txt", "w+").close()
     try:
-        extraURLs = None
-        urls = None
         #initialize
         print("getting most recent taxonomyRelations.db ...")
-        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
-        urls = getWikipediaArticles()
+        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsOneZero.db > taxonomyRelations.db', shell=True)
+        extraURLs = None
+        urls = None
+        urls = getAmbigiousSentences()
+        #import pdb ; pdb.set_trace()
         urls = removeBadAndAlreadyProcessedURLs(urls)
         print("working with " + str(len(urls)))
-        urlExemplarChunks = divideURLsInChunks(urls, 3) #list of lists
+        urlExemplarChunks = divideURLsInChunks(urls, 5) #list of lists
         random.shuffle(urlExemplarChunks) #reduce chance of multiple clients processing exact same urls at same time
         extraURLs = []
+    except Exception as e:
+        processMainLoopException(e, [])
+    try:
         for urls in urlExemplarChunks:
             urls = removeBadAndAlreadyProcessedURLs(urls)
             print("processing (" + str(len(urls + extraURLs)) + ") " + str(urls + extraURLs))
-            enoughToWorkWith = extractRelations.run(urls + extraURLs)
+            enoughToWorkWith = extractRelationsNLTKCorpus.run(urls + extraURLs)
             print("getting most recent taxonomyRelations.db ...")
-            subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
+            subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsOneZero.db > taxonomyRelations.db', shell=True)
             if not enoughToWorkWith:
                 extraURLs += urls
             if enoughToWorkWith:
                 #MLN1
-                tPsThatChangeC2 = evalInput.run()
-                subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTR' + str(random.randrange(100000)) + '.db', shell=True)
+                tPsThatChangeC2 = evalInputOne.run()
+                subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTROneZero' + str(random.randrange(100000)) + '.db', shell=True)
                 os.remove(os.getcwd() + "/transportedTR.db")
                 shutil.copyfile("taxonomyRelations.db", "backUpTaxonomy.db")
                 extraURLs = []
+                time.sleep(60)
                 #MLN2
                 moveOrMerge = True
                 while moveOrMerge:
                     time.sleep(60) #assumes the server will take no longer than 60 seconds to update/upload the database
                     print("getting most recent taxonomyRelations.db ...")
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelations.db > taxonomyRelations.db', shell=True)
-                    moveOrMerge = mln2experiment.run(tPsThatChangeC2)
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTR' + str(random.randrange(100000)) + '.db', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsOneZero.db > taxonomyRelations.db', shell=True)
+                    moveOrMerge = mln2experimentZero.run(tPsThatChangeC2)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTROneZero' + str(random.randrange(100000)) + '.db', shell=True)
                     os.remove(os.getcwd() + "/transportedTR.db")
                 time.sleep(2)
     except Exception as e:

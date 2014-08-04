@@ -86,9 +86,21 @@ def updateSQLRelationsDB(c, patternTuples, typeOfUpdate):
                    WHERE support_col="%s"),
                 0) + 1);""" % (replaceSpaceWithPlus(patternTuple[1]), replaceSpaceWithPlus(patternTuple[1])))
             c.execute("""insert or ignore into sentence values ("%s")""" % (replaceSpaceWithPlus(patternTuple[3])))
-            #c.execute("""SELECT * FROM patterns WHERE pattern_type="%s" AND support_col="%s" AND sentence_col="%s" """ % (replaceSpaceWithPlus(patternTuple[0]), replaceSpaceWithPlus(patternTuple[1]), replaceSpaceWithPlus(patternTuple[3])))
-            #if not sqlStatementCount(c):
-                #c.execute("""insert or ignore into patterns (pattern_type, support_col, feature_col, sentence_col) values ("%s", "%s", NULL, "%s")""" % (replaceSpaceWithPlus(patternTuple[0]), replaceSpaceWithPlus(patternTuple[1]), replaceSpaceWithPlus(patternTuple[3])))
+            #----------add patternTuple[2] which is the relation
+            relation = patternTuple[2]
+            poss = nltk.pos_tag(nltk.word_tokenize(relation))
+            verb = None
+            for pos in poss:
+                if pos[1] == 'VBD':
+                    verb = pos[0]
+                    break
+            if verb:
+                feature = "featUNNORMALIZEDVERB_" + verb
+                c.execute("""insert or ignore into feature values ("%s")""" % (replaceSpaceWithPlus(feature)))
+                c.execute("""SELECT * FROM patterns WHERE pattern_type="%s" AND feature_col="%s" AND sentence_col="%s" """ % (replaceSpaceWithPlus(patternTuple[0]), replaceSpaceWithPlus(feature), replaceSpaceWithPlus(patternTuple[3])))
+                if not sqlStatementCount(c):
+                    c.execute("""insert or ignore into patterns (pattern_type, support_col, feature_col, sentence_col) values ("%s", "%s", "%s", "%s")""" % (replaceSpaceWithPlus(patternTuple[0]), replaceSpaceWithPlus(patternTuple[1]), replaceSpaceWithPlus(feature), replaceSpaceWithPlus(patternTuple[3])))
+        #############
         if typeOfUpdate == "features": #ex. [(textualPattern, supportItem, feature, sentence), ...
             c.execute("""insert or ignore into textualPattern values ("%s")""" % (replaceSpaceWithPlus(patternTuple[0])))
             c.execute("""insert or ignore into feature values ("%s")""" % (replaceSpaceWithPlus(patternTuple[2])))

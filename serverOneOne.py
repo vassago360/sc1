@@ -64,9 +64,9 @@ def uploadBadWikipediaArticles():
         print("Error loading bad wikipedia urls.  Recreating bad urls list...")
         badURLs = []
         pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
-    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" badWikipediaArticles1.p  ', shell=True)
-    subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm badWikipediaArticles.p  ', shell=True)
-    subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv badWikipediaArticles1.p badWikipediaArticles.p ', shell=True)
+    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" badWikipediaArticles1OneOne.p  ', shell=True)
+    subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm badWikipediaArticlesOneOne.p  ', shell=True)
+    subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv badWikipediaArticles1OneOne.p badWikipediaArticlesOneOne.p ', shell=True)
 
 def main():
     createInitialDatabase.run()
@@ -77,8 +77,8 @@ def main():
     try:
         while(True):
             #process badURLs
-            subprocess.call(r'scp st1298@eros.cs.txstate.edu:transportedBW*.p ./ ', shell=True)
-            subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm transportedBW*.p  ', shell=True)
+            subprocess.call(r'scp st1298@eros.cs.txstate.edu:transportedBWOneOne*.p ./ ', shell=True)
+            subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm transportedBWOneOne*.p  ', shell=True)
             processedSomething = False
             for fileName in os.listdir(os.getcwd()):
                 if "transportedBW" in fileName:
@@ -87,12 +87,12 @@ def main():
                     processBadWikipediaArticles(fileName)
                     os.remove(os.getcwd() + "/" + fileName)
             if processedSomething:
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" badWikipediaArticles1.p  ', shell=True)
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm badWikipediaArticles.p  ', shell=True)
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv badWikipediaArticles1.p badWikipediaArticles.p ', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" badWikipediaArticles1OneOne.p  ', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm badWikipediaArticlesOneOne.p  ', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv badWikipediaArticles1OneOne.p badWikipediaArticlesOneOne.p ', shell=True)
             #process transportedTR*.db
-            subprocess.call(r'scp st1298@eros.cs.txstate.edu:transportedTR*.db ./ ', shell=True)
-            subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm transportedTR*.db  ', shell=True)
+            subprocess.call(r'scp st1298@eros.cs.txstate.edu:transportedTROneOne*.db ./ ', shell=True)
+            subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm transportedTROneOne*.db  ', shell=True)
             processedSomething = False
             for fileName in os.listdir(os.getcwd()):
                 if "transportedTR" in fileName:
@@ -102,9 +102,9 @@ def main():
                     os.remove(os.getcwd() + "/" + fileName)
             if processedSomething or True:
             #if processedSomething:
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelations.db  ', shell=True)
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv taxonomyRelations1.db taxonomyRelations.db ', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1OneOne.db  ', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelationsOneOne.db  ', shell=True)
+                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv taxonomyRelations1OneOne.db taxonomyRelationsOneOne.db ', shell=True)
             time.sleep(2)
             conn2 = sqlite3.connect("taxonomyRelations.db")
             c2 = conn2.cursor(cursor)
@@ -118,9 +118,9 @@ def main():
                 c2.removeItemsNotBeingUsed()
                 c2.close()
                 conn2.commit()
-                subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1.db  ', shell=True)
-                subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelations.db  ', shell=True)
-                subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv taxonomyRelations1.db taxonomyRelations.db ', shell=True)
+                subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < taxonomyRelations.db ">" taxonomyRelations1OneOne.db  ', shell=True)
+                subprocess.call(r'ssh st1298@eros.cs.txstate.edu rm taxonomyRelationsOneOne.db  ', shell=True)
+                subprocess.call(r'ssh st1298@eros.cs.txstate.edu mv taxonomyRelations1OneOne.db taxonomyRelationsOneOne.db ', shell=True)
             if True:
                 print("sleeping...")
                 c2.close()
