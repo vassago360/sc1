@@ -1,6 +1,7 @@
-import extractRelationsNLTKCorpus, evalInputZero, mln2experimentOne, shutil, pickle, time, urllib2, sqlite3, sys
+import extractRelationsNLTKCorpus, evalInputOne, mln2experimentOne, evalInputZero, mln2experimentZero, shutil, pickle, time, urllib2, sqlite3, sys
 from derivedClasses import *
 import sentences
+import createInitialDatabase
 #import createTaxonomy
 
 oldUrls = ['http://en.wikipedia.org/wiki/Alberta', 'http://en.wikipedia.org/wiki/Edmonton', 'http://en.wikipedia.org/wiki/Canada', 'http://en.wikipedia.org/wiki/Alexander_Cameron_Rutherford',
@@ -21,15 +22,10 @@ def processMainLoopException(e, urls):
         print(type(e))
         print(str(e.args))
         print("-------- ")
-        try:
-            print("getting most recent taxonomyRelations.db ...")
-            subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsZeroOne.db > taxonomyRelations.db', shell=True)
-        except:
-            print("error getting taxonomyRelations.db using backUpTaxonomy.db instead <<<<<< ")
-            if "backUpTaxonomy.db" in os.listdir(os.getcwd()):
-                shutil.copyfile("backUpTaxonomy.db", "taxonomyRelations.db")
-            else:
-                print("no backUpTaxonomy.db to fall back on.")
+        if "backUpTaxonomy.db" in os.listdir(os.getcwd()):
+            shutil.copyfile("backUpTaxonomy.db", "taxonomyRelations.db")
+        else:
+            print("no backUpTaxonomy.db to fall back on.")
         deleteInputTextFolderFiles()
         #say urls are bad
         addBadURLs(urls)
@@ -90,12 +86,12 @@ def addBadURLs(urls):
         badURLs = getBadURLs()
         badURLs += urls
         print("adding " + str(urls) + " to the bad wikipedia articles.")
-        pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
-        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" ' + 'transportedBWZeroOne' + str(random.randrange(100000)) + '.p', shell=True)
+        pickle.dump( badURLs, open('transportedBW' + str(random.randrange(100000)) + '.p', 'wb'))
+        #subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < badWikipediaArticles.p ">" ' + 'transportedBW' + str(random.randrange(100000)) + '.p', shell=True)
 
 def getBadURLs():
     try:
-        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat badWikipediaArticlesZeroOne.p > badWikipediaArticles.p', shell=True)
+        #subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat badWikipediaArticlesOneOne.p > badWikipediaArticles.p', shell=True)
         badURLs = pickle.load( open('badWikipediaArticles.p', 'rb') )
     except:
         print("Error loading bad wikipedia urls.  Recreating bad urls list...")
@@ -111,12 +107,45 @@ def removeBadAndAlreadyProcessedURLs(urls):
     urls = removeURLsAlreadyProcessed(urls)
     return urls
 
+def processBadWikipediaArticles(fileName):
+    try:
+        badURLsToBeAdded = pickle.load( open(fileName, 'rb') )
+    except:
+        print("Error loading " + fileName)
+        badURLsToBeAdded = []
+    try:
+        badURLs = pickle.load( open('badWikipediaArticles.p', 'rb') )
+    except:
+        print("Error loading bad wikipedia urls.  Recreating bad urls list...")
+        badURLs = []
+        pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
+    badURLs += badURLsToBeAdded
+    badURLs = list(set(badURLs))
+    pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
+
+def processTransportedTR(fileName):
+    conn1 = sqlite3.connect(fileName)
+    c1 = conn1.cursor(cursor)
+    c1.execute("pragma foreign_keys = ON")
+    conn2 = sqlite3.connect("taxonomyRelations.db")
+    c2 = conn2.cursor(cursor)
+    c2.execute("pragma foreign_keys = ON")
+    ####
+    c1.renameHighWordSensesToNextAvailableWordSenseOfOtherC(c2)
+    c1.deleteNecessaryRows(c2)
+    c1.copyOverEverything(c2)
+    ####
+    conn1.commit()
+    c1.close()
+    conn2.commit()
+    c2.close()
+
 def main():
     open("printOuts.txt", "w+").close()
     try:
         #initialize
-        print("getting most recent taxonomyRelations.db ...")
-        subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsZeroOne.db > taxonomyRelations.db', shell=True)
+        #print("getting most recent taxonomyRelations.db ...")
+        #subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsOneOne.db > taxonomyRelations.db', shell=True)
         extraURLs = None
         urls = None
         urls = getAmbigiousSentences()
@@ -133,27 +162,48 @@ def main():
             urls = removeBadAndAlreadyProcessedURLs(urls)
             print("processing (" + str(len(urls + extraURLs)) + ") " + str(urls + extraURLs))
             enoughToWorkWith = extractRelationsNLTKCorpus.run(urls + extraURLs)
-            print("getting most recent taxonomyRelations.db ...")
-            subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsZeroOne.db > taxonomyRelations.db', shell=True)
+            #print("getting most recent taxonomyRelations.db ...")
+            #subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsOneOne.db > taxonomyRelations.db', shell=True)
             if not enoughToWorkWith:
                 extraURLs += urls
             if enoughToWorkWith:
                 #MLN1
                 tPsThatChangeC2 = evalInputZero.run()
-                subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTRZeroOne' + str(random.randrange(100000)) + '.db', shell=True)
-                os.remove(os.getcwd() + "/transportedTR.db")
+                #subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTROneOne' + str(random.randrange(100000)) + '.db', shell=True)
+                #os.remove(os.getcwd() + "/transportedTR.db")
                 shutil.copyfile("taxonomyRelations.db", "backUpTaxonomy.db")
                 extraURLs = []
-                time.sleep(60)
+                #time.sleep(60)
+                #server
+                for fileName in os.listdir(os.getcwd()):
+                    if "transportedBW" in fileName:
+                        print("processing " + fileName)
+                        processBadWikipediaArticles(fileName)
+                        os.remove(os.getcwd() + "/" + fileName)
+                for fileName in os.listdir(os.getcwd()):
+                    if "transportedTR" in fileName:
+                        print("processing " + fileName)
+                        processTransportedTR(fileName)
+                        os.remove(os.getcwd() + "/" + fileName)
                 #MLN2
                 moveOrMerge = True
                 while moveOrMerge:
-                    time.sleep(60) #assumes the server will take no longer than 60 seconds to update/upload the database
-                    print("getting most recent taxonomyRelations.db ...")
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsZeroOne.db > taxonomyRelations.db', shell=True)
+                    #time.sleep(60) #assumes the server will take no longer than 60 seconds to update/upload the database
+                    #print("getting most recent taxonomyRelations.db ...")
+                    #subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsOneOne.db > taxonomyRelations.db', shell=True)
                     moveOrMerge = mln2experimentOne.run(tPsThatChangeC2)
-                    subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTRZeroOne' + str(random.randrange(100000)) + '.db', shell=True)
-                    os.remove(os.getcwd() + "/transportedTR.db")
+                    #subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat < transportedTR.db ">" ' + 'transportedTROneOne' + str(random.randrange(100000)) + '.db', shell=True)
+                    #os.remove(os.getcwd() + "/transportedTR.db")
+                    for fileName in os.listdir(os.getcwd()):
+                        if "transportedBW" in fileName:
+                            print("processing " + fileName)
+                            processBadWikipediaArticles(fileName)
+                            os.remove(os.getcwd() + "/" + fileName)
+                    for fileName in os.listdir(os.getcwd()):
+                        if "transportedTR" in fileName:
+                            print("processing " + fileName)
+                            processTransportedTR(fileName)
+                            os.remove(os.getcwd() + "/" + fileName)
                 time.sleep(2)
     except Exception as e:
         if extraURLs:

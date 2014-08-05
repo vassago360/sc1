@@ -142,9 +142,6 @@ def processTransportedTR(fileName):
 
 def main():
     open("printOuts.txt", "w+").close()
-    createInitialDatabase.run()
-    badURLs = []
-    pickle.dump( badURLs, open('badWikipediaArticles.p', 'wb'))
     try:
         #initialize
         #print("getting most recent taxonomyRelations.db ...")
