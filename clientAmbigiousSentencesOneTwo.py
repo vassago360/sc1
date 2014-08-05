@@ -185,6 +185,12 @@ def main():
                         print("processing " + fileName)
                         processTransportedTR(fileName)
                         os.remove(os.getcwd() + "/" + fileName)
+                print("removing unused items in database...")
+                conn2 = sqlite3.connect("taxonomyRelations.db")
+                c2 = conn2.cursor(cursor)
+                c2.removeItemsNotBeingUsed()
+                c2.close()
+                conn2.commit()
                 #MLN2
                 moveOrMerge = True
                 while moveOrMerge:
@@ -204,6 +210,12 @@ def main():
                             print("processing " + fileName)
                             processTransportedTR(fileName)
                             os.remove(os.getcwd() + "/" + fileName)
+                    print("removing unused items in database...")
+                    conn2 = sqlite3.connect("taxonomyRelations.db")
+                    c2 = conn2.cursor(cursor)
+                    c2.removeItemsNotBeingUsed()
+                    c2.close()
+                    conn2.commit()
                 time.sleep(2)
     except Exception as e:
         if extraURLs:
