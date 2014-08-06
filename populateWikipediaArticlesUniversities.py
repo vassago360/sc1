@@ -1,4 +1,4 @@
-import createInitialDatabase, extractRelations, evalInput, shutil, pickle, time, urllib2, sqlite3, sys
+import createInitialDatabase, extractRelations, evalInput, shutil, pickle, time, urllib2, sqlite3, sys, csv
 from derivedClasses import *
 #import createTaxonomy
 
@@ -63,11 +63,12 @@ def getWikipediaArticles(wikipediaCategories):
         print("now processing " + str(wikipediaCategoriesInChunk))
         masterURL = "http://tools.wmflabs.org/erwin85/randomarticle.php?lang=en&family=wikipedia&categories=" + reCombineWikipediaCategories(wikipediaCategoriesInChunk) + "&namespaces=0&subcats=1&d=9"
         try:
-            urls = pickle.load( open('wikipediaArticles.p', 'rb') )
+            urls = pickle.load( open('wikipediaArticlesUniversities.p', 'rb') )
+            return urls[:1000]
         except:
             print("Error loading wikipedia urls.  Recreating urls list...")
             urls = []
-            pickle.dump( urls, open('wikipediaArticles.p', 'wb'))
+            pickle.dump( urls, open('wikipediaArticlesCelebrities.p', 'wb'))
         lenURLs = []
         errorCount = 0
         for i in range(20000): #the expected maximum number of wikipedia articles (duplicates included) for that given request
@@ -100,15 +101,77 @@ def getWikipediaArticles(wikipediaCategories):
             time.sleep(3)
     return urls
 
+def removeLongSentences(text):
+    for sentence in re.split(r'\.', text):
+        parsedSentence = nltk.word_tokenize(sentence)
+        if len(parsedSentence) > 100:
+            text = text.replace(sentence + ".", "")
+    return text
+
+def inputTextFolderHasFiles():
+    if len(os.listdir(os.getcwd() + '/exemplar-master/inputText')) > 0:
+        return True
+    else:
+        return False
+
+def deleteInputTextFolderFiles():
+    filelist = [ f for f in os.listdir(os.getcwd() + '/exemplar-master/inputText') ]
+    for f in filelist:
+        os.remove(os.getcwd() + '/exemplar-master/inputText/' + f)
+
+def getSentences(urls):
+    try:
+        while True:
+            urls.remove('')
+    except:
+        pass
+    print('len urls:' + str(len(urls)))
+    #go from urls to boilerpipe to exemplar to sentence
+    sentences = []
+    for count, url in enumerate(urls):
+        #get and preprocess url text ( takes 3 mins :( )
+        try:
+            extractedText = boilerpipe.extract.Extractor(extractor='ArticleExtractor', url=url)
+            extractedText = extractedText.getText()
+            extractedText = extractedText.encode('unicode_escape')
+            extractedText = re.sub(r"""(\\[0a-z1-9]*)|(\[[0a-z1-9]{0,20}\])""", '', extractedText)
+            extractedText = extractedText.replace('\\', '')
+            extractedText = extractedText.replace('/', '')
+            extractedText = removeLongSentences(extractedText)
+            f = open(os.getcwd() + '/exemplar-master/inputText/inputText_' + str(count) + '.txt', 'w+')
+            f.write(extractedText)
+            f.close()
+        except Exception as e:
+            print("--------")
+            print(type(e))
+            print(str(e.args))
+            print("--------")
+            continue
+    if inputTextFolderHasFiles():
+        #extract relations and features
+        print("using Exemplar for relation extraction...")
+        osCwd = os.getcwd()
+        os.chdir(os.getcwd() + "/exemplar-master")
+        subprocess.call(r'./exemplar.sh stanford inputText exemplarTempOutput.txt > exemplarTerminalOutput.txt', shell=True)
+        with open("exemplarTempOutput.txt") as tsv:
+            tsv.readline() #read past the first line: "Subjects    Relation    Objects    Normalized Relation    Sentence"
+            for line in csv.reader(tsv, dialect="excel-tab"):
+                sentence = line[4]
+                sentences.append(sentence)
+        os.chdir(osCwd)
+        deleteInputTextFolderFiles()
+    return sentences
+
 def main():
+    import pdb ; pdb.set_trace()
     open("printOuts.txt", "w+").close()
     open('exceptions', 'w+').close()
-    wikipediaCategories = 'American_female_pop_singers|American_film_actresses|21st-century American actresses|American_dance_musicians|American_hip_hop_singers|21st-century_American_male_actors|American male pop singers|Forbes_lists'
-    #wikipediaCategories = 'Visitor_attractions|Historic_districts|Places|Religious_places'
-    #wikipediaCategories = 'Tools|Cutting_tools|Machines|Cooking|Kitchenware|Cooking_appliances|Domestic_implements'
-    getWikipediaArticles(wikipediaCategories)
-
-
+    wikipediaCategories = ''
+    #wikipediaCategories = 'Geography of the United States|Historic_districts_in_the_United_States|Geography of the United States by city|Categories_by_region|Lists_of_cities_in_the_United_States_by_population|Territorial_disputes|Towers|Festivals|Conventions_in_the_United_States|Places|Religious_places|Visitor_attractions|Historic_districts'
+    # wikipediaCategories = 'Tools|Cutting_tools|Machines|Cooking|Kitchenware|Cooking_appliances|Domestic_implements'
+    urls = getWikipediaArticles(wikipediaCategories)
+    sentences = getSentences(urls)
+    pickle.dump( sentences, open('ambigiousSentencesUniversities.p', 'wb'))
 
 
 if __name__ == "__main__":
