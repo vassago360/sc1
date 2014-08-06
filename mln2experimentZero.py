@@ -410,40 +410,6 @@ def moveTuplesBasedOnMLN2Clustering(c2, c3):
     dictTPSIProbsToWSs = dict()
     dictOwnerWSResultWStoProbs = dict()  #ex dictWSToWSsProbs[1409,1409] = [.25, .5]
     #######
-    #move tuples to best fitting wordSense
-    for result in results:
-        predicate, args, prob = getResultsTokens(result)
-        tpSI = args[0]
-        wordSense = args[1][2:]
-        dictTPSItoProbs[tpSI] = []
-        dictTPSIProbsToWSs[(tpSI,prob)] = wordSense
-    results.seek(0)
-    for result in results:
-        predicate, args, prob = getResultsTokens(result)
-        tpSI = args[0]
-        dictTPSItoProbs[tpSI].append(prob)
-        dictTPSItoProbs[tpSI].sort()
-    #update c3 based on any changes (moves needed)
-    for key in dictTPSItoProbs.keys():
-        l = dictTPSItoProbs[key]
-        tpSI = key
-        prob = l[-1:][0]
-        wordSense = dictTPSIProbsToWSs[(tpSI,prob)]
-        inputTP, inputSI = separateTPandSI(tpSI)
-        #if the highest probability word sense is different than what the tuple is already assigned to, then add the WS-TP-Support to deleteWSTPSupport table and then make/copy over tuple changes. Otherwise do nothing
-        orginalWS = str(c2.getWordSenseBasedOnUI(inputTP, inputSI))
-        if orginalWS != str(wordSense):
-            if random.choice([1,1,0]): #sometimes necessary to get out of a neverending loop where a tuple will move back and forth between two wordSenses.
-                changesToTupleAssignments = True
-                print("Tuple change for: " + str(inputTP) + str(inputSI) + ".  OrginalWS: " + str(orginalWS) + " gotoWS: " + str(wordSense))
-                c3.execute(""" INSERT OR IGNORE INTO support (support_col, occurrences) VALUES ("%s", %s) """ % (inputSI, "1"))
-                c3.execute(""" INSERT OR IGNORE INTO wordSenses (id_col) VALUES (%s) """ % orginalWS)
-                c3.execute(""" INSERT OR IGNORE INTO textualPattern (pattern_type) VALUES ("%s") """ % inputTP)
-                c3.execute(""" INSERT OR IGNORE INTO deleteWSTPSupport (wordSense_col, pattern_type, support_col) VALUES (%s, "%s", "%s") """ % (orginalWS, inputTP, inputSI)) #requires deleteNecessaryRows() to be called later (currently server is doing that)
-                c2.updateRowsBasedOnUIwWSAndCopyOver(wordSense, inputTP, inputSI, c3)
-        if changesToTupleAssignments:
-            return True
-    #######
     #merge wordSenses
     #who owns that tuple. based on that for each result add that prob of the wordsense to that wordsense
     allWordSenses = []
@@ -479,6 +445,40 @@ def moveTuplesBasedOnMLN2Clustering(c2, c3):
                 c2.updateRowsBasedOnUIwWSAndCopyOver(wSToMergeTo, tP, sI, c3)
     if changesToTupleAssignments:
         return True
+    #######
+    #move tuples to best fitting wordSense
+    for result in results:
+        predicate, args, prob = getResultsTokens(result)
+        tpSI = args[0]
+        wordSense = args[1][2:]
+        dictTPSItoProbs[tpSI] = []
+        dictTPSIProbsToWSs[(tpSI,prob)] = wordSense
+    results.seek(0)
+    for result in results:
+        predicate, args, prob = getResultsTokens(result)
+        tpSI = args[0]
+        dictTPSItoProbs[tpSI].append(prob)
+        dictTPSItoProbs[tpSI].sort()
+    #update c3 based on any changes (moves needed)
+    for key in dictTPSItoProbs.keys():
+        l = dictTPSItoProbs[key]
+        tpSI = key
+        prob = l[-1:][0]
+        wordSense = dictTPSIProbsToWSs[(tpSI,prob)]
+        inputTP, inputSI = separateTPandSI(tpSI)
+        #if the highest probability word sense is different than what the tuple is already assigned to, then add the WS-TP-Support to deleteWSTPSupport table and then make/copy over tuple changes. Otherwise do nothing
+        orginalWS = str(c2.getWordSenseBasedOnUI(inputTP, inputSI))
+        if orginalWS != str(wordSense):
+            if random.choice([1,1,0]): #sometimes necessary to get out of a neverending loop where a tuple will move back and forth between two wordSenses.
+                changesToTupleAssignments = True
+                print("Tuple change for: " + str(inputTP) + str(inputSI) + ".  OrginalWS: " + str(orginalWS) + " gotoWS: " + str(wordSense))
+                c3.execute(""" INSERT OR IGNORE INTO support (support_col, occurrences) VALUES ("%s", %s) """ % (inputSI, "1"))
+                c3.execute(""" INSERT OR IGNORE INTO wordSenses (id_col) VALUES (%s) """ % orginalWS)
+                c3.execute(""" INSERT OR IGNORE INTO textualPattern (pattern_type) VALUES ("%s") """ % inputTP)
+                c3.execute(""" INSERT OR IGNORE INTO deleteWSTPSupport (wordSense_col, pattern_type, support_col) VALUES (%s, "%s", "%s") """ % (orginalWS, inputTP, inputSI)) #requires deleteNecessaryRows() to be called later (currently server is doing that)
+                c2.updateRowsBasedOnUIwWSAndCopyOver(wordSense, inputTP, inputSI, c3)
+        if changesToTupleAssignments:
+            return True
     #no moves or merges
     return False
 
