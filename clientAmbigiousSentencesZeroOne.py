@@ -146,6 +146,23 @@ def main():
         #initialize
         #print("getting most recent taxonomyRelations.db ...")
         #subprocess.call(r'ssh st1298@eros.cs.txstate.edu cat taxonomyRelationsOneOne.db > taxonomyRelations.db', shell=True)
+        for fileName in os.listdir(os.getcwd()):
+            if "transportedBW" in fileName:
+                print("processing " + fileName)
+                processBadWikipediaArticles(fileName)
+                os.remove(os.getcwd() + "/" + fileName)
+        for fileName in os.listdir(os.getcwd()):
+            if "transportedTR" in fileName:
+                print("processing " + fileName)
+                processTransportedTR(fileName)
+                os.remove(os.getcwd() + "/" + fileName)
+        print("removing unused items in database...")
+        conn2 = sqlite3.connect("taxonomyRelations.db")
+        c2 = conn2.cursor(cursor)
+        c2.removeItemsNotBeingUsed()
+        c2.close()
+        conn2.commit()
+        ####
         extraURLs = None
         urls = None
         urls = getAmbigiousSentences()
