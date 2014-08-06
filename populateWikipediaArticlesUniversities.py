@@ -130,16 +130,23 @@ def getSentences(urls):
     sentences = []
     for count, url in enumerate(urls):
         #get and preprocess url text ( takes 3 mins :( )
-        extractedText = boilerpipe.extract.Extractor(extractor='ArticleExtractor', url=url)
-        extractedText = extractedText.getText()
-        extractedText = extractedText.encode('unicode_escape')
-        extractedText = re.sub(r"""(\\[0a-z1-9]*)|(\[[0a-z1-9]{0,20}\])""", '', extractedText)
-        extractedText = extractedText.replace('\\', '')
-        extractedText = extractedText.replace('/', '')
-        extractedText = removeLongSentences(extractedText)
-        f = open(os.getcwd() + '/exemplar-master/inputText/inputText_' + str(count) + '.txt', 'w+')
-        f.write(extractedText)
-        f.close()
+        try:
+            extractedText = boilerpipe.extract.Extractor(extractor='ArticleExtractor', url=url)
+            extractedText = extractedText.getText()
+            extractedText = extractedText.encode('unicode_escape')
+            extractedText = re.sub(r"""(\\[0a-z1-9]*)|(\[[0a-z1-9]{0,20}\])""", '', extractedText)
+            extractedText = extractedText.replace('\\', '')
+            extractedText = extractedText.replace('/', '')
+            extractedText = removeLongSentences(extractedText)
+            f = open(os.getcwd() + '/exemplar-master/inputText/inputText_' + str(count) + '.txt', 'w+')
+            f.write(extractedText)
+            f.close()
+        except Exception as e:
+            print("--------")
+            print(type(e))
+            print(str(e.args))
+            print("--------")
+            continue
     if inputTextFolderHasFiles():
         #extract relations and features
         print("using Exemplar for relation extraction...")
