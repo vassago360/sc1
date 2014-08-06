@@ -120,6 +120,12 @@ def deleteInputTextFolderFiles():
         os.remove(os.getcwd() + '/exemplar-master/inputText/' + f)
 
 def getSentences(urls):
+    try:
+        while True:
+            urls.remove('')
+    except:
+        pass
+    print('len urls:' + str(len(urls)))
     #go from urls to boilerpipe to exemplar to sentence
     sentences = []
     for count, url in enumerate(urls):
