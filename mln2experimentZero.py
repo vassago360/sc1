@@ -433,13 +433,14 @@ def moveTuplesBasedOnMLN2Clustering(c2, c3):
         #if the highest probability word sense is different than what the tuple is already assigned to, then add the WS-TP-Support to deleteWSTPSupport table and then make/copy over tuple changes. Otherwise do nothing
         orginalWS = str(c2.getWordSenseBasedOnUI(inputTP, inputSI))
         if orginalWS != str(wordSense):
-            changesToTupleAssignments = True
-            print("Tuple change for: " + str(inputTP) + str(inputSI) + ".  OrginalWS: " + str(orginalWS) + " gotoWS: " + str(wordSense))
-            c3.execute(""" INSERT OR IGNORE INTO support (support_col, occurrences) VALUES ("%s", %s) """ % (inputSI, "1"))
-            c3.execute(""" INSERT OR IGNORE INTO wordSenses (id_col) VALUES (%s) """ % orginalWS)
-            c3.execute(""" INSERT OR IGNORE INTO textualPattern (pattern_type) VALUES ("%s") """ % inputTP)
-            c3.execute(""" INSERT OR IGNORE INTO deleteWSTPSupport (wordSense_col, pattern_type, support_col) VALUES (%s, "%s", "%s") """ % (orginalWS, inputTP, inputSI)) #requires deleteNecessaryRows() to be called later (currently server is doing that)
-            c2.updateRowsBasedOnUIwWSAndCopyOver(wordSense, inputTP, inputSI, c3)
+            if random.choice([1,1,0]): #sometimes necessary to get out of a neverending loop where a tuple will move back and forth between two wordSenses.
+                changesToTupleAssignments = True
+                print("Tuple change for: " + str(inputTP) + str(inputSI) + ".  OrginalWS: " + str(orginalWS) + " gotoWS: " + str(wordSense))
+                c3.execute(""" INSERT OR IGNORE INTO support (support_col, occurrences) VALUES ("%s", %s) """ % (inputSI, "1"))
+                c3.execute(""" INSERT OR IGNORE INTO wordSenses (id_col) VALUES (%s) """ % orginalWS)
+                c3.execute(""" INSERT OR IGNORE INTO textualPattern (pattern_type) VALUES ("%s") """ % inputTP)
+                c3.execute(""" INSERT OR IGNORE INTO deleteWSTPSupport (wordSense_col, pattern_type, support_col) VALUES (%s, "%s", "%s") """ % (orginalWS, inputTP, inputSI)) #requires deleteNecessaryRows() to be called later (currently server is doing that)
+                c2.updateRowsBasedOnUIwWSAndCopyOver(wordSense, inputTP, inputSI, c3)
         if changesToTupleAssignments:
             return True
     #######
