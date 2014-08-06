@@ -120,46 +120,19 @@ def deleteInputTextFolderFiles():
         os.remove(os.getcwd() + '/exemplar-master/inputText/' + f)
 
 def getSentences(urls):
-    try:
-        while True:
-            urls.remove('')
-    except:
-        pass
-    print('len urls:' + str(len(urls)))
-    #go from urls to boilerpipe to exemplar to sentence
     sentences = []
-    for count, url in enumerate(urls):
-        #get and preprocess url text ( takes 3 mins :( )
-        try:
-            extractedText = boilerpipe.extract.Extractor(extractor='ArticleExtractor', url=url)
-            extractedText = extractedText.getText()
-            extractedText = extractedText.encode('unicode_escape')
-            extractedText = re.sub(r"""(\\[0a-z1-9]*)|(\[[0a-z1-9]{0,20}\])""", '', extractedText)
-            extractedText = extractedText.replace('\\', '')
-            extractedText = extractedText.replace('/', '')
-            extractedText = removeLongSentences(extractedText)
-            f = open(os.getcwd() + '/exemplar-master/inputText/inputText_' + str(count) + '.txt', 'w+')
-            f.write(extractedText)
-            f.close()
-        except Exception as e:
-            print("--------")
-            print(type(e))
-            print(str(e.args))
-            print("--------")
-            continue
-    if inputTextFolderHasFiles():
-        #extract relations and features
-        print("using Exemplar for relation extraction...")
-        osCwd = os.getcwd()
-        os.chdir(os.getcwd() + "/exemplar-master")
-        subprocess.call(r'./exemplar.sh stanford inputText exemplarTempOutput.txt > exemplarTerminalOutput.txt', shell=True)
-        with open("exemplarTempOutput.txt") as tsv:
-            tsv.readline() #read past the first line: "Subjects    Relation    Objects    Normalized Relation    Sentence"
-            for line in csv.reader(tsv, dialect="excel-tab"):
-                sentence = line[4]
-                sentences.append(sentence)
-        os.chdir(osCwd)
-        deleteInputTextFolderFiles()
+    #extract relations and features
+    print("using Exemplar for relation extraction...")
+    osCwd = os.getcwd()
+    os.chdir(os.getcwd() + "/exemplar-master")
+    #subprocess.call(r'./exemplar.sh stanford inputText exemplarTempOutput.txt > exemplarTerminalOutput.txt', shell=True)
+    with open("exemplarTempOutput.txt") as tsv:
+        tsv.readline() #read past the first line: "Subjects    Relation    Objects    Normalized Relation    Sentence"
+        for line in csv.reader(tsv, dialect="excel-tab"):
+            sentence = line[4]
+            sentences.append(sentence)
+    os.chdir(osCwd)
+    deleteInputTextFolderFiles()
     return sentences
 
 def main():
