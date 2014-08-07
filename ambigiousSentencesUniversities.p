@@ -5563,953 +5563,953 @@ aS"RLG also has developed the `` RLG Report Card , '' an automated quality-check
 p2781
 aS'Adoption -LRB- edit -RRB- A number of repositories in the United States and Canada , the United Kingdom and France and Australia and elsewhere have adopted and implemented EAD with varying levels of technical sophistication .'
 p2782
-aS'For example , in the excerpt below the relatedencoding = `` MARC21 \'\' attribute of the archdesc element specifies that child elements will be mapped to MARC21 ; the child element <unittitle\xc2\xa0encodinganalog="245$a"\xc2\xa0label="Title:\xc2\xa0"> indicates that the unittitle element maps to MARC field 245 , subfield a. Example : <archdesc\xc2\xa0level="collection"\xc2\xa0type="inventory"\xc2\xa0relatedencoding="MARC21"> <did> <head> Overview of the Collection <head> <repository\xc2\xa0encodinganalog="852$a"\xc2\xa0label="Repository:\xc2\xa0"> Blank University <repository> <origination\xc2\xa0label="Creator:\xc2\xa0"> <persname\xc2\xa0encodinganalog="100"> Brightman , Samuel C. -LRB- Samuel Charles -RRB- , 1911-1992 <persname> <origination> <unittitle\xc2\xa0encodinganalog="245$a"\xc2\xa0label="Title:\xc2\xa0"> Samuel C. Brightman Papers <unittitle> <unitdate\xc2\xa0encodinganalog="245$f"\xc2\xa0normal="19321992"\xc2\xa0type="inclusive"\xc2\xa0label="Inclusive\xc2\xa0Dates:\xc2\xa0"> 1932-1992 <unitdate> <physdesc\xc2\xa0encodinganalog="300$a"\xc2\xa0label="Quantity:\xc2\xa0"> <extent> 6 linear ft. .'
-p2783
 aS'ContentsScope -LRB- edit -RRB- SSP openly encourages dialog on sometimes controversial issues , including Open Access to scholarly publishing , during its events and in its communications vehicles .'
-p2784
+p2783
 aS'Social Media -LRB- edit -RRB- SSP also maintains an active social media presence on LinkedIn , where its group has over 7000 members , Twitter , and Facebook .'
-p2785
+p2784
 aS'Learned Publishing -LRB- edit -RRB- Learned Publishing is a journal published by the Association of Learned and Professional Society Publishers in collaboration with SSP .'
-p2786
+p2785
 aS'SSP appoints the North American Editor of Learned Publishing .'
-p2787
+p2786
 aS'University of Colorado Health Sciences Center -LRB- edit -RRB- Old Main in Boulder , where the School of Medicine first started .'
-p2788
+p2787
 aS'The University of Colorado created the Department of Medicine and Surgery in September 1883 in the Old Main building on the Boulder campus .'
-p2789
+p2788
 aS"In 1911 , the School of Medicine combined with the Denver and Gross Medical College to form a larger school with a more comprehensive program , paving the way for the school 's permanent move to Denver ."
-p2790
+p2789
 aS'In 1925 , the School of Medicine moved to the campus on Ninth Avenue and Colorado Boulevard in Denver .'
-p2791
+p2790
 aS'In 2006 , the Fitzsimons campus of UCHSC was renamed the Anschutz Medical Campus in recognition of philanthropic donations from Philip and Nancy Anschutz .'
-p2792
+p2791
 aS"University of Colorado Denver -LRB- edit -RRB- The University of Colorado Denver North Building on the Downtown CampusThe University of Colorado Denver began as the Extension Center of University of Colorado 's Department of Correspondence and Extension , which was established in 1912 ."
-p2793
+p2792
 aS'In 1938 , the Extension Center acquired permanent quarters in Denver in the C.A. Johnson Building at 509 17th St. , where a single , full-time faculty member ran the school with the help of part-time teachers .'
-p2794
+p2793
 aS'In 1956 , the University acquired the Denver Tramway Company Building at 14th and Arapahoe Streets -LRB- now the Hotel Teatro and the Denver Center for the Performing Arts Tramway building -RRB- .'
+p2794
+aS'In 1964 , the Extension Center was renamed the University of Colorado Denver Center , and in 1974 it became the Denver campus of the University of Colorado , or University of Colorado Denver .'
 p2795
 aS'In 1964 , the Extension Center was renamed the University of Colorado Denver Center , and in 1974 it became the Denver campus of the University of Colorado , or University of Colorado Denver .'
 p2796
-aS'In 1964 , the Extension Center was renamed the University of Colorado Denver Center , and in 1974 it became the Denver campus of the University of Colorado , or University of Colorado Denver .'
-p2797
 aS'Between 1973 and 1976 , the State of Colorado built the Auraria Higher Education Center -LRB- AHEC -RRB- on a 127-acre -LRB- 0.51 -RRB- downtown campus to be shared by the University of Colorado Denver , the Metropolitan State University of Denver and the Community College of Denver .'
-p2798
+p2797
 aS"In 2008 , lawmakers asked the CU board of regents to replace `` Denver '' with `` Aurora '' from the university 's name while referring to the Anschutz Medical Campus , which the regents refused ."
-p2799
+p2798
 aS"In 2010 , it was reported that CU would drop the term `` Denver '' from the Anschutz Medical Campus ' full name , referring to it only as `` University of Colorado Anschutz Medical Campus '' ."
-p2800
+p2799
 aS'Denver Campus -LRB- edit -RRB- A signboard on the Auraria Campus with the names of the three institutions that share the campusThe Denver Campus , part of the Auraria Campus , is located to the southwest of downtown Denver in the Auraria Neighborhood , on Speer Boulevard and Auraria Parkway .'
-p2801
+p2800
 aS'The University of Colorado Hospital , which is the principal teaching hospital for the University of Colorado Denver , serves more than half a million patients every year .'
-p2802
+p2801
 aS'The Auraria library on the Downtown Campus serves the three institutions that share the campus UC Denver , Metropolitan State University of Denver and Community College of Denver .'
-p2803
+p2802
 aS"The College of Liberal Arts and Sciences is UC Denver 's largest school on the Downtown Denver Campus , offering 20 baccalaureate degrees , 17 master 's degrees , and two PhD programs ."
-p2804
+p2803
 aS'The Presidential Climate Action Plan is a two-year , $ 2 million initiative administered by the Wirth Chair , School of Public Affairs at the University of Colorado Denver , to engage the nation science , policy , business and civic leaders to produce a Presidential Climate Action Plan -LRB- PCAP -RRB- .'
-p2805
+p2804
 aS'UC Denver sponsors the only college of architecture and planning in Colorado .'
-p2806
+p2805
 aS'On the Anschutz Medical Campus , the university houses the School of Dental Medicine , the School of Medicine , the College of Nursing , the School of Pharmacy , Colorado School of Public Health , and the Graduate School .'
-p2807
+p2806
 aS'In 1986 , the School of Pharmacy was administratively transferred to the University of Colorado Health Sciences Center in Denver .'
-p2808
+p2807
 aS'In 2011 , the school will move into its new building , the Skaggs School of Pharmacy and Pharmaceutical Sciences which will also be located on the Anschutz Medical Campus .'
-p2809
+p2808
 aS'Main article : University of Colorado Denver Business SchoolThe University of Colorado Denver Business School is accredited by AACSB International .'
-p2810
+p2809
 aS'The Princeton Review included CU Denver in its Best Western Colleges , Best in the West in 2008 .'
-p2811
+p2810
 aS"UCD 's Distinguished Lecture Series hosts an array of speakers , that have included David Horowitz and Malcolm-Jamal Warner ."
-p2812
+p2811
 aS"Nobel Laureate Tom Cech , of CU Boulder , is an affiliated faculty with UCD 's Department of Biochemistry and Molecular Genetics ."
-p2813
+p2812
 aS"Lawrence Hunter is the founder of the International Society for Computational Biology , the world 's oldest and largest professional organization for bioinformatics and computational biology ."
-p2814
+p2813
 aS'Henry Swan revolutionized open heart surgery at the Department of Surgery , pioneering investigations and clinical application of hypothermia in cardiac surgery .'
-p2815
+p2814
 aS'His research is still widely cited in nations such as Australia which are still adopting OBE .'
-p2816
+p2815
 aS'References -LRB- edit -RRB- ^ `` Last December , the School Board approved the hiring of William Spady of ChangeLeaders , .'
-p2817
+p2816
 aS"Today 's School of Naval Engineers , located in the Ciudad Universitaria , is one out of two UPM schools that started with a military background and is completely civil nowadays ."
-p2818
+p2817
 aS'School of Forestry Engineering -LRB- edit -RRB- A Royal Decree created the Special School of Forestry Engineering in 1835 , although it did not start its activity until 1848 in Villaviciosa de Od and Madrid .'
-p2819
+p2818
 aS'Later it was called National Agronomy Institute and today Higher Technical School of Agricultural Engineering of Madrid .'
-p2820
+p2819
 aS'The School of Computer Sciences offers the first Spanish undergraduate degree in Mathematics and Computer Sciences .'
-p2821
+p2820
 aS"Southern Illinois University -LRB- SIU -RRB- , over 100 miles -LRB- 160 -RRB- to the region 's south , opened a residence center in Belleville in 1949 ."
-p2822
+p2821
 aS'In 1955 , the Edwardsville Chamber of Commerce founded the Southwestern Illinois Council for Higher Education -LRB- SWICHE -RRB- , tasked with creating a more permanent solution to the problem .'
-p2823
+p2822
 aS"Dr. Myers 's 1957 report , The Extent and the Nature of Needs for Higher Education in Madison and St. Clair Counties , outlined the precise need : the 1950 census showed that students in the region in question were only half as likely as those in other regions of the country to finish a four-year college degree program -LRB- owing specifically to the lack of a nearby university and the financial difficulties of going to school away from home at other state universities -RRB- ."
+p2823
+aS'Acting on the report , in 1957 , SIU purchased both a former building of East St. Louis High School and the campus of Shurtleff College in Alton as temporary facilities .'
 p2824
 aS'Acting on the report , in 1957 , SIU purchased both a former building of East St. Louis High School and the campus of Shurtleff College in Alton as temporary facilities .'
 p2825
-aS'Acting on the report , in 1957 , SIU purchased both a former building of East St. Louis High School and the campus of Shurtleff College in Alton as temporary facilities .'
-p2826
 aS'The campus was designed by architects Hellmuth , Obata and Kassabaum .'
-p2827
+p2826
 aS'The School of Engineering originated as the Engineering Department of the School of Science and Technology and was elevated to School status in 1982 .'
-p2828
+p2827
 aS"In 1971 , the SIU Board of Trustees made official the campus 's name of Southern Illinois University at Edwardsville ."
-p2829
+p2828
 aS"The center of the Core Campus is the Stratton Quadrangle , named after William Stratton , who served as the Governor of Illinois from 1953 to 1961 and was the university 's first commencement speaker in June 1960 ."
-p2830
+p2829
 aS'The Lovejoy Library is named after Elijah Parish Lovejoy and sits on the north side of the Stratton Quadrangle .'
-p2831
+p2830
 aS'Peck Hall is named after John Mason Peck and opened in 1965 .'
-p2832
+p2831
 aS'It houses the College of Arts & Sciences and the Departments of Anthropology , History , Sociology , Social Work , English , Foreign Languages , Political Science , and Philosophy .'
-p2833
+p2832
 aS'The Morris University Center is named for former SIU president Delyte W. Morris and opened in 1967 .'
-p2834
+p2833
 aS'Rendleman Hall is located to the east of the University Center and is named after former SIUE president John S. Rendleman .'
-p2835
+p2834
 aS'The Center for Spirituality & Sustainability , formerly known as the Religious Center was completed in 1971 and is located near the Art and Design Building .'
-p2836
+p2835
 aS"Korte Stadium and its Bob Guelker Field opened in 1994 and serves the men 's and women 's soccer and track and field teams ."
+p2836
+aS'The Cougar Tennis Courts are just west of the Vadalabene Center and the SIUE Cross Country Course is on the north edge of the campus at the intersection of North University Drive and New Poag Road .'
 p2837
 aS'The Cougar Tennis Courts are just west of the Vadalabene Center and the SIUE Cross Country Course is on the north edge of the campus at the intersection of North University Drive and New Poag Road .'
 p2838
-aS'The Cougar Tennis Courts are just west of the Vadalabene Center and the SIUE Cross Country Course is on the north edge of the campus at the intersection of North University Drive and New Poag Road .'
-p2839
 aS'Tower Lake is now called Cougar Lake .'
-p2840
+p2839
 aS'The School of Pharmacy Lab houses the SIUE School of Pharmacy and began offering courses to students admitted to the SIUE doctor of Pharmacy program in August 2005 .'
+p2840
+aS'The School of Pharmacy also has space in the adjacent 200 University Park Building and in the nearby Technology and Management Center and the Biotechnology Laboratory Incubator , which also contains Biology and Chemistry labs , as well as the Geographic Information Systems offices .'
 p2841
 aS'The School of Pharmacy also has space in the adjacent 200 University Park Building and in the nearby Technology and Management Center and the Biotechnology Laboratory Incubator , which also contains Biology and Chemistry labs , as well as the Geographic Information Systems offices .'
 p2842
 aS'The School of Pharmacy also has space in the adjacent 200 University Park Building and in the nearby Technology and Management Center and the Biotechnology Laboratory Incubator , which also contains Biology and Chemistry labs , as well as the Geographic Information Systems offices .'
 p2843
-aS'The School of Pharmacy also has space in the adjacent 200 University Park Building and in the nearby Technology and Management Center and the Biotechnology Laboratory Incubator , which also contains Biology and Chemistry labs , as well as the Geographic Information Systems offices .'
-p2844
 aS"The Environmental Resource Training Center -LRB- ERTC -RRB- is designated by the Illinois Environmental Protection Agency -LRB- IEPA -RRB- as the State of Illinois ' center for continuing education of personnel involved in the operation , maintenance and management of drinking water and wastewater treatment systems ."
-p2845
+p2844
 aS"Main article : Southern Illinois University School of Dental MedicineSIUE 's campus in Alton and Illinois , 17 miles -LRB- 27 -RRB- from the main campus , the site of SIU 's Alton residential center from 1957 to 1965 , now houses the School of Dental Medicine and its offices , classrooms , labs , clinics , and ancillary services ."
-p2846
+p2845
 aS'The Center also houses the Community Nursing Services office of the SIUE School of Nursing , the East St. Louis Dental Clinic of the SIUE School of Dental Medicine , and an eye care clinic .'
-p2847
+p2846
 aS'Springfield Campus -LRB- edit -RRB- SIUE also maintains an off-site location in Springfield and Illinois for graduate nursing students as part of the SIUE School of Nursing .'
-p2848
+p2847
 aS"SIUE offers 65 baccalaureate degrees , 8 Post-Baccalaureate certificate , 49 master 's degrees , 12 Post-Master 's or Specialist certificates , and doctoral degrees in Dental Medicine , Pharmacy , Educational Leadership , and Nursing Practice ."
-p2849
+p2848
 aS'TCA was acquired by Career Education Corporation in August 2001 .'
-p2850
+p2849
 aS'TCA offers an Associate of Applied Science Degree in Le Cordon Bleu Culinary Arts and certificates in Le Cordon Bleu P & Baking and Le Cordon Bleu Culinary Arts .'
-p2851
+p2850
 aS'TCA has since been renamed Le Cordon Bleu College of Culinary Arts Austin .'
-p2852
+p2851
 aS'In 1900 , the Baltimore City Public School System initiated a one-year training course for African American elementary school teachers , as a result Coppin State University , an HBCU Historically Black Colleges and Universities was founded at Douglass High School .'
-p2853
+p2852
 aS'-LRB- citation needed -RRB- , Ethel Ennis , The Ink Spots lead singer Bill Kenny , -LRB- citation needed -RRB- and opera star Veronica Tyler .'
-p2854
+p2853
 aS"In 2008 , Frederick Douglass was the subject of an HBO documentary : `` Hard Times at Douglass High : A No Child Left Behind Report Card '' directed by Oscar award winning filmmakers Alan Raymond and Susan Raymond , which was recorded in the 2004-2005 school year , highlights the past academic and financial struggles of the school under the No Child Left Behind Act ."
-p2855
+p2854
 aS'It defines a standard storing raster -LRB- bit-mapped -RRB- image data , either uncompressed or compressed using CCITT Group 4 compression.MIL-R-28002 Requirement for Raster Graphics Representation in Binary FormatMIL-PRF-28002'
-p2856
+p2855
 aS'Athletic facilities include the Ryan Center , Keaney Gymnasium , Meade Stadium , Mackal Field House , Tootell Aquatic Center , Bradford R. Boss Arena , URI Soccer Complex , Bill Beck Field , and URI Softball Complex .'
-p2857
+p2856
 aS'The Director of Athletics is Thorr Bjorn , who previously worked at the University of Massachusetts .'
-p2858
+p2857
 aS'Includes the URI Drumline and URI Color Guard .'
-p2859
+p2858
 aS'Greek life -LRB- edit -RRB- The University of Rhode Island also has an award-winning Greek System .'
-p2860
+p2859
 aS'Two ministers , Samuel C. Alexander and Willis L. Miller , saw the need for a school in the south and after the birth of the school they were elected as some of the first teachers .'
-p2861
+p2860
 aS'In 1891 , Biddle University elected Daniel J. Sanders as the first African-American as President of a four-year institute in the south .'
-p2862
+p2861
 aS'In 1924 , James B. Duke established the Duke Endowment .'
-p2863
+p2862
 aS'JCSU joined the United Negro College Fund in 1944 as a founding member .'
+p2863
+aS"Known as '' ThinkPad U '' , JCSU gives students and their computers complete access to the campus-wide network and the Internet ."
 p2864
 aS"Known as '' ThinkPad U '' , JCSU gives students and their computers complete access to the campus-wide network and the Internet ."
 p2865
-aS"Known as '' ThinkPad U '' , JCSU gives students and their computers complete access to the campus-wide network and the Internet ."
-p2866
 aS'At that time , he worked in East Los Angeles with the innovative educator Dr. Constance Amsden , Director of the Malabar Reading Project for Mexican-American Students , which focused on the development of individual sensory modalities -LRB- visual , auditory , and tactile skills -RRB- for reading instruction .'
-p2867
+p2866
 aS'In 1975 , at the University of Southern California , Paul received the Phi Delta Kappa award for Outstanding Research ; he was granted a Doctorate in Education for his research in beginning reading achievement and its relationship to cognitive development and silent speech -LRB- thinking -RRB- skills .'
-p2868
+p2867
 aS'`` In the early 1980s , Dr. Dennison began a teaching and writing partnership with Gail Hargrove , later to become Gail Dennison .'
-p2869
+p2868
 aS'The Dennisons say that Edu-K draws from the educational philosophy of Jean Piaget and the sensory-integration works of educators Maria Montessori , Anna Jean Ayres and pediatrician Arnold Gesell , as well as the work of movement pioneers F.M. Alexander and Moshe Feldenkrais .'
-p2870
+p2869
 aS"Since the mid 1980s , the Dennisons have also drawn from the work of Howard Gardner and Thomas Armstrong on multiple intelligences -LRB- Visioncircles Teacher 's manual , 1986 -RRB- and , more recently , Armstrong 's work on neurodiversity ."
-p2871
+p2870
 aS'Brain Gym is a registered trademark of Brain Gym International .'
-p2872
+p2871
 aS"The Dennisons have since published the 2010 Brain Gym : Teacher 's Edition which offers theories based on movement , learning , and neuroplasticity ."
-p2873
+p2872
 aS'Further , Hyatt concluded that because Dennison referenced the Doman-Delacato work , the Brain Gym activities were based on the Doman-Delacato theory of development .'
-p2874
+p2873
 aS'Although Dennison read and cited the Doman-Delacato work as one of many reading references , he did not base his work on the same thesis that they had theorized for a brain-injured population .'
-p2875
+p2874
 aS'In early April 2008 , Newsnight did a piece on Brain Gym which included an interview between Jeremy Paxman and Paul Dennison .'
-p2876
+p2875
 aS"The body treats these as food rather than water sources ... In April 2008 , Charlie Brooker , also writing in the Guardian , expressed incredulity that the Department for Children , Schools and Families is supportive of Brain Gym , despite its broad condemnation by scientific organizations , and despite it sounding `` like hooey '' ."
+p2876
+aS'West Texas A&M University has been named friendly and its academic programs and campus have been recognized by The Princeton Review , U.S. News & World Report , Newsweek and The Daily Beast .'
 p2877
 aS'West Texas A&M University has been named friendly and its academic programs and campus have been recognized by The Princeton Review , U.S. News & World Report , Newsweek and The Daily Beast .'
 p2878
-aS'West Texas A&M University has been named friendly and its academic programs and campus have been recognized by The Princeton Review , U.S. News & World Report , Newsweek and The Daily Beast .'
+aS'Near the end of the 1960s , West Texas State obtained its own board of regents , established a School of Agriculture , a School of Fine Arts , and created a Department of Nursing .'
 p2879
 aS'Near the end of the 1960s , West Texas State obtained its own board of regents , established a School of Agriculture , a School of Fine Arts , and created a Department of Nursing .'
 p2880
-aS'Near the end of the 1960s , West Texas State obtained its own board of regents , established a School of Agriculture , a School of Fine Arts , and created a Department of Nursing .'
-p2881
 aS'The school had a long-term connection with T. Boone Pickens who was appointed to its Board of Regents in 1969 .'
-p2882
+p2881
 aS'On March 21 , 1973 , Pickens resigned from the Board of Regents in protest , but was reappointed in 1981 and became its chair in 1982 .'
-p2883
+p2882
 aS'Subsequently , Pickens donated $ 165 million to Oklahoma State University-Stillwater .'
-p2884
+p2883
 aS'The Division of Education , the Department of History and Political Science , and the Division of Nursing are based in this building .'
-p2885
+p2884
 aS'The Sybil B. Harrington Fine Arts Complex , completed in September 2006 , is the home of the Department of Communication and Department of Art , Theatre , and Dance .'
-p2886
+p2885
 aS'The Texas history museum , Panhandle-Plains Historical Museum has been located on the campus of West Texas A&M University since the early 1930s .'
-p2887
+p2886
 aS"It is named for former Alabama governor George C. Wallace , who greatly expanded Alabama 's community college system ."
-p2888
+p2887
 aS'The campuses are located in unincorporated Uvalde County -LRB- next to Uvalde and on the site of Garner Field -RRB- , Del Rio -LRB- northwest portion -RRB- , next to Del Rio International Airport , unincorporated Maverick County -LRB- near Eagle Pass -RRB- , and Crystal City , the seat of Zavala County .'
-p2889
+p2888
 aS'During the same month , the Faculty of Medicine was created at the Hospital de Sant Pau in Barcelona .'
-p2890
+p2889
 aS'During that year , the Faculty of Sciences and the Faculty of Economical Sciences started running .'
-p2891
+p2890
 aS'www.cv.eduC hattahoochee Valley Community College is a community college in Phenix City and Alabama and United States .'
-p2892
+p2891
 aS'Immediately upon his arrival at Penn State in 1859 , Pugh established a research laboratory .'
-p2893
+p2892
 aS"As a consequence , first graduate students to earn degrees from Penn State did so under Pugh 's guidance in 1863 : Alfred Smith -LRB- later a professor of chemistry at Penn State -RRB- and Augustus King -LRB- the son of the president of Columbia University -RRB- were awarded the Master of Scientific Agriculture degree ."
-p2894
+p2893
 aS'In 1922 , President John Thomas established the Graduate School under the direction of Dean Frank D. Kern .'
-p2895
+p2894
 aS'At that point , the Graduate School made available a small number of graduate teaching assistantships , each with an $ 800 per year stipend , as well as a fellowship sponsored by the Elliot Company , an electrical engineering firm in Pittsburgh .'
-p2896
+p2895
 aS'Regina Vasilatos-Younken , -LRB- Professor of Endocrine Physiology and Nutrition , Ph.D. in Animal Nutrition , Penn State -RRB- is senior associate dean of The Graduate School .'
-p2897
+p2896
 aS'Dr. Vasilatos-Younken is responsible for operations and planning at the Graduate School .'
-p2898
+p2897
 aS'Suzanne C. Adair , -LRB- Ph.D. in Educational Theory and Policy , Penn State -RRB- is assistant dean of the Graduate School .'
-p2899
+p2898
 aS'In addition , Dr. Adair also manages the Office of Postdoctoral Affairs .'
-p2900
+p2899
 aS'Jump to : navigation , searchAFI Global Policy ForumThe Alliance for Financial Inclusion -LRB- AFI -RRB- Global Policy Forum -LRB- GPF -RRB- is organized by AFI as the keystone event for its membership .'
-p2901
+p2900
 aS"GPF 2012 Cape Town and South Africa -LRB- edit -RRB- The Alliance for Financial Inclusion 's -LRB- AFI -RRB- annual , landmark Global Policy Forum -LRB- GPF -RRB- was held in Cape Town and South Africa on 26-28 September 2012 , under the overall theme of Making Financial Inclusion Real ."
-p2902
+p2901
 aS'GPF 2011 Riviera Maya and Mexico -LRB- edit -RRB- The 2011 GPF was held in Riviera Maya and Mexico and saw the entire membership adopt the Maya Declaration , a set of common principles and goals for financial inclusion policy .'
-p2903
+p2902
 aS"GPF 2010 Bali and Indonesia -LRB- edit -RRB- The 2010 GPF was held in Bali and Indonesia , and saw the financial inclusion concept recognized as a more formalized and an integral part of financial regulators ' work ."
-p2904
+p2903
 aS'GPF 2009 Nairobi and Kenya -LRB- edit -RRB- The first GPF was held in Kenya in 2009 and focused primarily on the promotion of the benefits of a knowledge exchange platform of peers .'
-p2905
+p2904
 aS"In his opening remarks , the Governor of the Central Bank of Kenya , Prof. Njuguna Ndung ' u summarized the goal of the Global Policy Forum when he stated , `` We will , over the next three days , share experiences on smart financial inclusion policies that have worked elsewhere ."
-p2906
+p2905
 aS"Asia and Australia -LRB- edit -RRB- Australia -LRB- edit -RRB- Internships in Australia are often referred to as `` work experience '' when undertaken by high school students and `` industry experience '' when undertaken by university students ."
-p2907
+p2906
 aS'Jump to : navigation , searchThe Alamo Community College District -LRB- ACCD -RRB- is a community college system serving the San Antonio and Texas and USA metropolitan area .'
-p2908
+p2907
 aS"ACCD consists of five colleges which operate with a high degree of autonomy : San Antonio College , St. Philip 's College , Palo Alto College , Northwest Vista College , and Northeast Lakeview College ."
-p2909
+p2908
 aS"Sacramento State was formally established in 1947 through legislation by State Senator Earl D. Desmond , by playing hardball to get it done convincing the Senate 's finance committee to withhold funding for the University of California until he had a commitment ."
-p2910
+p2909
 aS'In 2000 and 2004 , the campus hosted the U.S. Olympic Track and Field Trials .'
-p2911
+p2910
 aS'These include -LRB- but are not limited to -RRB- the University Union expansion , construction of Mendocino Hall , Riverside Hall , Mariposa Hall , Placer Hall , a new Bookstore , a perimeter road , and two parking garages .'
-p2912
+p2911
 aS'The former Health Center near the dormitories became the new headquarters for Athletics .'
-p2913
+p2912
 aS'World Conference on Education for All -LRB- Jomtien , Thailand , 1990 -RRB- -LRB- edit -RRB- The delegates of the conference adopted te World Declaration on Education for All .'
-p2914
+p2913
 aS'Goal 5 : Achieve gender parity by 2005 , gender equality by 2015 : The indicator selected to measure progress towards this goal is the gender-specific EFA index , the GEI , which is itself a simple average of the three gender parity indexes -LRB- GPI -RRB- for primary education , secondary education and adult literacy , with each being weighted equally .'
-p2915
+p2914
 aS'Aarhus Faculty of Health Sciences -LRB- Aarhus University -RRB- From Wikipedia , the free encyclopediaJump to : navigation , searchThe Aarhus Faculty of Health Sciences is a faculty of Aarhus University .'
+p2915
+aS'History -LRB- edit -RRB- Established in 1971 , MacEwan University was named after Dr. J.W. Grant MacEwan , author , educator and former lieutenant governor of Alberta .'
 p2916
 aS'History -LRB- edit -RRB- Established in 1971 , MacEwan University was named after Dr. J.W. Grant MacEwan , author , educator and former lieutenant governor of Alberta .'
 p2917
-aS'History -LRB- edit -RRB- Established in 1971 , MacEwan University was named after Dr. J.W. Grant MacEwan , author , educator and former lieutenant governor of Alberta .'
-p2918
 aS'Prior to the renaming , MacEwan was the largest college in Alberta , and it remains the largest transfer institution in the province .'
+p2918
+aS'The Griffins compete in the Alberta Colleges Athletics Conference -LRB- ACAC -RRB- , against 17 other post-secondary institutions in Alberta as well as in the Canada West conference of Canadian Interuniversity Sport -LRB- CIS -RRB- .'
 p2919
 aS'The Griffins compete in the Alberta Colleges Athletics Conference -LRB- ACAC -RRB- , against 17 other post-secondary institutions in Alberta as well as in the Canada West conference of Canadian Interuniversity Sport -LRB- CIS -RRB- .'
 p2920
-aS'The Griffins compete in the Alberta Colleges Athletics Conference -LRB- ACAC -RRB- , against 17 other post-secondary institutions in Alberta as well as in the Canada West conference of Canadian Interuniversity Sport -LRB- CIS -RRB- .'
+aS"The Griffins , MacEwan University 's athletic organization , compete in intercollegiate sports within the Alberta Colleges Athletic Conference -LRB- ACAC -RRB- and the Canada West conference of Canadian Interuniversity Sport -LRB- CIS -RRB- ."
 p2921
 aS"The Griffins , MacEwan University 's athletic organization , compete in intercollegiate sports within the Alberta Colleges Athletic Conference -LRB- ACAC -RRB- and the Canada West conference of Canadian Interuniversity Sport -LRB- CIS -RRB- ."
 p2922
 aS"The Griffins , MacEwan University 's athletic organization , compete in intercollegiate sports within the Alberta Colleges Athletic Conference -LRB- ACAC -RRB- and the Canada West conference of Canadian Interuniversity Sport -LRB- CIS -RRB- ."
 p2923
-aS"The Griffins , MacEwan University 's athletic organization , compete in intercollegiate sports within the Alberta Colleges Athletic Conference -LRB- ACAC -RRB- and the Canada West conference of Canadian Interuniversity Sport -LRB- CIS -RRB- ."
-p2924
 aS"Establishment -LRB- edit -RRB- The Tejas Club was formed in 1925 by Tom Renfro and Howell Cobb with the vision of establishing `` a club on this campus composed of men whom we believe to be honorable . ''"
-p2925
+p2924
 aS"Socrates , unlike the Sophists , did believe that knowledge was possible , but believed that the first step to knowledge was recognition of one 's ignorance ."
-p2926
+p2925
 aS"Therefore , myth and the Socratic method are not meant by Plato to be incompatible ; they have different purposes , and are often described as the `` left hand '' and `` right hand '' paths to good and wisdom ."
-p2927
+p2926
 aS'In 1995 Cabarrus College was accredited by the Commission on Colleges of the Southern Association of Colleges and Schools to award associate degrees .'
-p2928
+p2927
 aS'Dr. Woodson argues in his book , The Mis-Education of the Negro , that African Americans often valorize European culture to the detriment of their own culture .'
-p2929
+p2928
 aS"Blyden used that standpoint to show how the traditional social , industrial , and economic life of Africans untouched by `` either European or Asiatic influence '' , was different and complete in itself , with its own organic wholeness ."
-p2930
+p2929
 aS'They began to set up institutions to support scholarly work in African-American history and literature , such as the American Negro Academy -LRB- now the Black Academy of Letters and Arts -RRB- , founded in Washington and DC in 1874 .'
+p2930
+aS'Afrocentrists claimed The Mis-Education of the Negro -LRB- 1933 -RRB- by Carter G. Woodson , an African-American historian , as one of their foundational texts .'
 p2931
 aS'Afrocentrists claimed The Mis-Education of the Negro -LRB- 1933 -RRB- by Carter G. Woodson , an African-American historian , as one of their foundational texts .'
 p2932
-aS'Afrocentrists claimed The Mis-Education of the Negro -LRB- 1933 -RRB- by Carter G. Woodson , an African-American historian , as one of their foundational texts .'
-p2933
 aS"Woodson critiqued education of African Americans as `` mis-education '' because he held that it denigrated the black while glorifying the white ."
-p2934
+p2933
 aS'In the 1950s Du Bois envisioned and received funding from Ghanaian president Kwame Nkrumah to produce an Encyclopedia Africana to chronicle the history and cultures of Africa .'
-p2935
+p2934
 aS'Du Bois inspired a number of authors , including Drusilla Dunjee Houston .'
-p2936
+p2935
 aS'Since that time , Afrocentrists have increasingly seen African peoples as the makers and shapers of their own histories .'
-p2937
+p2936
 aS'Chinua Achebe , 1965 In this context , ethnocentric Afrocentrism was not intended to be essential or permanent , but was a consciously fashioned strategy of resistance to the Eurocentrism of the time .'
+p2937
+aS"At a 1974 UNESCO symposium in Cairo titled `` The Peopling of Ancient Egypt and the Decipherment of Meroitic Script '' , Cheikh Anta Diop brought together scholars of Egypt from around the world ."
 p2938
 aS"At a 1974 UNESCO symposium in Cairo titled `` The Peopling of Ancient Egypt and the Decipherment of Meroitic Script '' , Cheikh Anta Diop brought together scholars of Egypt from around the world ."
 p2939
-aS"At a 1974 UNESCO symposium in Cairo titled `` The Peopling of Ancient Egypt and the Decipherment of Meroitic Script '' , Cheikh Anta Diop brought together scholars of Egypt from around the world ."
-p2940
 aS'Key texts from this period include : The Destruction of Black Civilization -LRB- 1971 -RRB- by Chancellor WilliamsThe African Origins of Civilization : Myth or Reality -LRB- 1974 -RRB- by Cheikh Anta DiopThey Came Before Columbus : The African Presence in Ancient America -LRB- 1976 -RRB- by Ivan Van SertimaSome Afrocentric writers focused on study of indigenous African civilizations and peoples , to emphasize African history separate from European or Arab influence .'
-p2941
+p2940
 aS'Uhuru Hotep , co-director of the Kwame Ture Leadership Institute , established an ethnocentric approach to leadership specifically based on the four principles of restoration of sovereignty , Sankofa , Maat restoration , and Johari Sita installation .'
-p2942
+p2941
 aS'Sankofa is a leadership technique of Ghana that emphasizes living in the present to learn from the past .'
-p2943
+p2942
 aS'Johari Sita is a multifaceted Afrocentric approach to leadership-followership development .'
-p2944
+p2943
 aS'During the 1960s , the University of Connecticut Health Center was established in Farmington as a home for the new School of Medicine and School of Dental Medicine .'
+p2944
+aS'John Dempsey Hospital opened in Farmington in 1975 and has been operated by UConn ever since .'
 p2945
 aS'John Dempsey Hospital opened in Farmington in 1975 and has been operated by UConn ever since .'
 p2946
-aS'John Dempsey Hospital opened in Farmington in 1975 and has been operated by UConn ever since .'
-p2947
 aS'The Lyman Maynard Stowe Library , which is housed at the University of Connecticut Health Center , was one of eight federally funded National Network of Libraries of Medicine libraries from 1991 .'
-p2948
+p2947
 aS'The University of Connecticut School of Law houses the School of Law Library at its campus in Hartford .'
-p2949
+p2948
 aS"UConn is the home of the Roper Center for Public Opinion Research , the world 's most comprehensive survey and public opinion data library ."
-p2950
+p2949
 aS'The Dodd Research Center has also formed a partnership with the African National Congress to share materials with South African scholars .'
-p2951
+p2950
 aS'The UConn campus at Storrs is home to the Connecticut Repertory Theatre -LRB- CRT -RRB- run by the Department of Dramatic Arts .'
-p2952
+p2951
 aS'CRT is a member of the Theatre Communications Group , the national service organization for the professional theater .'
-p2953
+p2952
 aS'The UConn Division of Public Safety also includes the UConn Fire Department , and Office of the Fire Marshal and Building Inspectors .'
-p2954
+p2953
 aS'In addition to the BGS degree , there are three other majors that can be completed at the Avery Point campus : Coastal Studies , Maritime Studies , and American Studies .'
-p2955
+p2954
 aS'Stamford campus -LRB- edit -RRB- The Stamford Campus of the University of Connecticut was founded in 1951 , to provide education for GIs returning from the Korean War .'
-p2956
+p2955
 aS"The Stamford campus ' location in lower Fairfield County provides access to internships , field placements , and jobs with Fortune 500 companies , investment and banking institutions , non-profit organizations , and civic , education , and community agencies ."
-p2957
+p2956
 aS"Greater Hartford campus -LRB- edit -RRB- UConn 's Greater Hartford campus , as its name indicates , serves a broad section of the area populace ."
-p2958
+p2957
 aS'The centerpiece of the new campus will be the historic Beaux-Arts former headquarters of the Hartford Times .'
+p2958
+aS'The Greater Hartford Campus offers a wide range of Liberal Arts and Sciences courses and degrees to over 1,400 undergraduate and more than 600 graduate students .'
 p2959
 aS'The Greater Hartford Campus offers a wide range of Liberal Arts and Sciences courses and degrees to over 1,400 undergraduate and more than 600 graduate students .'
 p2960
-aS'The Greater Hartford Campus offers a wide range of Liberal Arts and Sciences courses and degrees to over 1,400 undergraduate and more than 600 graduate students .'
-p2961
 aS'The Center for Continuing Studies provides a number of certificate program options , in addition to the Bachelor of General Studies , an interdisciplinary degree program tailored to meet individual needs and goals of returning , non-traditional , part-time adult students .'
-p2962
+p2961
 aS'Due to the Greater Hartford Campus proximity to the State Capitol and legislative offices , the University Department of Public Policy is based on the Greater Hartford Campus and offers a Master of Arts in Survey Research and a Master of Arts in Public Administration , as well as certificate programs .'
-p2963
+p2962
 aS'The University School of Social Work is also located at the Greater Hartford Campus and offers a Master of Social Work and Ph. D in Social Work .'
-p2964
+p2963
 aS'The Greater Hartford Campus also offers the popular one-year Master of Education with Teacher Certification Program for College Graduates .'
-p2965
+p2964
 aS'Located on a 58-acre -LRB- 230,000 -RRB- campus , the Greater Hartford facilities include the Harleigh B. Trecker Library , which is fully integrated with and linked to the University Library System , including Storrs , all regional campuses , the Law School , and the UConn Health Center ; a state-of-the-art Information Technology Center , which features high-tech computer labs and distance learning facilities ; the Writing and Quantitative Center , a peaceful study environment for tutorial help and assistance in writing , math , accounting , chemistry , biology , and statistics ; the UConn Co-op ; and an art gallery .'
-p2966
+p2965
 aS'Bioscience Connecticut -LRB- edit -RRB- In June 2011 , the Connecticut General Assembly approved legislation for Bioscience Connecticut , a plan proposed by Connecticut Gov. Dannel P. Malloy to jump-start the Connecticut economy .'
-p2967
+p2966
 aS'As part of the project , TACC provides access to Ranger , Lonestar and Longhorn , Spur , and Ranch through XSEDE quarterly allocations .'
-p2968
+p2967
 aS'The XSEDE partnership also includes : University of Illinois at Urbana-Champaign , Carnegie Mellon UniversityUniversity of Pittsburgh , University of Texas at Austin , University of Tennessee Knoxville , University of Virginia , Shodor Education Foundation , Southeastern Universities Research Association , University of Chicago , University of California San Diego , Indiana University , J Supercomputing Centre , Purdue University , Cornell University , Ohio State University , University of California Berkeley , Rice University , and the National Center for Atmospheric Research .'
-p2969
+p2968
 aS"It is led by the University of Illinois 's National Center for Supercomputing Applications ."
-p2970
+p2969
 aS'Maverick debuts the new NVIDIA K40 GPU for remote visualization and GPU computing to the national community .'
-p2971
+p2970
 aS'The first Lonestar system was built by Dell and integrated by Cray , using Dell PowerEdge 1750 servers and Myrinet interconnects , with a peak performance of 3672 giga Flops .'
-p2972
+p2971
 aS'Baptist College of Health SciencesFrom Wikipedia , the free encyclopediaCoordinates : 35N 90W .139362 N 90.028303 W 35.139362 ; -90.028303 Baptist College of Health Sciences is a private , coeducational , specialized college in Memphis and Tennessee operated by Baptist Memorial Healthcare .'
-p2973
+p2972
 aS"It offers Bachelor 's degrees in the following fields : Diagnostic medical sonography Accredited by Commission on Accreditation of Allied Health Education Programs in collaboration with Joint Review Committee on Education in Diagnostic Medical Sonography ."
-p2974
+p2973
 aS'Kenneth I. Shine , Executive Vice Chancellor for Health AffairsPedro Reyes , Executive Vice Chancellor for Academic AffairsScott C. Kelley , Executive Vice Chancellor for Business AffairsBarry D. Burgdorf , Vice Chancellor and General CounselFrancie A. Frederick , General Counsel to the Board of RegentsBarry McBee , Vice Chancellor and Chief Governmental Relations OfficerRanda S. Safady , Vice Chancellor for External RelationsWilliam H. Shute , Vice Chancellor for Federal RelationsAmy Shaw Thomas , Vice Chancellor and Counsel for Health AffairsSandra K. Woodley , Vice Chancellor for Strategic InitiativesAnthony P. -LRB- UTIMCO -RRB- Headquarters -LRB- edit -RRB- The University of Texas System is headquartered in Downtown Austin .'
-p2975
+p2974
 aS'The system headquarters complex includes O. Henry Hall , Claudia Taylor Johnson Hall , Ashbel Smith Hall , the Colorado Building , the Lavaca Building , and the Norwood Tower .'
+p2975
+aS'The Colorado Building , an administration building in Downtown AustinThe Lavaca Building , an administration building in Downtown Austin'
 p2976
 aS'The Colorado Building , an administration building in Downtown AustinThe Lavaca Building , an administration building in Downtown Austin'
 p2977
-aS'The Colorado Building , an administration building in Downtown AustinThe Lavaca Building , an administration building in Downtown Austin'
-p2978
 aS'Origins in Oyster Bay -LRB- edit -RRB- Coe Hall on the original Oyster Bay campus -LRB- used 1957-1964 -RRB- The State University of New York at Stony Brook was established in Oyster Bay in 1957 as the State University College on Long Island -LRB- SUCOLI -RRB- , by the governor and state of New York .'
-p2979
+p2978
 aS'The Staller Center for the Arts at Stony Brook University West CampusWard Melville , a philanthropist and businessman from the Three Village area in western Suffolk County donated over 400 acres of land to the state for the development of a state university and in 1962 the institution relocated to Stony Brook and officially renamed as the State University of New York at Stony Brook .'
-p2980
+p2979
 aS'The report was particularly important for Stony Brook as it recommended creation of a Health Science Center and academic hospital at the campus to serve the need of the fastest growing counties -LRB- Nassau and Suffolk -RRB- in New York at the time .'
-p2981
+p2980
 aS'Growth -LRB- edit -RRB- In 1965 the State University appointed John S. Toll , a renowned physicist from the University of Maryland as the second president of Stony Brook .'
-p2982
+p2981
 aS'At the same time , residential housing was expanded to 3,000 , the Stony Brook Union opened in 1970 , and in 1971 the massive expansion project for the campus library -LRB- named in memory of Frank Melville Jr. , father of philanthropist Ward Melville -RRB- was completed .'
-p2983
+p2982
 aS'One of the many gifts received by the University in the 2000sIn 1998 the University broke into the top 100 of American research universities in the U.S. News & World Report and its relatively affordable tuition placed it among the best values among universities in the nation .'
-p2984
+p2983
 aS'That same year the University and Battelle Memorial Institute were chosen by the Department of Energy as joint operators of the Brookhaven National Laboratories joining a selective group of universities that operated national laboratories across the nation .'
-p2985
+p2984
 aS'Enrollment reached the 20,000 mark in 2001 , and the administration improvement efforts climaxed with the invitation to the highly selective Association of American Universities , an organization of sixty-two universities across North America committed to a strong system of research and education , becoming only the third public university in the northeast to receive such invitation -LRB- Buffalo and Rutgers admitted in 1989 -RRB- .'
-p2986
+p2985
 aS'The Charles B. Wang Center saw the opening of the $ 22 million Kenneth P. LaValle Stadium , and the inauguration of the massive Charles B. Wang Center dedicated to Asian and American culture funded by a $ 50 million donation from Charles B. Wang , at the time the largest private donation to a SUNY institution .'
-p2987
+p2986
 aS'In 2003 , chemistry professor Paul Lauterbur received a Nobel Prize in Physiology or Medicine for his research and discovery of Nuclear Magnetic Resonance which was instrumental in the development of NMR Imaging -LRB- MRI -RRB- while at Stony Brook .'
-p2988
+p2987
 aS'In 2005 the University bought the Flowerfield property adjacent to campus through eminent domain as land for the development of a Research and Development Park .'
-p2989
+p2988
 aS'The late 2000s -LRB- decade -RRB- saw the University receive historic philanthropic donations with Jim Simons making multiple multi-million donations : including : $ 25 million donations to the Stony Brook Foundation in 2006 , a $ 60 million donation for the development of the Simons Center for Geometry and Physics in 2008 , and a landmark $ 150 million donation to the University in 2011 .'
+p2989
+aS'saw the approval of state legislation allowing University Centers to rationalize tuition increases for the next five years and the inclusion of a capital challenge grant for each University , a landmark bill providing greater autonomy for the centers known as SUNY 2020 .'
 p2990
 aS'saw the approval of state legislation allowing University Centers to rationalize tuition increases for the next five years and the inclusion of a capital challenge grant for each University , a landmark bill providing greater autonomy for the centers known as SUNY 2020 .'
 p2991
-aS'saw the approval of state legislation allowing University Centers to rationalize tuition increases for the next five years and the inclusion of a capital challenge grant for each University , a landmark bill providing greater autonomy for the centers known as SUNY 2020 .'
+aS'The renovation of the old-chemistry building and its conversion to a classroom building , was done by Flad Architects , the design team , and Leslie E. Robertson Associates , the structural engineers .'
 p2992
 aS'The renovation of the old-chemistry building and its conversion to a classroom building , was done by Flad Architects , the design team , and Leslie E. Robertson Associates , the structural engineers .'
 p2993
-aS'The renovation of the old-chemistry building and its conversion to a classroom building , was done by Flad Architects , the design team , and Leslie E. Robertson Associates , the structural engineers .'
+aS'In 2013 Stony Brook received its best ranking ever in the National University category of U.S. News & World Report ranked as the 82nd Best University , and 34th Best Public in Undergraduate education .'
 p2994
 aS'In 2013 Stony Brook received its best ranking ever in the National University category of U.S. News & World Report ranked as the 82nd Best University , and 34th Best Public in Undergraduate education .'
 p2995
-aS'In 2013 Stony Brook received its best ranking ever in the National University category of U.S. News & World Report ranked as the 82nd Best University , and 34th Best Public in Undergraduate education .'
+aS"Ivy Tech Community College of IndianaFrom Wikipedia , the free encyclopediaChanging Lives , Making Indiana GreatEstablished regions that include 30 campusesWebsite.edu Ivy Tech Community College of Indiana -LRB- usually shortened to Ivy Tech or Ivy Tech Community College -RRB- is Indiana 's community college system , encompassing 30 campuses in 14 regions ."
 p2996
 aS"Ivy Tech Community College of IndianaFrom Wikipedia , the free encyclopediaChanging Lives , Making Indiana GreatEstablished regions that include 30 campusesWebsite.edu Ivy Tech Community College of Indiana -LRB- usually shortened to Ivy Tech or Ivy Tech Community College -RRB- is Indiana 's community college system , encompassing 30 campuses in 14 regions ."
 p2997
-aS"Ivy Tech Community College of IndianaFrom Wikipedia , the free encyclopediaChanging Lives , Making Indiana GreatEstablished regions that include 30 campusesWebsite.edu Ivy Tech Community College of Indiana -LRB- usually shortened to Ivy Tech or Ivy Tech Community College -RRB- is Indiana 's community college system , encompassing 30 campuses in 14 regions ."
-p2998
 aS'The partnership ended in 2005 and Ivy Tech was rechartered as a system of community colleges , and renamed Ivy Tech Community College of Indiana .'
-p2999
+p2998
 aS'The US Department of State operates the Virtual Student Foreign Service program .'
-p3000
+p2999
 aS'Efficient Enterprises , Inc. ^ Marte , Jonnelle -LRB- 29 September 2009 -RRB- .'
-p3001
+p3000
 aS'Bolognese manuscript of the Decretum Gratiani , 14th centuryThe Roman statesman Cassiodorus had abandoned politics in 537 and later in the century established a monastery on his own lands at Vivarium in southern Italy .'
-p3002
+p3001
 aS'These two schools originally occupied Bogue Hall on the same site of University High School , which would later become the home of the University of San Diego High School .'
-p3003
+p3002
 aS'In 1957 , Immaculate Heart Major Seminary and St. Francis Minor Seminary were moved into their newly completed facility , now known as Maher Hall .'
+p3003
+aS"The Universidad de Alcal in Spain , inspiration for Mother Hill 's USDSignificant periods of expansion of the university , since the 1972 merger , occurred in the mid-1980s , as well as in 1998 , when Joan B. Kroc , philanthropist and wife of McDonald 's financier Ray Kroc , endowed USD with a gift of $ 25 for the construction of the Institute for Peace & Justice ."
 p3004
 aS"The Universidad de Alcal in Spain , inspiration for Mother Hill 's USDSignificant periods of expansion of the university , since the 1972 merger , occurred in the mid-1980s , as well as in 1998 , when Joan B. Kroc , philanthropist and wife of McDonald 's financier Ray Kroc , endowed USD with a gift of $ 25 for the construction of the Institute for Peace & Justice ."
 p3005
-aS"The Universidad de Alcal in Spain , inspiration for Mother Hill 's USDSignificant periods of expansion of the university , since the 1972 merger , occurred in the mid-1980s , as well as in 1998 , when Joan B. Kroc , philanthropist and wife of McDonald 's financier Ray Kroc , endowed USD with a gift of $ 25 for the construction of the Institute for Peace & Justice ."
-p3006
 aS'These gifts helped make possible , respectively , the Jenny Craig Pavilion -LRB- an athletic arena -RRB- , the Donald P. Shiley Center for Science and Technology , the Joan B. Kroc School of Peace Studies , and the Degheri Alumni Center .'
-p3007
+p3006
 aS"As a result , USD has been able to host the West Coast Conference -LRB- WCC -RRB- basketball tournament in 2002 , 2003 and 2008 , and hosted international functions such as the Kyoto Laureate Symposium at the Joan B. Kroc Institute for Peace & Justice and at USD 's Shiley Theatre ."
-p3008
+p3007
 aS"Thus , the university 's buildings are designed in a 16th-century Spanish Renaissance architectural style , paying homage to both San Diego 's Catholic heritage -LRB- clarification needed -RRB- and the Universidad de Alcal in Spain ."
+p3008
+aS"In 2012 , USD ranked 92nd among `` National Universities '' by U.S. News & World Report and 223rd by Forbes and Washington Monthly ."
 p3009
 aS"In 2012 , USD ranked 92nd among `` National Universities '' by U.S. News & World Report and 223rd by Forbes and Washington Monthly ."
 p3010
-aS"In 2012 , USD ranked 92nd among `` National Universities '' by U.S. News & World Report and 223rd by Forbes and Washington Monthly ."
-p3011
 aS'The Princeton Review ranked the school 2nd for Best Campus Environment and 39th in Most Beautiful Campus .'
-p3012
+p3011
 aS'Schools and programs -LRB- edit -RRB- College of Arts and Sciences -LRB- edit -RRB- The College of Arts and Sciences is a member of Phi Beta Kappa .'
-p3013
+p3012
 aS'Founders HallMain article : University of San Diego School of LawFounded in 1954 , the School of Law is accredited by the American Bar Association and is a member of the Association of American Law Schools .'
-p3014
+p3013
 aS'Legal educator Brian Leiter regards the School of Law as having a strong law faculty .'
-p3015
+p3014
 aS'In September 2012 , USD announced that philanthropist Darlene Shiley , wife of engineer Donald Shiley had pledged to donate $ 20 million to the engineering program .'
-p3016
+p3015
 aS'Hahn School of Nursing and Health Science -LRB- edit -RRB- The Philip Y. Hahn School of Nursing and Health Science is among the top 10 percent of graduate-level nursing programs according to the U.S. News & World Report -LRB- # 47 -RRB- -LRB- citation needed -RRB- .'
+p3016
+aS'Institute for Nonprofit Education and Research -LRB- edit -RRB- The Caster Family Center for Nonprofit Research was launched in 2004 with start-up grants provided by The Westreich Foundation and the Bruce T. Halle Family Foundation .'
 p3017
 aS'Institute for Nonprofit Education and Research -LRB- edit -RRB- The Caster Family Center for Nonprofit Research was launched in 2004 with start-up grants provided by The Westreich Foundation and the Bruce T. Halle Family Foundation .'
 p3018
-aS'Institute for Nonprofit Education and Research -LRB- edit -RRB- The Caster Family Center for Nonprofit Research was launched in 2004 with start-up grants provided by The Westreich Foundation and the Bruce T. Halle Family Foundation .'
+aS'School of Business Administration -LRB- edit -RRB- The School of Business Administration has AACSB business program accreditation and ABET engineering degree accreditation .'
 p3019
 aS'School of Business Administration -LRB- edit -RRB- The School of Business Administration has AACSB business program accreditation and ABET engineering degree accreditation .'
 p3020
-aS'School of Business Administration -LRB- edit -RRB- The School of Business Administration has AACSB business program accreditation and ABET engineering degree accreditation .'
-p3021
 aS'The AS Leadership Team serves USD undergraduates as official student representatives who promote opportunities for growth and expression , address student issues and enrich a diverse , inclusive and engaged community .'
-p3022
+p3021
 aS"UTA is classified by the Carnegie Foundation as a `` High Research Activity '' institution ."
-p3023
+p3022
 aS'The university also operates the Fort Worth Education Center and the UTA Research Institute , with campuses at the Fort Worth ITC and River Bend Park .'
-p3024
+p3023
 aS"In the fall of 1913 , H.K. Taylor moved from Missouri where he was president of the Northwest State Teachers ' College to set up another military academy called Arlington Training School ."
-p3025
+p3024
 aS'Taylor left Arlington , and the property owners hired John B. Dodson to establish a third military academy for the 1916 school year called Arlington Military Academy .'
-p3026
+p3025
 aS'Myron L. Williams was appointed as the first Dean .'
-p3027
+p3026
 aS'Edward Everett Davis replaced Williams as Dean in 1925 and held that position for 21 years .'
-p3028
+p3027
 aS'As part of a plan that reorganized several university systems in Texas , Arlington State College officially became a part of The University of Texas System on September 1 , 1965 .'
-p3029
+p3028
 aS'The Texas Select Committee on Higher Education recognized UT Arlington as an emerging research institution in 1987 .'
-p3030
+p3029
 aS'Johnson Creek , a tributary of the Trinity River , runs along the southern portion of the campus .'
-p3031
+p3030
 aS'Cooper Street -LRB- which forms a part of Farm to Market Road 157 -RRB- runs through the middle of the campus and provides access to Interstates 20 and 30 .'
-p3032
+p3031
 aS'Europe -LRB- edit -RRB- The European Union publishes an Interinstitutional Style Guide 23 languages across the European Union .'
-p3033
+p3032
 aS'For university in Anchorage and Alaska , see Wayland Baptist University -LRB- Alaska -RRB- .'
-p3034
+p3033
 aS'Dr. and Mrs. James Henry Wayland offered $ 10,000 and 25 acres -LRB- 100,000 -RRB- of land in Plainview if the Staked Plains Baptist Association and the citizens of the city would raise an additional $ 40,000 .'
+p3034
+aS'Wayland Baptist gained membership to the American Association of Junior Colleges in 1926 and would later be approved as a senior college by the Texas Department of Education and the Southern Association of Colleges and Schools .'
 p3035
 aS'Wayland Baptist gained membership to the American Association of Junior Colleges in 1926 and would later be approved as a senior college by the Texas Department of Education and the Southern Association of Colleges and Schools .'
 p3036
-aS'Wayland Baptist gained membership to the American Association of Junior Colleges in 1926 and would later be approved as a senior college by the Texas Department of Education and the Southern Association of Colleges and Schools .'
-p3037
 aS'The university is accredited by the Southern Association of Colleges and Schools and the Texas Education Agency for teacher education training .'
+p3037
+aS'The Malouf Abraham Family Arts Center on the Wayland campus was endowed by the family of the late State Representative Malouf Abraham , Sr. , and his son , Malouf Abraham , Jr. , a retired allergist and active art collector from Canadian , the seat of Hemphill County in the northeastern Texas Panhandle .'
 p3038
 aS'The Malouf Abraham Family Arts Center on the Wayland campus was endowed by the family of the late State Representative Malouf Abraham , Sr. , and his son , Malouf Abraham , Jr. , a retired allergist and active art collector from Canadian , the seat of Hemphill County in the northeastern Texas Panhandle .'
 p3039
-aS'The Malouf Abraham Family Arts Center on the Wayland campus was endowed by the family of the late State Representative Malouf Abraham , Sr. , and his son , Malouf Abraham , Jr. , a retired allergist and active art collector from Canadian , the seat of Hemphill County in the northeastern Texas Panhandle .'
-p3040
 aS'In May 2008 , entertainer Jimmy Dean , a Plainview native , announced that he is making the largest ever gift to Wayland .'
-p3041
+p3040
 aS'-LRB- citation needed -RRB- In 2013 , Wayland was ranked as the # 72 university in the West Region by US News .'
-p3042
+p3041
 aS'A Wayland grad , Claude Hutcherson , was persuaded to fly the team to Mexico .'
-p3043
+p3042
 aS'Redin served in the Marine Air Corp in WWII , logging 50 combat missions over the South Pacific .'
-p3044
+p3043
 aS"Redin would go on to coach the USA Women 's Pan American Team in 1959 and 1971 ."
-p3045
+p3044
 aS'On December 8 , 2010 , the Pioneers introduced Jeff Lynn , former head coach of New Mexico Military Institute , as the first head coach in over 70 years .'
-p3046
+p3045
 aS'He would be replaced by former Lubbock Coronado High School coach , Butch Henderson .'
-p3047
+p3046
 aS'University Police -LRB- edit -RRB- The Wayland Police Department is the primary law enforcement agency for the university .'
+p3047
+aS"ODU 's TELETECHNET distance learning program is one of the nation 's largest and accounts for nearly one third of student enrollment ."
 p3048
 aS"ODU 's TELETECHNET distance learning program is one of the nation 's largest and accounts for nearly one third of student enrollment ."
 p3049
-aS"ODU 's TELETECHNET distance learning program is one of the nation 's largest and accounts for nearly one third of student enrollment ."
-p3050
 aS'ODU is one of the few universities in the US to offer MBA concentrations in Maritime , Transportation , and Port Logistics Management and also has well-respected programs in Marine Science , Coastal and Transportation Engineering .'
-p3051
+p3050
 aS'Within the Theatre Arts Department , Film and Video Studies is offered .'
-p3052
+p3051
 aS'The Department of Music is housed in the Diehn Fine and Performing Arts building .'
-p3053
+p3052
 aS'Diehn is the home of the ODU Symphony Orchestra -LRB- ODUSO -RRB- , Wind Ensemble , Concert Choir , Jazz Choir , Jazz Ensemble , Monarch Marching Band as well as other smaller ensembles like the Diehn String Quartet and Diehn Chorale .'
-p3054
+p3053
 aS'The Diehn building also houses the Wilson G. Chandler Recital Hall , where performances of the Diehn Concert Series and student recitals are held .'
-p3055
+p3054
 aS'Programs include : Educational Leadership and School Administration , Counseling , Human Services , Higher Education , Exercise Science , Athletic Training , Sport Management , Physical Education , Recreation and Tourism Studies , Early Childhood Education , Speech Pathology , Special Education , Fashion Merchandising , Instructional Design and Technology , Business and Industry Training , Community College Teaching , and Technology Education .'
-p3056
+p3055
 aS'In 2010 , the Frank Batten College of Engineering and Technology will become the first college in the United States offering all degrees in the emerging discipline of Modeling and Simulation -LRB- B.S. and M.E. and M.S. , D. Eng. , Ph.D. -RRB- .'
-p3057
+p3056
 aS'College of Sciences -LRB- edit -RRB- Offers degree programs in Chemistry and Biochemistry , Biological Sciences , Computer Science , Psychology , Mathematics , Physics , and Ocean and Earth and Atmospheric Sciences .'
-p3058
+p3057
 aS'Students can follow the CMC on Facebook , Twitter , Linkedin , and Myspace .'
-p3059
+p3058
 aS'The battalion is organized into seven phonetic companies : Alpha , Bravo -LRB- designated for the Norfolk State unit -RRB- , Charlie -LRB- designated for the Hampton University unit -RRB- , Delta , Echo -LRB- designated for all freshmen midshipman -RRB- , Foxtrot , and Mike -LRB- designated for Marine-option midshipman and prior-enlisted Marines -RRB- .'
-p3060
+p3059
 aS'Greek life -LRB- edit -RRB- Old Dominion has a complex and diverse Greek system with fourteen fraternities and eleven sororities .'
-p3061
+p3060
 aS'-LRB- September 2013 -RRB- The University of Texas at DallasMottoEducation , the Guardian of SocietyEstablishedUrban , 445 acres -LRB- 1.80 -RRB- Former namesGraduate Research Center of the Southwest -LRB- 1961 -RRB- , Southwest Center for Advanced Studies -LRB- 1967 -RRB- UTDallas.edu The University of Texas at Dallas -LRB- also referred to as UT Dallas or UTD -RRB- is a public research university in the University of Texas System .'
-p3062
+p3061
 aS'In 1969 the founders bequeathed SCAS to the state of Texas and Governor Preston Smith signed the bill officially creating the University of Texas at Dallas .'
-p3063
+p3062
 aS"The Carnegie Foundation classifies UT Dallas as a `` comprehensive doctoral research university '' and a `` high research activity institution '' ."
-p3064
+p3063
 aS'The UT Dallas founders , Eugene McDermott , Cecil Howard Green and J. Erik Jonsson , purchased Geophysical Service Incorporated -LRB- GSI -RRB- on December 6 , 1941 , the day before the attack on Pearl Harbor .'
-p3065
+p3064
 aS'Land for the center was acquired by Jonsson , McDermott , and Green in Richardson in 1962 and the first facility , the Laboratory of Earth and Planetary Science -LRB- later named the Founders Building -RRB- , opened on the grounds of the present-day UTD campus in 1964 .'
-p3066
+p3065
 aS'The Graduate Research Center of the Southwest was renamed the Southwest Center for Advanced Studies -LRB- SCAS -RRB- in 1967 and in 1969 the founders transferred the land and assets of SCAS to the State of Texas .'
-p3067
+p3066
 aS'On June 13 , 1969 Governor Preston Smith signed the bill adding the institution to the University of Texas System and creating the University of Texas at Dallas .'
-p3068
+p3067
 aS'Francis S. Johnson served as interim president and William B. Hanson was named the director of the Division of Atmospheric and Space Sciences now known as the William B. Hanson Center for Space Sciences .'
-p3069
+p3068
 aS'The Southern Association of Colleges and Schools granted accreditation to UT Dallas in 1972 and in 1973 the first UT Dallas diplomas were awarded .'
-p3070
+p3069
 aS'The Callier Center for Communication Disorders became part of the University of Texas at Dallas in 1975 as part of the School of Human Development -LRB- now the School of Behavioral and Brain Sciences -RRB- .'
-p3071
+p3070
 aS"UT Dallas 's first Nobel laureate , the late Polykarp Kusch , was a member of the physics faculty from 1972 to 1982 ."
+p3071
+aS'Robert H. Rutford , an Antarctic explorer recognized with the naming of the Rutford Ice Stream and Mount Rutford in Antarctica , became the second president of UT Dallas in May 1982 .'
 p3072
 aS'Robert H. Rutford , an Antarctic explorer recognized with the naming of the Rutford Ice Stream and Mount Rutford in Antarctica , became the second president of UT Dallas in May 1982 .'
 p3073
-aS'Robert H. Rutford , an Antarctic explorer recognized with the naming of the Rutford Ice Stream and Mount Rutford in Antarctica , became the second president of UT Dallas in May 1982 .'
-p3074
 aS"The Arts and Technology Building at UT-Dallas was named in 2013 in honor of O'Donnell 's wife , Edith Jones O'Donnell ."
-p3075
+p3074
 aS"The Edith O'Donnell Arts and Technology Building was also selected by the Nasher Sculpture Center as part of a ten location exhibit called the Nasher XChange ."
-p3076
+p3075
 aS'Franklyn Jenifer became the third president of UT Dallas in 1994 and served until 2005 .'
-p3077
+p3076
 aS'Recent history -LRB- edit -RRB- School of ManagementIn the fall of 2001 Ray Baughman and Anvar Zakhidov left Honeywell International to establish the UT Dallas NanoTech Institute .'
-p3078
+p3077
 aS"With a donation in 2001 from Jim Von Ehr of $ 3.5 million and the 2002 appointment of the late Alan MacDiarmid -LRB- April 14 , 1927 February 7 , 2007 -RRB- , UTD 's second Nobel laureate , the institute has grown and is now the Alan G. MacDiarmid NanoTech Institute ."
-p3079
+p3078
 aS'In June 2005 , David E. Daniel became the fourth president of the University of Texas at Dallas and had served on the faculty at UT Austin and was the Dean of Engineering at the University of Illinois from 2001 to 2005 .'
-p3080
+p3079
 aS'The 2013 Academic Ranking of World Universities placed UTD at 109th in the United States .'
-p3081
+p3080
 aS"The Washington Monthly 's 2013 Annual College and University Rankings placed UTD at 136th in the United States ."
-p3082
+p3081
 aS"Kiplinger 's Personal Finance magazine 's 100 Best Values in Public Colleges 2014 ranked UTD at 39th in value for in state residents and 58th for out of state students ."
-p3083
+p3082
 aS'The U.S. News and World Report 2015 rankings of graduate school programs ranked the UT Dallas Erik Jonsson School of Engineering and Computer Science at 71st among graduate engineering programs .'
-p3084
+p3083
 aS"UTD 's Arts and Technology program is Texas 's first comprehensive degree designed to merge computer science and engineering with creative arts and the humanities ."
-p3085
+p3084
 aS'Geospatial Information Sciences is jointly offered with the School of Natural Sciences and Mathematics and with the School of Economic , Political and Policy Sciences -LRB- EPPS -RRB- , which administers the degree .'
-p3086
+p3085
 aS"The U.S. News & World Report 's 2012 edition of Best Colleges classified UTD 's admission process as `` more selective '' with an acceptance rate of 53.4 % ."
-p3087
+p3086
 aS'The McDermott Scholars Program , established at UT Dallas in 2000 , provides full scholarships and unique cultural and civic opportunities to academically talented high school students .'
+p3087
+aS"NASA 's CINDI instrument is installed on CNOFS ."
 p3088
 aS"NASA 's CINDI instrument is installed on CNOFS ."
 p3089
-aS"NASA 's CINDI instrument is installed on CNOFS ."
-p3090
 aS'The William B. Hanson Center for Space Studies -LRB- CSS -RRB- , affiliated with the Department of Physics , conducts research in space plasma physics .'
-p3091
+p3090
 aS'In 2007 , it was renamed in memory of the late Alan G. MacDiarmid , who shared the 2000 Nobel Prize in chemistry with Alan Heeger and Hideki Shirakawa .'
-p3092
+p3091
 aS'The Callier Center for Communication Disorders became part of the University of Texas at Dallas in 1975 as part of the School of Human Development -LRB- now the School of Behavioral and Brain Sciences -RRB- .'
-p3093
+p3092
 aS"Harold Clarke , the Ashbel Smith professor of political science in the School of Economic , Political and Policy Sciences , and Marianne Stewart , professor of political science are the co-principal investigators for the study , which began in 1964 and is one of the world 's oldest continuous political research projects ."
-p3094
+p3093
 aS'Campus -LRB- edit -RRB- The main campus is in the heart of the Richardson and Texas , Telecom Corridor , 18 miles -LRB- 29 -RRB- north of downtown Dallas , on the boundary of Dallas and Collin counties .'
-p3095
+p3094
 aS'UT Dallas owns generally contiguous land in Richardson and Texas consisting of approximately 465 acres -LRB- 1.88 -RRB- for campus development and another 265 acres -LRB- 1.07 -RRB- adjacent to the campus .'
+p3095
+aS'For the design UT Dallas chose Studios Architecture firm that designed Google Headquarters in Mountain View and California .'
 p3096
 aS'For the design UT Dallas chose Studios Architecture firm that designed Google Headquarters in Mountain View and California .'
 p3097
-aS'For the design UT Dallas chose Studios Architecture firm that designed Google Headquarters in Mountain View and California .'
-p3098
 aS'Piedmont Community College is accredited by the Commission on Colleges of the Southern Association of Colleges and Schools to award associate degrees , diplomas and certificates .'
-p3099
+p3098
 aS'Effective July 1 , 1985 , Piedmont Technical College was designated by the North Carolina General Assembly as the primary service provider for Caswell County .'
+p3099
+aS'The Science Lab Initiative , led by the PCC Foundation , resulted in the renovation of science labs on the Person County Campus , equipping the labs with modern equipment and technology .'
 p3100
 aS'The Science Lab Initiative , led by the PCC Foundation , resulted in the renovation of science labs on the Person County Campus , equipping the labs with modern equipment and technology .'
 p3101
-aS'The Science Lab Initiative , led by the PCC Foundation , resulted in the renovation of science labs on the Person County Campus , equipping the labs with modern equipment and technology .'
-p3102
 aS'Other buildings include Student Services , Bookstore , Learning Resource Center , and a Child Care Facility .'
-p3103
+p3102
 aS"Kitzi later made a guest appearance in Bloom County in 1985 , although the character had been altered to be Steve 's younger sister rather than his girlfriend -LRB- jailed for protesting Apartheid , even though their sorority does n't even admit blacks -RRB- ."
-p3104
+p3103
 aS'ContentsFoundational theory of conceptual models and conceptual modelingPeter Chen Award -LRB- edit -RRB- Peter P. Chen Award Initiated by Elsevier in 2008 to celebrate the 25th anniversary of the journal , Data and Knowledge Engineering , the Peter P. Chen Award honors one person each year for his or her outstanding contributions to the field of conceptual modeling .'
-p3105
+p3104
 aS'History -LRB- edit -RRB- Emmanuel College was founded by Paul Bates in 1919 as the Franklin Springs Institute in Franklin Springs and GA .'
-p3106
+p3105
 aS'Paul Bates hails from Kingston and Jamaica and in 1917 he traveled to America by foot .'
+p3106
+aS'Hands torn and blisters lingering , Paul Bates , the founding father of the school walked back to Kingston and spread the word of his epic battle in the Springs .'
 p3107
 aS'Hands torn and blisters lingering , Paul Bates , the founding father of the school walked back to Kingston and spread the word of his epic battle in the Springs .'
 p3108
-aS'Hands torn and blisters lingering , Paul Bates , the founding father of the school walked back to Kingston and spread the word of his epic battle in the Springs .'
-p3109
 aS'Bolten turned Boltville into a leprechaun sanctuary and these young gentleman can still be seen today running through the community with their many pots of gold .'
-p3110
+p3109
 aS'The University of Mary HardinBaylor -LRB- UMHB -RRB- is a Christian co-educational institution of higher learning located in Belton and Texas and United States .'
-p3111
+p3110
 aS"UMHB was founded by the Republic of Texas in 1845 as `` Baylor Female College , '' the female department of what is now Baylor University ."
+p3111
+aS'The Mayborn Campus Center is named for its benefactor , the late Temple Daily Telegram publisher , Frank W. MaybornThe Cottage Home System , the first work-study program for women in a college west of the Mississippi , was instituted on the new Belton campus in 1893 by Elli Moore Townsend , wife of the serving president .'
 p3112
 aS'The Mayborn Campus Center is named for its benefactor , the late Temple Daily Telegram publisher , Frank W. MaybornThe Cottage Home System , the first work-study program for women in a college west of the Mississippi , was instituted on the new Belton campus in 1893 by Elli Moore Townsend , wife of the serving president .'
 p3113
-aS'The Mayborn Campus Center is named for its benefactor , the late Temple Daily Telegram publisher , Frank W. MaybornThe Cottage Home System , the first work-study program for women in a college west of the Mississippi , was instituted on the new Belton campus in 1893 by Elli Moore Townsend , wife of the serving president .'
-p3114
 aS'In 1925 , Baylor Female College was renamed Baylor College for Women .'
-p3115
+p3114
 aS'A year later in 1926 , it was accredited by the Southern Association of Colleges and Universities -LRB- now SACS -RRB- , being the first Texas Baptist college to do so .'
-p3116
+p3115
 aS'In 1968 , the Scott & White College of Nursing , named for the Scott & White Memorial Hospital located in nearby Temple , became a part of Mary HardinBaylor College .'
+p3116
+aS"Margaret `` Maggie '' Lea Houston , eldest daughter of Republic of Texas President Sam Houston Oveta Culp Hobby , the first woman appointed as a commanding officer of a military unit , the first director of the Women 's Army Corps and the first Secretary of the Department of Health , Education and Welfare , now known as the Department of Health and Human Services ; the second woman to serve in a Cabinet for a U.S. president ; Sybil Leonard Armes , a Christian author , alternate poet laureate of Texas in 1969 , and former trustee of UMHB Miriam ` Ma ' Ferguson , Texas ' first female governor and the second woman to be elected governor of any state in the U.S. Jerrell Freeman , Canadian and American football linebackerMary Gentry Kavanaughm Class of 1855 , The first graduate of the Female Department of Baylor University in Independence ."
 p3117
 aS"Margaret `` Maggie '' Lea Houston , eldest daughter of Republic of Texas President Sam Houston Oveta Culp Hobby , the first woman appointed as a commanding officer of a military unit , the first director of the Women 's Army Corps and the first Secretary of the Department of Health , Education and Welfare , now known as the Department of Health and Human Services ; the second woman to serve in a Cabinet for a U.S. president ; Sybil Leonard Armes , a Christian author , alternate poet laureate of Texas in 1969 , and former trustee of UMHB Miriam ` Ma ' Ferguson , Texas ' first female governor and the second woman to be elected governor of any state in the U.S. Jerrell Freeman , Canadian and American football linebackerMary Gentry Kavanaughm Class of 1855 , The first graduate of the Female Department of Baylor University in Independence ."
 p3118
-aS"Margaret `` Maggie '' Lea Houston , eldest daughter of Republic of Texas President Sam Houston Oveta Culp Hobby , the first woman appointed as a commanding officer of a military unit , the first director of the Women 's Army Corps and the first Secretary of the Department of Health , Education and Welfare , now known as the Department of Health and Human Services ; the second woman to serve in a Cabinet for a U.S. president ; Sybil Leonard Armes , a Christian author , alternate poet laureate of Texas in 1969 , and former trustee of UMHB Miriam ` Ma ' Ferguson , Texas ' first female governor and the second woman to be elected governor of any state in the U.S. Jerrell Freeman , Canadian and American football linebackerMary Gentry Kavanaughm Class of 1855 , The first graduate of the Female Department of Baylor University in Independence ."
-p3119
 aS'Johnson Hall , an all-girls dormitory on the UMHB campus , was named after Rebekah Baines Johnson , mother of President Lyndon B. Johnson and granddaughter of Baptist preacher Reverend George Washington Baines who served as president of the college from 1861 .'
-p3120
+p3119
 aS'UMHB was formerly a member of the NAIA before becoming a full member of the NCAA Division III following the 1999 school year .'
+p3120
+aS'UMHB held dual membership in the NAIA and NCAA during a provisional period as UMHB was transitioning to the NCAA .'
 p3121
 aS'UMHB held dual membership in the NAIA and NCAA during a provisional period as UMHB was transitioning to the NCAA .'
 p3122
-aS'UMHB held dual membership in the NAIA and NCAA during a provisional period as UMHB was transitioning to the NCAA .'
+aS"6 External linksHistory and mission -LRB- edit -RRB- Founded in 1972 , Wayne College is the only regional branch of the University of Akron and is authorized by the State of Ohio through the Ohio State Board of Regents to offer general education , including associate 's degrees and baccalaureate-oriented preparation and degrees ; technical education programs ; Post Secondary Enrollment Options for high school juniors and seniors ; and continuing education experiences for those who live in the College 's service area of Wayne , Medina and Holmes counties ."
 p3123
 aS"6 External linksHistory and mission -LRB- edit -RRB- Founded in 1972 , Wayne College is the only regional branch of the University of Akron and is authorized by the State of Ohio through the Ohio State Board of Regents to offer general education , including associate 's degrees and baccalaureate-oriented preparation and degrees ; technical education programs ; Post Secondary Enrollment Options for high school juniors and seniors ; and continuing education experiences for those who live in the College 's service area of Wayne , Medina and Holmes counties ."
 p3124
-aS"6 External linksHistory and mission -LRB- edit -RRB- Founded in 1972 , Wayne College is the only regional branch of the University of Akron and is authorized by the State of Ohio through the Ohio State Board of Regents to offer general education , including associate 's degrees and baccalaureate-oriented preparation and degrees ; technical education programs ; Post Secondary Enrollment Options for high school juniors and seniors ; and continuing education experiences for those who live in the College 's service area of Wayne , Medina and Holmes counties ."
-p3125
 aS'Facilities -LRB- edit -RRB- Wayne College is located on 160 acres of land on the northern edge of Orrville and Ohio and consists of the original classroom building built in 1972 and the Student Life Building , which opened in 2009 .'
-p3126
+p3125
 aS'Wayne College offers day and evening classes , plus special sections for Weekend College .'
-p3127
+p3126
 aS'Shakespeare Festivals -LRB- edit -RRB- Wayne College also hosts annual Shakespeare Festivals every November for the enjoyment of students and the community .'
-p3128
+p3127
 aS"Presidents -LRB- edit -RRB- The university has had six Adrian Dominican Sisters serve as president since its inception : Mother M. Gerald Barry , 1940-1961 ; Mother M. Genevieve Weber , 1962 ; Sister M. Dorothy Browne , 1963 ; Sister M. Trinita Flood , 1974 ; Sister Jeanne O'Laughlin , 1981 ; and Sister Linda Bevilacqua , OP , PhD , 2004 ."
-p3129
+p3128
 aS"It was financed with the aid of Margaret Brady Farrell , a parishioner of St. Patrick 's Church in Miami Beach ."
+p3129
+aS'Barry University has a campus in Orlando containing the Dwayne O. Andreas School of Law and a campus in Saint Petersburg that has the second branch of its Physician Assistant Program .'
 p3130
 aS'Barry University has a campus in Orlando containing the Dwayne O. Andreas School of Law and a campus in Saint Petersburg that has the second branch of its Physician Assistant Program .'
 p3131
-aS'Barry University has a campus in Orlando containing the Dwayne O. Andreas School of Law and a campus in Saint Petersburg that has the second branch of its Physician Assistant Program .'
-p3132
 aS'Thomas Laighton established a hotel on Smuttynose Island and eventually a much larger one , the Appledore Hotel , on Hog , which he renamed Appledore Island .'
-p3133
+p3132
 aS'Then , in 1896 , Thomas Elliott and his wife Lilla arrived on Star Island .'
-p3134
+p3133
 aS"The conferences continued and , in 1915 , the Isles of Shoals Summer Meeting Association which Elliott had organized bought the hotel and the island , forming the Star Island Corporation.Present-day -LRB- edit -RRB- Sunset at the Oceanic HotelThomas Elliott 's original conference still meets today , as the Conference on International Affairs , as do a dozen or more other conferences ."
-p3135
+p3134
 aS'Transportation to Star Island was by the steamship-replica Thomas Laighton out of Portsmouth from 1985 through 2004 .'
-p3136
+p3135
 aS'The Star Island conference center is owned and operated by the Star Island Corporation , a not-for-profit United States Internal Revenue Code Section 501 -LRB- c -RRB- -LRB- 3 -RRB- membership organization incorporated in the state of Massachusetts .'
-p3137
+p3136
 aS"Those in June and July , plus LOAS in August , tend to have a Unitarian Universalist orientation , while those marked `` UCC '' are affiliated with the United Church of Christ ."
-p3138
+p3137
 aS'Department of Physics -LRB- 2010 -RRB- Department of Mathematics -LRB- 2011 -RRB- Department of Chemistry -LRB- 2011 -RRB- Department of Computer Science and Engineering -LRB- 2011 -RRB- Department of Materials Science and Engineering -LRB- 2011 -RRB- Department of Biological Applications and Technologies -LRB- 2011 -RRB- Research Institutes -LRB- edit -RRB- Ioannina Biomedical Research Institute -LRB- edit -RRB- The Biomedical Research Institute -LRB- BRI -RRB- was founded in 1998 .'
-p3139
+p3138
 aS'In order to fulfill the above research aims the Institute has already established collaborations with the Medical School of the University of Ioannina , as well as with other Departments of the University , the University Hospital , and the other Institutes of FORTH .'
+p3139
+aS'Institute of Transportation & Telecommunications -LRB- edit -RRB- The University of Ioannina has become allied with the regional local authorities and industrial partners to establish a major Institute of Transportation & Telecommunication in Igoumenitsa .'
 p3140
 aS'Institute of Transportation & Telecommunications -LRB- edit -RRB- The University of Ioannina has become allied with the regional local authorities and industrial partners to establish a major Institute of Transportation & Telecommunication in Igoumenitsa .'
 p3141
-aS'Institute of Transportation & Telecommunications -LRB- edit -RRB- The University of Ioannina has become allied with the regional local authorities and industrial partners to establish a major Institute of Transportation & Telecommunication in Igoumenitsa .'
+aS'Erasmus Programme -LRB- edit -RRB- The University of Ioannina currently has formal exchange agreements with a large number of Universities - in mainland Europe - through the well-established Erasmus program of the European Commission .'
 p3142
 aS'Erasmus Programme -LRB- edit -RRB- The University of Ioannina currently has formal exchange agreements with a large number of Universities - in mainland Europe - through the well-established Erasmus program of the European Commission .'
 p3143
-aS'Erasmus Programme -LRB- edit -RRB- The University of Ioannina currently has formal exchange agreements with a large number of Universities - in mainland Europe - through the well-established Erasmus program of the European Commission .'
-p3144
 aS"The archaic name for the site was Hekademia , which by classical times evolved into Akademia and was explained , at least as early as the beginning of the 6th century BC , by linking it to an Athenian hero , a legendary '' Akademos '' ."
-p3145
+p3144
 aS"The Neoplatonic Academy of Late Antiquity -LRB- edit -RRB- Further information : End of Hellenic ReligionAfter a lapse during the early Roman occupation , Akademia was refounded as a new institution of some outstanding Platonists of late antiquity who called themselves `` successors '' -LRB- diadochoi , but of Plato -RRB- and presented themselves as an uninterrupted tradition reaching back to Plato ."
-p3146
+p3145
 aS'One of the last leading figures of this group was Simplicius , a pupil of Damascius , the last head of the Athenian school .'
-p3147
+p3146
 aS'After his exile , Simplicius -LRB- and perhaps some others -RRB- , may have traveled to Harran , near Edessa .'
-p3148
+p3147
 aS"century accademie -LRB- edit -RRB- During the Florentine Renaissance , Cosimo de ' Medici took a personal interest in the new Platonic Academy that he determined to re-establish in 1439 , centered on the marvellous promise shown by the young Marsilio Ficino ."
-p3149
+p3148
 aS'Bessarion , in the latter years of his life , retired from Rome to Ravenna , but he left behind him ardent adherents of the classic philosophy .'
-p3150
+p3149
 aS"Its principal members were humanists , like Bessarion 's prot Giovanni Antonio Campani -LRB- Campanus -RRB- , Bartolomeo Platina , the papal librarian , and Filippo Buonaccorsi , and young visitors who received polish in the academic circle , like Publio Fausto Andrelini of Bologna who took the New Learning to the University of Paris , to the discomfiture of his friend Erasmus ."
-p3151
+p3150
 aS'In Naples , the Quattrocento academy founded by Alfonso of Aragon and guided by Antonio Beccadelli was the Porticus Antoniana , later known as the Accademia Pontaniana , after Giovanni Pontano .'
+p3151
+aS"In Florence , the Medici again took the lead in establishing the Accademia e Compagnia delle Arti del Disegno in 1563 , the first of the more formally organised art academies that gradually displaced the medieval artists ' guilds , usually known as the Guild of Saint Luke , as the bodies responsible for training and often regulating artists , a change with great implications for the development of art , leading to the styles known as Academic art ."
 p3152
 aS"In Florence , the Medici again took the lead in establishing the Accademia e Compagnia delle Arti del Disegno in 1563 , the first of the more formally organised art academies that gradually displaced the medieval artists ' guilds , usually known as the Guild of Saint Luke , as the bodies responsible for training and often regulating artists , a change with great implications for the development of art , leading to the styles known as Academic art ."
 p3153
-aS"In Florence , the Medici again took the lead in establishing the Accademia e Compagnia delle Arti del Disegno in 1563 , the first of the more formally organised art academies that gradually displaced the medieval artists ' guilds , usually known as the Guild of Saint Luke , as the bodies responsible for training and often regulating artists , a change with great implications for the development of art , leading to the styles known as Academic art ."
-p3154
 aS"And , mainly , since 17th century academies spread throughout Europe.Literary-philosophical academies -LRB- edit -RRB- In the 17th century the tradition of literary-philosophical academies , as circles of friends gathering around learned patrons , was continued in Italy ; the '' Umoristi '' -LRB- 1611 -RRB- , the '' Fantastici -LRB- 1625 -RRB- , and the '' Ordinati '' , founded by Cardinal Dati and Giulio Strozzi ."
-p3155
+p3154
 aS'Artistic academies were established all over Europe by the end of the 18th century , and many , like the Akademie der K in Berlin -LRB- founded 1696 -RRB- , the Real Academia de Bellas Artes de San Fernando in Madrid -LRB- founded 1744 -RRB- , the Imperial Academy of Arts in Saint Petersburg -LRB- 1757 -RRB- , the Royal Academy in London -LRB- 1768 -RRB- and the Accademia di Belle Arti di Brera in Milan -LRB- 1776 -RRB- still run art schools and hold large exhibitions , although their influence on taste greatly declined from the late 19th century .'
-p3156
+p3155
 aS"Similar institutions were often established for other arts : Rome had the Accademia di Santa Cecilia for music from 1585 ; Paris had the Acad Royale de Musique from 1669 and the Acad d'architecture from 1671 ."
-p3157
+p3156
 aS'Main article : List of language regulatorsThe Accademia degli Infiammati of Padova and the Accademia degli Umidi , soon renamed Accademia Fiorentina , of Florence were both founded in 1540 , and were both initially concerned with the proper basis for literary use of the volgare , or vernacular language of Italy , which would later become the Italian language .'
-p3158
+p3157
 aS"The foundation of Academy was funded by Prince Leopoldo and Grand Duke Ferdinando II de ' Medici ."
-p3159
+p3158
 aS"In 1662 Charles II of England signed a Royal Charter which created the `` Royal Society of London '' , then `` Royal Society of London for the Improvement of Natural Knowledge '' ."
-p3160
+p3159
 aS'Although Prussia was a member of Holy Roman Empire , in 1700 Prince-elector Frederick III of Brandenburg founded its own Prussian Academy of Sciences upon the advice of Gottfried Leibniz , who was appointed president .'
-p3161
+p3160
 aS'The Militaire was founded by Louis XV of France in 1750 with the aim of creating an academic college for cadet officers from poor families .'
-p3162
+p3161
 aS'The Theresian Military Academy was founded on 14 December 1751 by Maria Theresa of Austria .'
-p3163
+p3162
 aS"Modern use of the term academy -LRB- edit -RRB- The modern Academy of Athens , next to the University of Athens and the National Library forming ` the Trilogy ' , designed by Schinkel 's Danish pupil Theofil Hansen , 1885 , in Greek Ionic , academically correct even to the polychrome sculpture ."
-p3164
+p3163
 aS"Mozart organized public subscription performances of his music in Vienna in the 1780s and 1790s , he called the concerts `` academies . ''"
-p3165
+p3164
 aS'This usage in musical terms survives in the concert orchestra Academy of St Martin in the Fields and in the Brixton Academy , a concert hall in Brixton and South London .'
-p3166
+p3165
 aS"The Queen 's Speech , which followed the 2010 UK general election , included proposals for a bill to allow the Secretary of State for Education to approve schools , both Primary and Secondary , that have been graded `` outstanding '' by Ofsted , to become academies ."
-p3167
+p3166
 aS'Founded in 2003 , Aluka was an initiative of Ithaka Harbors , Inc. , a non-profit organization based in New York City and Princeton and New Jersey .'
-p3168
+p3167
 aS'The initial funding was provided by the Mellon Foundation , the William and Flora Hewlett Foundation , and the Stavros S. Niarchos Foundation .'
-p3169
+p3168
 aS'In 1996 , the Georgia Board of Regents renamed many higher-ed institutions , with Clayton State becoming Clayton College & State University .'
-p3170
+p3169
 aS"The James M. Baker University Center , Clayton State 's signature building , was completed in August 2004 and named in honor of Clayton State alumnus James M. `` Jim '' Baker in November 2005 , and provides the University with a true `` Center '' for student life ."
-p3171
+p3170
 aS"In a six-week period between August and October 2008 , the University dedicated three new buildings : the University 's first student housing -LRB- Laker Hall -RRB- , the Student Activities Center , and a new building for the AACSB-accredited School of Business ."
+p3171
+aS"When President Dr. Thomas K. Harden left to become chancellor of the University of Wisconsin-Green Bay in May 2009 , Dr. Thomas J. `` Tim '' Hynes , Jr. , provost of the University of West Georgia , became Clayton State 's interim president , being appointed permanently by the Board of Regents as the University 's fourth president on February 9 , 2010 ."
 p3172
 aS"When President Dr. Thomas K. Harden left to become chancellor of the University of Wisconsin-Green Bay in May 2009 , Dr. Thomas J. `` Tim '' Hynes , Jr. , provost of the University of West Georgia , became Clayton State 's interim president , being appointed permanently by the Board of Regents as the University 's fourth president on February 9 , 2010 ."
 p3173
-aS"When President Dr. Thomas K. Harden left to become chancellor of the University of Wisconsin-Green Bay in May 2009 , Dr. Thomas J. `` Tim '' Hynes , Jr. , provost of the University of West Georgia , became Clayton State 's interim president , being appointed permanently by the Board of Regents as the University 's fourth president on February 9 , 2010 ."
-p3174
 aS'Clayton State University has 2 campuses in Morrow , the main campus and CSU East .'
-p3175
+p3174
 aS'In Summer 2011 , Clayton State purchased the former Clayton Place apartment complex across the road and railroad tracks from the main campus .'
-p3176
+p3175
 aS'Athletics -LRB- edit -RRB- Clayton State University is an Division II member of the National Collegiate Athletic Association -LRB- NCAA -RRB- , competing in the Peach Belt Conference -LRB- PBC -RRB- .'
-p3177
+p3176
 aS'The AIA is run by executive director Daniel J. Flynn , the author of the book Why the Left Hates America .'
-p3178
+p3177
 aS'The group was criticized by prominent conservative and first Secretary of Education William Bennett , who described AIA as bad idea at the time of its founding in 1986 .'
-p3179
+p3178
 aS'MCC began as the vision of Dr. H.M. Ivy -LRB- 1884 -RRB- , superintendent of the Meridian Separate School District in the 1930s .'
-p3180
+p3179
 aS"Other facilities not located at the main campus include the college 's Truck Driving School and Magnolia Hall which is widely used by the community.Org anization and administration -LRB- edit -RRB- Academic profile -LRB- edit -RRB- Recent data shows enrollment at almost 4,000 students ."
-p3181
+p3180
 aS'Former MCC golf coach , Lou Hart was inducted into the Mississippi Sports Hall of Fame on July 27 , 2007 .'
+p3181
+aS"Garon won the Golf Coaches Association of America -LRB- GCAA -RRB- Arnold Palmer Award in 2010 and then the GCAA 's Jack Nicklaus Award in 2011 as the national player of the year ."
 p3182
 aS"Garon won the Golf Coaches Association of America -LRB- GCAA -RRB- Arnold Palmer Award in 2010 and then the GCAA 's Jack Nicklaus Award in 2011 as the national player of the year ."
 p3183
-aS"Garon won the Golf Coaches Association of America -LRB- GCAA -RRB- Arnold Palmer Award in 2010 and then the GCAA 's Jack Nicklaus Award in 2011 as the national player of the year ."
+aS"Jamario Moon , current professional basketball player of Los Angeles Clippers in the NBA , played for Meridian `` Eagles '' for one season -LRB- 19992000 ; his only season of college basketball -RRB- , and averaged 20.8 points and 8.7 rebounds pre game ."
 p3184
 aS"Jamario Moon , current professional basketball player of Los Angeles Clippers in the NBA , played for Meridian `` Eagles '' for one season -LRB- 19992000 ; his only season of college basketball -RRB- , and averaged 20.8 points and 8.7 rebounds pre game ."
 p3185
-aS"Jamario Moon , current professional basketball player of Los Angeles Clippers in the NBA , played for Meridian `` Eagles '' for one season -LRB- 19992000 ; his only season of college basketball -RRB- , and averaged 20.8 points and 8.7 rebounds pre game ."
-p3186
 aS"Current NBA player , Ronald `` Flip '' Murray -LRB- Chicago Bulls -RRB- attended MCC and played basketball for the Eagles in 199798-199899 ."
+p3186
+aS'Coby Miller competed in the 2000 and 2004 Olympic Games and Miguel Pate who competed in the 2008 Olympic Games .'
 p3187
 aS'Coby Miller competed in the 2000 and 2004 Olympic Games and Miguel Pate who competed in the 2008 Olympic Games .'
 p3188
-aS'Coby Miller competed in the 2000 and 2004 Olympic Games and Miguel Pate who competed in the 2008 Olympic Games .'
-p3189
 aS'Former Major League Soccer star Damani Ralph played soccer for MCC .'
-p3190
+p3189
 aS"At HPU 's 1889 founding , sister Baptist school Hardin-Simmons University in Abilene and Texas , would not exist until 1891 and many found travel to another sister Baptist school , Baylor University in Waco and Texas unfeasible ."
-p3191
+p3190
 aS'Texas recorded its last Indian attack in the early twentieth century near Santa Anna and Texas .'
-p3192
+p3191
 aS'Daniel Baker College , a Presbyterian institution , began operation near the time local Baptists founded Howard Payne .'
-p3193
+p3192
 aS"DBC and Howard Payne merged in 1953 after DBC fell into financial difficulties , and after extensive renovation , DBC 's main building became the Douglas MacArthur Academy of Freedom building in 1969 ."
-p3194
+p3193
 aS'The BGCT operated Howard Payne as a junior college from 1900 until 1914 , when it regained four-year status .'
-p3195
+p3194
 aS"Taylor 's successor , Guy D. Newman , took office in 1955 and before retiring from the post in 1973 , created the Douglas MacArthur Academy of Freedom and built most of the campus buildings still in use today ."
+p3195
+aS"In 1974 , the BGCT recognized Howard Payne 's broad academic scope and approved a name change in the school 's charter , from `` Howard Payne College '' to `` Howard Payne University ."
 p3196
 aS"In 1974 , the BGCT recognized Howard Payne 's broad academic scope and approved a name change in the school 's charter , from `` Howard Payne College '' to `` Howard Payne University ."
 p3197
-aS"In 1974 , the BGCT recognized Howard Payne 's broad academic scope and approved a name change in the school 's charter , from `` Howard Payne College '' to `` Howard Payne University ."
-p3198
 aS"In August 2013 , College President Robert Badal announced that , in light of a new Master 's , online Bachelor 's , and Doctoral degrees , Jamestown College would henceforth be known as the University of Jamestown ."
-p3199
+p3198
 aS'The University of Jamestown will be a charter member of the North Star Athletic Association in the 2013-14 school year .'
-p3200
+p3199
 aS'The Jimmies formerly competed in the now-defunct Dakota Athletic Conference -LRB- DAC -RRB- .'
-p3201
+p3200
 aS"frhandle10068697878In 2009 , GreyNet began the Annual Summer Workshop Series `` GreyWorks '' , which is now in its 5th yearIn 2013 , GreyNet began the GreyForum , a Thematic Series of Onsite and Online Seminars and Workshops in the field of Grey Literature http : www.greynet.orgresearchandeducationworkshops.html GreyNet management -LRB- edit -RRB- The GreyNet Service is powered by TextRelease , an independently owned company based in Amsterdam ."
-p3202
+p3201
 aS'Some of the more recent sponsors include : BL , British Library , United KingdomCNR , National Research Council , ItalyCVTISR , Slovak Centre of Scientific and Technical Information , Slovak RepublicDTIC , Defense Technical Information Center , USAEBSCO Publishing , USAFEDLINK ; Library of Congress , USAIIA , Information International Associates , Inc. , USAINIST-CNRS , Institute for Scientific and Technical Information , FranceJST , Japan Science and Technology Agency , JapanKISTI , Korea Institute of Science and Technology Information , KoreaLLC , Law Library of Congress , USANTK , National Technical Library , Prague , Czech RepublicNLM , National Library of Medicine , USANYAM , New York Academy of Medicine , USAOSTI , Office of Scientific and Technical Information , USAUniversity of Ljubljana , SloveniaTextRelease realizes that its success over the last six years is largely due to its sustained content base and financial support by committed sponsors .'
-p3203
+p3202
 aS'International Conference on Advances in ICT for Emerging RegionsFrom Wikipedia , the free encyclopediaThis article is about International Conference on Advances in ICT for Emerging Regions .'
+p3203
+aS'International Conference on Advances in ICT for Emerging RegionsAbbreviationFrequencyInternational Conference on Advances in ICT for Emerging Regions -LRB- ICTer -RRB- is the successor to the seminal International Information Technology Conference -LRB- IITC -RRB- held in Sri Lanka since 1998 .'
 p3204
 aS'International Conference on Advances in ICT for Emerging RegionsAbbreviationFrequencyInternational Conference on Advances in ICT for Emerging Regions -LRB- ICTer -RRB- is the successor to the seminal International Information Technology Conference -LRB- IITC -RRB- held in Sri Lanka since 1998 .'
 p3205
-aS'International Conference on Advances in ICT for Emerging RegionsAbbreviationFrequencyInternational Conference on Advances in ICT for Emerging Regions -LRB- ICTer -RRB- is the successor to the seminal International Information Technology Conference -LRB- IITC -RRB- held in Sri Lanka since 1998 .'
-p3206
 aS'Charles T. Clotfelter and Michael Rothschild , ed .'
-p3207
+p3206
 aS'Ireland -LRB- edit -RRB- Legitimate higher education qualifications in Ireland are placed on , or formally aligned , with the National Framework of Qualifications .'
-p3208
+p3207
 aS"In 2004 authorities announced their intention to take action against unaccredited schools using the words `` degree '' and `` university , '' including the University of Newlands , an unaccredited distance-learning provider based in the Wellington suburb of Newlands ."
-p3209
+p3208
 aS"Other unaccredited New Zealand institutions reported to be using the word `` university '' included the New Zealand University of Golf in Auckland , the online Tawa-Linden and Tauranga Universities of the Third Age , and the Southern University of New Zealand ."
-p3210
+p3209
 aS'Newlands and Ms. Forrester had not shown it had a good arguable case that an act had been done in New Zealand for which damages could be claimed from a party outside New Zealand .'
-p3211
+p3210
 aS"South Korea -LRB- edit -RRB- In March 2006 prosecutors in Seoul had `` broken up a crime ring selling bogus music diplomas from Russia , which helped many land university jobs and seats in orchestras . ''"
-p3212
+p3211
 aS'As Bahr -LRB- Bahr 2008a , pp . -RRB-'
+p3212
+aS"Fueled by the broader goal of increasing the number of college graduates nationwide , the Gates Foundation promoted remedial interventions that proved successful , particularly low-income students and students of color , through the Lumina Foundation 's Achieving the Dream Initiative ."
 p3213
 aS"Fueled by the broader goal of increasing the number of college graduates nationwide , the Gates Foundation promoted remedial interventions that proved successful , particularly low-income students and students of color , through the Lumina Foundation 's Achieving the Dream Initiative ."
 p3214
-aS"Fueled by the broader goal of increasing the number of college graduates nationwide , the Gates Foundation promoted remedial interventions that proved successful , particularly low-income students and students of color , through the Lumina Foundation 's Achieving the Dream Initiative ."
-p3215
 aS'Research from the Community College Research Center indicates that even students who successfully complete a developmental class often drop out of school before entering credit programs Acceleration Programs in Developmental EducationThis has led to Acceleration in Developmental Education with The Community College of Baltimore County and the California Completion Project perhaps the two leading proponents .'
-p3216
+p3215
 aS'On 1 August 1990 , the 29th Commandant of the Marine Corps , General Alfred M. Gray , Jr. , instituted the Art of War Studies program under the Marine Corps Command and Staff College .'
-p3217
+p3216
 aS"In 2011 , the College published the inaugural edition of the `` MCWAR Papers '' in cooperation with the Marine Corps University Press ."
-p3218
+p3217
 aS'BGen Dunlap served during the Spanish-American War , Philippine-American War , and World War I .'
+p3218
+aS'Mission and Vision -LRB- edit -RRB- Mission : The Marine Corps War College , as the senior PME institution of the Marine Corps , educates selected military and civilian professionals in order to develop critical thinkers , military strategists , joint warfighters , and strategic leaders who are prepared to meet the challenges of a complex and dynamic security environment .'
 p3219
 aS'Mission and Vision -LRB- edit -RRB- Mission : The Marine Corps War College , as the senior PME institution of the Marine Corps , educates selected military and civilian professionals in order to develop critical thinkers , military strategists , joint warfighters , and strategic leaders who are prepared to meet the challenges of a complex and dynamic security environment .'
 p3220
-aS'Mission and Vision -LRB- edit -RRB- Mission : The Marine Corps War College , as the senior PME institution of the Marine Corps , educates selected military and civilian professionals in order to develop critical thinkers , military strategists , joint warfighters , and strategic leaders who are prepared to meet the challenges of a complex and dynamic security environment .'
-p3221
 aS'Reforms of Wilhelm von Humboldt -LRB- edit -RRB- In 1809 , the Prussian philosopher and minister of education Wilhelm von Humboldt undertook a major reform of the Prussian education system , which was significantly influenced by this idealistic approach , and still forms the foundation of the contemporary German education system .'
-p3222
+p3221
 aS'Calvin E. Stowe , Henry Barnard , Horace Mann , George Bancroft and Joseph Cogswell all had a vigorous interest in German education .'
-p3223
+p3222
 aS'In 1843 , Mann traveled to Germany to investigate how the educational process worked .'
-p3224
+p3223
 aS'Majors and degrees -LRB- edit -RRB- Union College offers the Bachelor of Arts and the Bachelor of Science degrees .'
-p3225
+p3224
 aS'The Department of Psychology offers master of arts degrees in General , in both traditional and online formats , Clinical , Counseling and School Psychology .'
-p3226
+p3225
 aS'The Graduate Education Program offers the Master of Arts degrees in Elementary Education P-5 , HealthPE P-12 , LBD -LRB- Special Education -RRB- P-12 , Middle School 5-9 , Principalship , Reading and Writing Endorsement P12 , Secondary 8-12 and Rank I degrees in Elementary Education P-5 , LBD -LRB- Special Education -RRB- P-12 , Middle School 5-9 , Reading and Writing Endorsement P-12 , Supervisor of Instruction P-12 .'
-p3227
+p3226
 aS'Off-campus arrangements -LRB- edit -RRB- Union College is a cooperating member of the Kentucky Institute for International Studies -LRB- KIIS -RRB- .'
-p3228
+p3227
 aS'The Federal Pell Grant , Federal Supplemental Educational Opportunity Grant and Federal Work-Study programs of the federal government are sources of aid .'
-p3229
+p3228
 aS'It was created in 2003 from the consolidation of Prestonsburg Community College and Mayo Technical College .'
-p3230
+p3229
 aS'Big Sandy Community and Technical College is accredited by the Southern Association of Colleges and Schools -LRB- SACS -RRB- .'
-p3231
+p3230
 aS'The Student Activities Office encourages and is available for students wishing to develop an organization not yet established at Davidson .'
-p3232
+p3231
 aS'Davidson College a cappella -LRB- edit -RRB- Davidson has four a cappella singing groups : the Generals , the Delilahs , Androgyny , and the Nuances .'
-p3233
+p3232
 aS"The Davidson Generals , an all-male group , took first place in the `` Rockin ' the Forest '' intercollegiate a cappella competition at Wake Forest University in 2005 ."
-p3234
+p3233
 aS"The group also sang `` I 'm Yours '' with platinum recording artist Jason Mraz on his `` Music , Magic , and Make Peace Tour '' stop at Davidson College on April 19 , 2008 ."
-p3235
+p3234
 aS'Sigma Phi Epsilon , Kappa Alpha Order , Phi Gamma Delta , Connor House , Phi Delta Theta , Sigma Alpha Epsilon , Warner Hall , Kappa Sigma , Black Student Coalition , Rusk House , and Turner House all currently occupy houses on Patterson Court .'
-p3236
+p3235
 aS'Additionally , Kappa Alpha Psi , Alpha Phi Alpha , Alpha Kappa Alpha , and Delta Sigma Theta maintain a presence on campus .'
-p3237
+p3236
 aS"The NPHC sorority Delta Sigma Theta is the newest member to Davidson 's Patterson Court , having received its charter in the Spring of 2011 ."
-p3238
+p3237
 aS"Royal Shakespeare Company Residencies -LRB- edit -RRB- In 2002 , the Royal Shakespeare Company performed William Shakespeare 's The Merchant of Venice in residency at Davidson College , the RSC 's second residency at a US college or university ."
+p3238
+aS'In March 2005 , the RSC returned to Davidson and was in residency for most of the month , performing The Two Gentlemen of Verona and Julius Caesar by William Shakespeare , as well as numerous educational activities , many of which were open to the general public .'
 p3239
 aS'In March 2005 , the RSC returned to Davidson and was in residency for most of the month , performing The Two Gentlemen of Verona and Julius Caesar by William Shakespeare , as well as numerous educational activities , many of which were open to the general public .'
 p3240
-aS'In March 2005 , the RSC returned to Davidson and was in residency for most of the month , performing The Two Gentlemen of Verona and Julius Caesar by William Shakespeare , as well as numerous educational activities , many of which were open to the general public .'
-p3241
 aS"In February 2007 , the Royal Shakespeare Company performed Shakespeare 's Pericles and The Winter 's Tale , as well as Roy Williams 's Days of Significance , in the Duke Family Performance Hall ."
+p3241
+aS'Woodrow Wilson , the 28th President of the United States , and current NBA player Stephen Curry attended Davidson .'
 p3242
 aS'Woodrow Wilson , the 28th President of the United States , and current NBA player Stephen Curry attended Davidson .'
 p3243
-aS'Woodrow Wilson , the 28th President of the United States , and current NBA player Stephen Curry attended Davidson .'
-p3244
 aS"The college 's financial situation improved dramatically in 1856 with a $ 250,000 donation by Maxwell Chambers , making Davidson the wealthiest college south of Princeton ."
-p3245
+p3244
 aS'John Belk , the former mayor of Charlotte and one of the heirs of Belk Department Store , was a casualty of this decision , resigning in protest after more than six decades of affiliation with the college .'
+p3245
+aS'Modelled somewhat after the Acad fran , it was proposed by L. L. Zamenhof , creator of Esperanto , at the First World Congress of Esperanto , and founded soon after with the name Lingva Komitato -LRB- Language Committee -RRB- .'
 p3246
 aS'Modelled somewhat after the Acad fran , it was proposed by L. L. Zamenhof , creator of Esperanto , at the First World Congress of Esperanto , and founded soon after with the name Lingva Komitato -LRB- Language Committee -RRB- .'
 p3247
-aS'Modelled somewhat after the Acad fran , it was proposed by L. L. Zamenhof , creator of Esperanto , at the First World Congress of Esperanto , and founded soon after with the name Lingva Komitato -LRB- Language Committee -RRB- .'
-p3248
 aS'On 12 March 2012 , Gernot Glawe , who had been hosting and maintaining the German version of the site , announced its closing by the end of March 2012 and thanked his listeners for the 116.000 downloads of his 68 podcasts .'
-p3249
+p3248
 aS"History -LRB- edit -RRB- Main campus entranceThe university was founded in 1935 by students opposed to the socialist education mandated by Mexico 's then president , General L C ."
-p3250
+p3249
 aS'Medical School -LRB- edit -RRB- Institute of Biological ScienceIt is the oldest private medical school in Mexico .'
-p3251
+p3250
 aS'History -LRB- edit -RRB- In 1888 , three nuns from the order of the Faithful Companions of Jesus began teaching 23 Catholic students in the very first Catholic school in Edmonton .'
-p3252
+p3251
 aS'Catholic education in Edmonton has a proud tradition that dates back to before Alberta was a province .'
-p3253
+p3252
 aS'Early Learning -LRB- edit -RRB- Edmonton Catholic Schools offers a pre-Kindergarten program for children aged 3 11 and 4 12 .'
-p3254
+p3253
 aS'The building was designed in the Art Deco style by John F. Staub , with Paul Cret as supervising architect .'
-p3255
+p3254
 aS'In 1723 , the Comanche defeated the Lipan Apache people in a nine-day battle along the Rio del Fierro -LRB- Wichita River -RRB- .'
+p3255
+aS'The Wichita County meteorite originally weighed 145 kg and was obtained by Major Robert Neighbors , US Indian agent at Fort Belknap , in 1858-1859 , who presented it to the State Cabinet , and was displayed in the old Capitol building before it burned down , when this Coarse Octahedrite was turned over to the University of Texas .'
 p3256
 aS'The Wichita County meteorite originally weighed 145 kg and was obtained by Major Robert Neighbors , US Indian agent at Fort Belknap , in 1858-1859 , who presented it to the State Cabinet , and was displayed in the old Capitol building before it burned down , when this Coarse Octahedrite was turned over to the University of Texas .'
 p3257
@@ -6517,731 +6517,731 @@ aS'The Wichita County meteorite originally weighed 145 kg and was obtained by Ma
 p3258
 aS'The Wichita County meteorite originally weighed 145 kg and was obtained by Major Robert Neighbors , US Indian agent at Fort Belknap , in 1858-1859 , who presented it to the State Cabinet , and was displayed in the old Capitol building before it burned down , when this Coarse Octahedrite was turned over to the University of Texas .'
 p3259
-aS'The Wichita County meteorite originally weighed 145 kg and was obtained by Major Robert Neighbors , US Indian agent at Fort Belknap , in 1858-1859 , who presented it to the State Cabinet , and was displayed in the old Capitol building before it burned down , when this Coarse Octahedrite was turned over to the University of Texas .'
-p3260
 aS'A sister meteorite weighing 742 kg , the Red River meteorite , was discovered in 1808 but this Medium Octahedrite now resides in the Yale Peabody Museum of Natural History .'
+p3260
+aS'In 1961 , Brevard Engineering College purchased the property of the University of Melbourne -LRB- Florida -RRB- which became the main campus in the heart of Melbourne and Florida .'
 p3261
 aS'In 1961 , Brevard Engineering College purchased the property of the University of Melbourne -LRB- Florida -RRB- which became the main campus in the heart of Melbourne and Florida .'
 p3262
-aS'In 1961 , Brevard Engineering College purchased the property of the University of Melbourne -LRB- Florida -RRB- which became the main campus in the heart of Melbourne and Florida .'
-p3263
 aS'In the early 1990s Florida Institute of Technology changed its promotional identity from FIT to Florida Tech , to avoid confusion with the Fashion Institute of Technology at the State University of New York .'
-p3264
+p3263
 aS'This name change created some confusion in the Orlando and Florida area with the existing Florida Technical College and Florida Technological University , the former name of the University of Central Florida .'
-p3265
+p3264
 aS'More south campus construction began in 2008 with the start of the Scott Center for Autism Treatment and the Harris Center for Science and Engineering .'
-p3266
+p3265
 aS'On the main campus , the Ruth Funk Center for Textile Arts is rising quickly next to Evans Library .'
-p3267
+p3266
 aS'The HTI was moved to Jensen Beach , and became the School of Marine and Environmental Technology -LRB- SOMET -RRB- .'
-p3268
+p3267
 aS'Arts -LRB- edit -RRB- In 2009 , Florida Tech opened the Ruth Funk Center for Textile Arts .'
-p3269
+p3268
 aS'In 2011 , Florida Tech merged with the Brevard Art Museum to form the Foosaner Art Museum .'
-p3270
+p3269
 aS'METU NCC enjoys full academic and administrative support of METU in Ankara .'
-p3271
+p3270
 aS'All degree programs of METU NCC are approved by the METU Senate , and provide the same quality standards of the main campus in Ankara .'
-p3272
+p3271
 aS'The METU NCC academic staff are recruited and promoted in accordance with the same criteria set forth by METU Senate and Administrative Board .'
-p3273
+p3272
 aS'Today , METU NCC is an excellent campus with its high-tech infrastructure , very modern education buildings and laboratories , the Cultural and Convention Center , Administration - Library - IT Center Complex , Cafeteria , Shopping Center , Student Association Rooms , Dormitories , Staff Housing , Fitness-Wellness Club , Post Office , Book Store , Health & Counseling Center , Sports Complex , and an outdoor swimming pool .'
+p3273
+aS"History -LRB- edit -RRB- Early edition of Bibliotheca SacraDTS was founded as Evangelical Theological College in 1924 by Dr. Lewis Sperry Chafer , who taught the first class of 13 students , and William Henry Griffith Thomas , who was to have been the school 's first theology professor but died before the first classes began ."
 p3274
 aS"History -LRB- edit -RRB- Early edition of Bibliotheca SacraDTS was founded as Evangelical Theological College in 1924 by Dr. Lewis Sperry Chafer , who taught the first class of 13 students , and William Henry Griffith Thomas , who was to have been the school 's first theology professor but died before the first classes began ."
 p3275
-aS"History -LRB- edit -RRB- Early edition of Bibliotheca SacraDTS was founded as Evangelical Theological College in 1924 by Dr. Lewis Sperry Chafer , who taught the first class of 13 students , and William Henry Griffith Thomas , who was to have been the school 's first theology professor but died before the first classes began ."
-p3276
 aS'During his tenure , DTS opened a three-year MA program in Biblical Counseling and a two-year MA program in Biblical exegesis and linguistics .'
-p3277
+p3276
 aS'After that institution stopped granting out of state accreditation , DTS was accredited in 1969 by the Southern Association of Colleges and Schools and in 1994 by the Association of Theological Schools in the United States and Canada .'
-p3278
+p3277
 aS'Notable people -LRB- edit -RRB- In a 2009 study conducted by LifeWay Research , Protestant pastors named preachers who had most influenced them .'
-p3279
+p3278
 aS"Three DTS alumni were among the top ten : Chuck Swindoll -LRB- ' 63 -RRB- , founder of radio broadcast Insight for Living ; David Jeremiah -LRB- ' 67 -RRB- , founder of Turning Point Radio and Television Ministries ; and Andy Stanley -LRB- ' 85 -RRB- , founder of North Point Ministries ."
-p3280
+p3279
 aS"Founded in 1972 , the Selkirk College Students ' Union , Local 4 of the Canadian Federation of Students , is the collective voice of students attending the Castlegar and Nelson campuses of Selkirk College ."
-p3281
+p3280
 aS'The Saints play their home games at the Castelgar Recreation Complex .'
-p3282
+p3281
 aS'Also , during this time , Mr. Anson G. P. Dodge was staying in Jackson .'
+p3282
+aS'Mr. Dodge was son of William E. Dodge , a congressman of New York , millionaire , and philanthropist .'
 p3283
 aS'Mr. Dodge was son of William E. Dodge , a congressman of New York , millionaire , and philanthropist .'
 p3284
-aS'Mr. Dodge was son of William E. Dodge , a congressman of New York , millionaire , and philanthropist .'
-p3285
 aS'Mr. Dodge and Mr. Dickey would come in contact and Dickey would discuss the idea of the school to him .'
-p3286
+p3285
 aS"He told Dickey to relocate to Jackson , build up the morale and intellectual side , and he -LRB- Dodge -RRB- would build up the material side of Jackson : to allow it to become a `` great country '' ."
-p3287
+p3286
 aS'By October 1883 , more than $ 3,657 was raised for the building and met the conditions which Mr. Dodge had set for Mr. Dickey .'
-p3288
+p3287
 aS'Yet , Mr. Dickey had already acquired a deed from Mrs. Fannie Cockrell , of Irvine , for 13 interest in a site on September 3 , 1884 .'
-p3289
+p3288
 aS'Also , Mr. Dodge had failed to pay his balance and would end up selling Mr. Dickey his stock with Mr. Dickey assuming responsibility for paying the previous pledge that Mr. Dodge had made .'
+p3289
+aS'By July 1890 , Mr. Dickey had resigned his responsibilities as Principal of Jackson Academy to take over as editor of the Jackson Hustler , a newspaper in Jackson .'
 p3290
 aS'By July 1890 , Mr. Dickey had resigned his responsibilities as Principal of Jackson Academy to take over as editor of the Jackson Hustler , a newspaper in Jackson .'
 p3291
-aS'By July 1890 , Mr. Dickey had resigned his responsibilities as Principal of Jackson Academy to take over as editor of the Jackson Hustler , a newspaper in Jackson .'
-p3292
 aS'Mr. Dickey would stay in Jackson until 1895 when he moved to London and Kentucky to help with the building of the Bennett Memorial School which would come to be known as Sue Bennett College .'
-p3293
+p3292
 aS'Acquisition by Central University -LRB- edit -RRB- During the time in which Mr. Dickey resigned , the Board of Trustees still owed the contractor who helped build the building $ 4,000 by the summer of 1890 .'
-p3294
+p3293
 aS'On April 13 , 1891 , the property was sold to L.H. Blanton who was acting representative for Central University in Richmond and Kentucky .'
-p3295
+p3294
 aS'All the buildings in Richmond would become the basis of a new institution in 1906 known as Eastern Kentucky State Normal School which is today known as Eastern Kentucky University they embrace the Central University heritage .'
+p3295
+aS'In October 1906 , S.P. Lees Collegiate Institute , also just known as Lees Collegiate Institute , was given control to the Southern Synod of Kentucky -LRB- Presbyterian Church -RRB- who had once controlled Central University before the consolidation .'
 p3296
 aS'In October 1906 , S.P. Lees Collegiate Institute , also just known as Lees Collegiate Institute , was given control to the Southern Synod of Kentucky -LRB- Presbyterian Church -RRB- who had once controlled Central University before the consolidation .'
 p3297
-aS'In October 1906 , S.P. Lees Collegiate Institute , also just known as Lees Collegiate Institute , was given control to the Southern Synod of Kentucky -LRB- Presbyterian Church -RRB- who had once controlled Central University before the consolidation .'
-p3298
 aS"The Kentucky Synod would instate a `` President '' in place of the `` Head MasterHead Teacher '' position and , as well , keep the Board of Trustees ."
-p3299
+p3298
 aS'Jackson Hall replaced Little Hall after it had been struck by lightning and burned a few years earlier .'
-p3300
+p3299
 aS'Dr. Van Meter saves the college -LRB- edit -RRB- In the summer of 1928 , President Donald W. Miller left his position from Lees Junior College and Dr. Jesse O. Van Meter was hired as acting President .'
-p3301
+p3300
 aS'He wanted to make use of the field , and him being an avid supporter of athletics , he decided to make a field for the football team to play , even though Lees already played their games across the river in South Jackson .'
-p3302
+p3301
 aS"Yet , there was a semester or two during the years of America 's involvement in World War II -LRB- 1941 -RRB- where the college had to shut down for a semester because of low enrollment ."
-p3303
+p3302
 aS'In 1963 , the Board of Trustees revealed plans to build a whole new dorm room due to the overflow of Jackson Hall and the very small Bach Hall .'
-p3304
+p3303
 aS'Despite projects falling through , Lees Junior College would officially change its name to Lees College in 1984 .'
-p3305
+p3304
 aS"In several meetings with UK 's President Charlie Wethington , they found out that the college would have to be taken in by the community college in Hazard since before 1997 , Hazard Community College -LRB- and a few other community colleges -RRB- where components of the University of Kentucky ."
+p3305
+aS'So , in December 1995 , President Derrickson and the Board of Trustees signed the land and the facilities over to the University of Kentucky .'
 p3306
 aS'So , in December 1995 , President Derrickson and the Board of Trustees signed the land and the facilities over to the University of Kentucky .'
 p3307
-aS'So , in December 1995 , President Derrickson and the Board of Trustees signed the land and the facilities over to the University of Kentucky .'
-p3308
 aS'Meanwhile , in Italy the National Group for Work and Study on Infant Toddler Centers was formed .'
-p3309
+p3308
 aS'The non-profit Reggio Children-Loris Malaguzzi Centre Foundation was officially established on September 29 , 2011 at the Loris Malaguzzi International Centre of Reggio Emilia with the aim of Education and research to improve the lives of people and communities , in Reggio Emilia and in the world .'
-p3310
+p3309
 aS'Its Tigers athletic programs compete in the NCAA Division I Southeastern Conference .'
-p3311
+p3310
 aS'Missouri University of Science and Technology -LRB- Missouri S&T or Rolla -RRB- was founded in 1870 in Rolla .'
-p3312
+p3311
 aS'Its Tritons athletic programs compete alongside the Missouri S&T Miners in the GLVC .'
+p3312
+aS'University of Missouri Extension is a partnership of the University of Missouri campuses , Lincoln University , the people of Missouri through county extension councils , and the National Institute for Food and Agriculture of the U.S. Department of Agriculture .'
 p3313
 aS'University of Missouri Extension is a partnership of the University of Missouri campuses , Lincoln University , the people of Missouri through county extension councils , and the National Institute for Food and Agriculture of the U.S. Department of Agriculture .'
 p3314
-aS'University of Missouri Extension is a partnership of the University of Missouri campuses , Lincoln University , the people of Missouri through county extension councils , and the National Institute for Food and Agriculture of the U.S. Department of Agriculture .'
-p3315
 aS'Missouri Research Park is a 200-acre -LRB- 80.9 -RRB- park in Weldon Spring created in 1985 .'
-p3316
+p3315
 aS"In 1966 , under the leadership of Perry Gordy , who replaced Richardson in 1965 , the school merged with the Muscogee Area Vocational-Technical School at Columbus Tech 's present-day location ."
-p3317
+p3316
 aS'Eugene Demonet succeeded Hartline as president of the school in 1995 .'
-p3318
+p3317
 aS"In 2007 the DTAE was renamed the Technical College System of Georgia , an entity comprising the thirty-four colleges under its administration , and in 2008 the DTAE 's name officially changed to TCSG ."
-p3319
+p3318
 aS'PCC first received school accreditation from the Southern Association of Colleges and Schools in 1969 .'
-p3320
+p3319
 aS'Academic profile -LRB- edit -RRB- PCC offers 1,002 classes via the Internet , 465 hybrid classes , and 2,700 traditional courses .'
-p3321
+p3320
 aS"PCC offers 44 associate degree programs , certificate programs , 22 diploma programs , and 18 University Transfer programs leading to bachelors ' degrees at four-year institutions ."
-p3322
+p3321
 aS'PCC also has a large Adult Education and Community Service division .'
+p3322
+aS'ACA Publications -LRB- edit -RRB- ACA Papers on International Cooperation in Education -LRB- edit -RRB- In 1999 , ACA started its own monograph series , the ACA Papers on International Cooperation in Education which are published by Lemmens Medien in Bonn and Germany .'
 p3323
 aS'ACA Publications -LRB- edit -RRB- ACA Papers on International Cooperation in Education -LRB- edit -RRB- In 1999 , ACA started its own monograph series , the ACA Papers on International Cooperation in Education which are published by Lemmens Medien in Bonn and Germany .'
 p3324
-aS'ACA Publications -LRB- edit -RRB- ACA Papers on International Cooperation in Education -LRB- edit -RRB- In 1999 , ACA started its own monograph series , the ACA Papers on International Cooperation in Education which are published by Lemmens Medien in Bonn and Germany .'
-p3325
 aS'Other Publications on Internationalisation of Higher Education -LRB- edit -RRB- ACA also publishes the ACA Newsletter Education Europe , a monthly newsletter which provides policy-makers and practitioners world-wide with concise and up-to-date information on the developments in higher education policy at the national , European and global level .'
-p3326
+p3325
 aS'Apart from the ACA Papers series and the ACA Newsletter , ACA publishes also a collection of reference works about trends and data of internationalisation in Europe and around the world .'
-p3327
+p3326
 aS'The first conference series was held at Glynd University in Wrexham in 1981 , chaired by Professor Glyn O Phillips -LRB- also of Glynd University -RRB- , and all subsequent conferences have taken place at the same location and with the same chairman .'
-p3328
+p3327
 aS'Until 2008 , Glynd University was known as the North-East Wales Institute of Higher Education -LRB- NEWI -RRB- .'
-p3329
+p3328
 aS"The 2013 conference -LRB- edit -RRB- Entitled `` Gums and Stabilisers for the Food Industry 17 '' will take place in June 2013 in Wrexham , North Wales.Org anizing committee : Dr M. Capelle , Nestle , Lausanne , SwitzerlandDr R. S. Farr , Unilever Research and Development , Colowrth House , UKDr T. J. Foster , University of Nottingham , UKMr H. Hughes -LRB- Administrative Secretary -RRB- , Glynd UniversityDr A. Imeson , FMC CorporationDr A. Koliandris , MarsEffem GmbH , GermanyDr Johann Lukanowski , DoehlerProfessor E. R. Morris , University College Cork , IrelandProfessor B. S. Murray , School of Food Science and Nutrition , Leeds , UKProfessor G. O. Phillips -LRB- Chairman -RRB- , Phillips Hydrocolloids Research LtdDr C. Rolin , CP Kelco , DenmarkDr F. Spyropoulos , University of Birmingham , UKDr G. Sworn , Danisco , FranceDr A. Tziboula-Clarke , ISP -LRB- International Specialty Products -RRB- Dr C. Viebke , Kerry IngredientsDr P. Wilde , IFR , Norwich , UKProfessor P.A. Williams -LRB- Scientific Secretary -RRB- , Glynd UniversityIndustrial sponsors :"
-p3330
+p3329
 aS'The case -LRB- edit -RRB- After being rejected by the University of Texas School of Law in 1992 , Cheryl J. Hopwood filed a federal lawsuit against the University on September 29 , 1992 in the United States District Court for the Western District of Texas .'
-p3331
+p3330
 aS"Ultimately , three white males , Douglas Carvell , Kenneth Elliott , and David Rogers , joined the existing lawsuit as plaintiffs alleging claims similar to Hopwood 's ."
-p3332
+p3331
 aS"Texas Monthly editor Paul Burka later described Cheryl Hopwood as `` the perfect plaintiff to question the fairness of reverse discrimination '' because of her academic credentials and the personal hardships she had endured -LRB- including a young daughter suffering from a muscular disease -RRB- ."
-p3333
+p3332
 aS'The University appealed the decision to the U.S. Supreme Court , which declined to review the case on July 1 , 1996 .'
-p3334
+p3333
 aS"In an opinion on the denial of certiorari , Justice Ruth Bader Ginsburg , joined by Justice David Souter , noted that the issue of the constitutionality of race in admission was `` an issue of great national importance . ''"
-p3335
+p3334
 aS'Later developments -LRB- edit -RRB- On January 15 , 1997 , William P. Hobby , Jr. , former Lieutenant Governor of Texas and then Chancellor of the University of Houston System , sought a clarification of the application of Hopwood from Texas Attorney General Dan Morales .'
-p3336
+p3335
 aS"On June 23 , 2003 , the Supreme Court abrogated Hopwood in Grutter v. Bollinger , 539 U.S. 306 -LRB- 2003 -RRB- in which the high court found that the United States Constitution `` does not prohibit the law school 's narrowly tailored use of race in admissions decisions to further a compelling interest in obtaining the educational benefits that flow from a diverse student body . ''"
-p3337
+p3336
 aS'The Long Center offers multiple performance and event spaces , including the Michael & Susan Dell Hall and the Debra and Kevin Rollins Studio Theatre .'
-p3338
+p3337
 aS'Contents External linksHistory and Facilities -LRB- edit -RRB- The City of Austin leased the Lester E. Palmer Auditorium to the nonprofit group , Arts Center Stage , for renovation to create a performing arts venue in 1998 .'
-p3339
+p3338
 aS'LongCenter-2010mAn original plan developed by Chicago architects , Skidmore , Owings & Merrill was commissioned November 1999 , and by August 2001 , the Long Center had raised over $ 61 million of the $ 110 goal .'
-p3340
+p3339
 aS'Phase I of the building project included the Michael & Susan Dell Hall -LRB- 2,300 seats -RRB- and the Debra & Kevin Rollins Studio Theatre -LRB- 240 seats -RRB- .'
-p3341
+p3340
 aS'On April 21 , 1831 , the new institution received its charter and was incorporated as the University of the City of New York by the New York State Legislature ; older documents often refer to it by that name .'
-p3342
+p3341
 aS"In 1835 , the School of Law , NYU 's first professional school , was established ."
-p3343
+p3342
 aS'The University Heights campus , now home to Bronx Community CollegeWhereas NYU had its Washington Square campus since its founding , the university purchased a campus at University Heights in the Bronx because of overcrowding on the old campus .'
-p3344
+p3343
 aS"NYU 's move to the Bronx occurred in 1894 , spearheaded by the efforts of Chancellor Henry Mitchell MacCracken ."
-p3345
+p3344
 aS'In 1950 , NYU was elected to the Association of American Universities , a nonprofit organization of leading public and private research universities .'
-p3346
+p3345
 aS'Feeling the pressures of imminent bankruptcy , NYU President James McNaughton Hester negotiated the sale of the University Heights campus to the City University of New York , which occurred in 1973 .'
-p3347
+p3346
 aS'After the sale of the Bronx campus , University College merged with Washington Square College .'
-p3348
+p3347
 aS'NYU was the founding member of the League of World Universities , an international organization consisting of rectors and presidents from urban universities across six continents .'
-p3349
+p3348
 aS'Cultural setting -LRB- edit -RRB- Washington Square and Greenwich Village have been hubs of cultural life in New York City since the early 19th century .'
+p3349
+aS'Samuel F.B. Morse , the first chair of Painting and Sculpture at NYU , and Daniel Huntington were early tenants of the Old University Building in the mid-19th century .'
 p3350
 aS'Samuel F.B. Morse , the first chair of Painting and Sculpture at NYU , and Daniel Huntington were early tenants of the Old University Building in the mid-19th century .'
 p3351
-aS'Samuel F.B. Morse , the first chair of Painting and Sculpture at NYU , and Daniel Huntington were early tenants of the Old University Building in the mid-19th century .'
-p3352
 aS'In the 1870s , sculptors Augustus Saint-Gaudens and Daniel Chester French lived and worked near the Square .'
-p3353
+p3352
 aS"Famed residents of this time include Eugene O'Neill , John Sloan , and Maurice Prendergast ."
-p3354
+p3353
 aS'In the 1930s , the abstract expressionists Jackson Pollock and Willem de Kooning , and the realists Edward Hopper and Thomas Hart Benton had studios around Washington Square .'
-p3355
+p3354
 aS'In the 1960s the area became one of the centers of the beat and folk generation , when Allen Ginsberg and Bob Dylan settled there .'
-p3356
+p3355
 aS'As a result , the EPA ranked NYU as one of the greenest colleges in the country in its annual College & University Green Power Challenge .'
-p3357
+p3356
 aS'With approximately 11,000 undergraduate and graduate residents , NYU had the seventh-largest university housing system in the U.S. as of 2007 , and one of the largest among private schools .'
-p3358
+p3357
 aS'The Washington Square Arch is an unofficial symbol of NYU .'
+p3358
+aS'Until 2007 , NYU had held its commencement ceremonies in Washington Square Park , but moved the ceremonies to Yankee Stadium in 2008 because of renovations to Washington Square .'
 p3359
 aS'Until 2007 , NYU had held its commencement ceremonies in Washington Square Park , but moved the ceremonies to Yankee Stadium in 2008 because of renovations to Washington Square .'
 p3360
-aS'Until 2007 , NYU had held its commencement ceremonies in Washington Square Park , but moved the ceremonies to Yankee Stadium in 2008 because of renovations to Washington Square .'
-p3361
 aS"In the 1990s , NYU became a `` two square '' university by building a second community around Union Square , in close proximity to Washington Square ."
-p3362
+p3361
 aS'Recently , the Skirball Center hosted important speeches on foreign policy by John Kerry and Al Gore .'
-p3363
+p3362
 aS'Designed by Philip Johnson and Richard Foster , the 12-story , 425,000-square-foot -LRB- 39,500 -RRB- structure sits on the southern edge of Washington Square Park -LRB- at 70 Washington Square South -RRB- and is the flagship of an eight-library , 4.5 million-volume system .'
+p3363
+aS'The Fales Collection houses one of the finest collections of English and American fiction in the United States , the unique Downtown Collection , documenting the New York literary avante-garde arts scene from the 1970s to the present , and the Food and Cookery Collection , which documents American food history with a focus on New York City .'
 p3364
 aS'The Fales Collection houses one of the finest collections of English and American fiction in the United States , the unique Downtown Collection , documenting the New York literary avante-garde arts scene from the 1970s to the present , and the Food and Cookery Collection , which documents American food history with a focus on New York City .'
 p3365
 aS'The Fales Collection houses one of the finest collections of English and American fiction in the United States , the unique Downtown Collection , documenting the New York literary avante-garde arts scene from the 1970s to the present , and the Food and Cookery Collection , which documents American food history with a focus on New York City .'
 p3366
-aS'The Fales Collection houses one of the finest collections of English and American fiction in the United States , the unique Downtown Collection , documenting the New York literary avante-garde arts scene from the 1970s to the present , and the Food and Cookery Collection , which documents American food history with a focus on New York City .'
-p3367
 aS'Bobst Library also houses the Tamiment Library , one of the finest collections in the world for scholarly research in labor history , socialism , anarchism , communism , and American radicalism .'
-p3368
+p3367
 aS'New facilities -LRB- edit -RRB- Since the early 2000s , NYU has developed new facilities on and around its Washington Square Campus .'
-p3369
+p3368
 aS'Other NYU Centers across the city include NYU Hospital for Joint Diseases and the Bellevue Hospital Center .'
-p3370
+p3369
 aS"NYU 's Silver School of Social Work -LRB- formerly Ehrenkranz School of Social Work -RRB- manages branch campus programs in Westchester County at Manhattanville College , in Rockland County at St. Thomas Aquinas College , and on Staten Island at the City University of New York 's College of Staten Island ."
-p3371
+p3370
 aS'In Sterling Forest , near Tuxedo and New York , NYU has a research facility that contains institutes , in particular the Nelson Institute of Environmental Medicine .'
-p3372
+p3371
 aS'The New York University Polytechnic School of Engineering has locations in Brooklyn and Manhattan .'
-p3373
+p3372
 aS'NYU has international houses on its Manhattan campus , including the Deutsches Haus , La Maison Fran , Casa Italiana Zerilli Marim , the Glucksman Ireland House , the King Juan Carlos I of Spain Center , the Hagop Kevorkian Center , an Africa House and a China House .'
-p3374
+p3373
 aS"Campuses abroad -LRB- edit -RRB- Tisch School of the Arts , Asia was NYU 's first branch campus abroad ."
-p3375
+p3374
 aS'Anticipated enrolment figures were not achieved , financial irregularities were alleged and President Pari Sara Shirazi was dismissed from her post by NYU in November 2011 .'
-p3376
+p3375
 aS'One of the most noteworthy is the 57-acre -LRB- 230,000 -RRB- campus of NYU Florence Villa LaPietra in Italy , bequeathed by the late Sir Harold Acton to NYU in 1994 .'
-p3377
+p3376
 aS"ECNU 's president Yu Lizhong will be the chancellor and play a major role in government relations while Jeffrey S. Lehman , former president of Cornell amongst other positions , will serve as vice chancellor and have `` free rein in academic affairs '' ."
+p3377
+aS'In spring 2014 , NYU will open a new campus in Paris , in the student area of the Quartier Latin , where NYU Law will be setting up an EU Regulatory Policy Clinic taught by Alberto Alemanno and Vincent Chauvet .'
 p3378
 aS'In spring 2014 , NYU will open a new campus in Paris , in the student area of the Quartier Latin , where NYU Law will be setting up an EU Regulatory Policy Clinic taught by Alberto Alemanno and Vincent Chauvet .'
 p3379
 aS'In spring 2014 , NYU will open a new campus in Paris , in the student area of the Quartier Latin , where NYU Law will be setting up an EU Regulatory Policy Clinic taught by Alberto Alemanno and Vincent Chauvet .'
 p3380
-aS'In spring 2014 , NYU will open a new campus in Paris , in the student area of the Quartier Latin , where NYU Law will be setting up an EU Regulatory Policy Clinic taught by Alberto Alemanno and Vincent Chauvet .'
-p3381
 aS"NYU received a grade of `` B '' on the College Sustainability Report Card 2010 from the Sustainable Endowments Institute ."
-p3382
+p3381
 aS'The EPA ranked NYU as one of the greenest colleges in the country in its annual College & University Green Power Challenge .'
-p3383
+p3382
 aS'From the early 1980s the NEA All-Pro team was released in the World Almanac which was a NEA publication .'
-p3384
+p3383
 aS'The Defensive Player of the Year was named after Chicago Bears founder George S. Halas and its inception was 1966 , the Rookie of the Year award was named after NFL commissioner Bert Bell and began in 1964 .'
-p3385
+p3384
 aS"In the early 1960s the NEA began awarding the Third Down Trophy that symbolized each team 's MVP ."
-p3386
+p3385
 aS"The village green is the social hub of the University of Waikato 's Hamilton campus ."
-p3387
+p3386
 aS"One of three lakes on the University of Waikato 's Hamilton campus ."
-p3388
+p3387
 aS'The University Council works with Te R Manukura , made up of representatives of the 16 iwi -LRB- M tribal -RRB- authorities in the University catchment area .'
+p3388
+aS"Accreditations and Rankings -LRB- edit -RRB- Accreditations -LRB- edit -RRB- Waikato Management School achieved Triple Crown status in 2006 by gaining accreditation from the three leading international business school accreditation bodies , AACSB , EQUIS and AMBA - only 1 % of the world 's business schools , 59 worldwide , have met the strict standards of all three accreditation bodies ."
 p3389
 aS"Accreditations and Rankings -LRB- edit -RRB- Accreditations -LRB- edit -RRB- Waikato Management School achieved Triple Crown status in 2006 by gaining accreditation from the three leading international business school accreditation bodies , AACSB , EQUIS and AMBA - only 1 % of the world 's business schools , 59 worldwide , have met the strict standards of all three accreditation bodies ."
 p3390
-aS"Accreditations and Rankings -LRB- edit -RRB- Accreditations -LRB- edit -RRB- Waikato Management School achieved Triple Crown status in 2006 by gaining accreditation from the three leading international business school accreditation bodies , AACSB , EQUIS and AMBA - only 1 % of the world 's business schools , 59 worldwide , have met the strict standards of all three accreditation bodies ."
-p3391
 aS'Waikato Management School is also accredited by the Public Relations Society of America .'
-p3392
+p3391
 aS'The Waikato MBA is delivered in partnership with the Waikato-Tainui College for Research and Development .'
-p3393
+p3392
 aS'The University Bachelor of Engineering degrees are all internationally accredited by the Institute of Professional Engineers of New Zealand -LRB- IPENZ -RRB- .'
-p3394
+p3393
 aS'Nevertheless , the University of Waikato has never been listed within the top 500 universities by the ARWU .'
-p3395
+p3394
 aS'Freshmen classes started for 1,227 undergraduate students in September 1965 at a renovated building in the Park Square area of downtown Boston .'
-p3396
+p3395
 aS'The Founding Day Convocation was held December 10 , 1966 , at the Prudential Center in Boston .'
-p3397
+p3396
 aS'At one point in his career , Weese had designed the Metropolitan Correction Center in Chicago .'
-p3398
+p3397
 aS'A scandal erupted after it was learned that MBM paid State Senators Joseph DiCarlo and Ronald MacKenzie $ 40,000 in exchange for a favorable report from the committee .'
-p3399
+p3398
 aS'DiCarlo and MacKenzie were convicted of extortion .'
+p3399
+aS'In 2004 , a new Campus Center was opened , designed by the Boston-based architectural firm of Kallmann McKinnell & Wood and built by Suffolk Construction at a cost of $ 80 million .'
 p3400
 aS'In 2004 , a new Campus Center was opened , designed by the Boston-based architectural firm of Kallmann McKinnell & Wood and built by Suffolk Construction at a cost of $ 80 million .'
 p3401
-aS'In 2004 , a new Campus Center was opened , designed by the Boston-based architectural firm of Kallmann McKinnell & Wood and built by Suffolk Construction at a cost of $ 80 million .'
-p3402
 aS'On June 2 , 2006 , Barack Obama addressed his commencement speech at UMass Boston to the graduating students .'
-p3403
+p3402
 aS"J. Keith Motley is the university 's first African American chancellor ."
-p3404
+p3403
 aS'In 2009 , the nearby Bayside Expo Center property was lost in a foreclosure to a Florida-based real estate firm , LNRCMAT .'
-p3405
+p3404
 aS'- Massachusetts Agricultural College -LRB- M.A. C -RRB- is founded in Amherst .'
-p3406
+p3405
 aS'- State College at Boston renamed Boston State College .'
-p3407
+p3406
 aS'- Boston State College merges with UMass Boston .'
-p3408
+p3407
 aS"Authors include Clayton Christensen who is Harvard professor and New York Times bestselling author , Robert Spence who invented the glass visualization that is familiar to anyone with an iPhone or iMac , and Stu Card who performed the research that led to the computer mouse 's commercial introduction by Xerox ."
-p3409
+p3408
 aS'The Executive Board currently include Don Norman , Ken Friedman , Bill Buxton , Irene Au , Michael Arent , Daniel Rosenberg , Jonas Lowgren and Olof Schybergson .'
-p3410
+p3409
 aS'Taiwan -LRB- edit -RRB- Taiwan has more than 150 universities -LRB- 23 were established after the 1980s -RRB- , while only 13 of them are public universities .'
-p3411
+p3410
 aS'See also : List of universities in ItalyIn The Netherlands , almost all universities are public and are funded by the Ministry of Education .'
-p3412
+p3411
 aS"^ Petty , G -LRB- 2006 -RRB- Evidence based teaching Cheltenham : Nelson Thornes ^ Hattie , J -LRB- 2003 -RRB- Visible Learning Oxford : Routledge ^ Marzano , R -LRB- 2001 -RRB- Classroom Instruction that Works Alexandria and VA : ASCD ^ Geake , J -LRB- 2009 -RRB- The Brain at School Maidenhead : Open University Press ^ Sousa , D -LRB- 2001 -RRB- How the brain learns Thousand Oaks : Corwen Press ^ Dommett , E et al -LRB- 2011 -RRB- Learning and the Brain Alresford : Teachers ' Pocketbooks ^ Joyce ."
-p3413
+p3412
 aS'History -LRB- edit -RRB- Spalding University is the oldest Catholic university west of the Alleghenies .'
-p3414
+p3413
 aS"In 1920 , the Sisters opened Nazareth College in Louisville and Kentucky 's first , four-year , Catholic college for women ."
-p3415
+p3414
 aS'Spalding was a leader in the two year RN to BSN weekend only college program .'
-p3416
+p3415
 aS'The MFA Program is accredited by the Southern Association of Colleges and Schools and is a member of the Association of Writers & Writing Programs .'
-p3417
+p3416
 aS'Kentucky School of Art -LRB- edit -RRB- Founded in 2010 , the Kentucky School of Art is housed within Spalding University .'
-p3418
+p3417
 aS'This Italianate building was designed and built by architect Henry Whitestone for the family of Joseph T. Tompkins , a wealthy dry-goods merchant and importer .'
-p3419
+p3418
 aS'Later , the Buchanans and Rankins lived here .'
-p3420
+p3419
 aS"Architect Whitestone introduced the Italianate style to Louisville , using Rome 's Palazzo Farnese for his model ."
-p3421
+p3420
 aS'As successive owners occupied the mansion , they added such treasures as a hand-tooled leather ceiling from Florence for one parlor , ebony mantels , and a large hand-carved hat-rack , which Mr. Buchanan purchased at the New Orleans Exposition .'
-p3422
+p3421
 aS"When Dr. John Coolidge , one-time Director of Harvard 's Fogg Art Museum , visited Louisville , he said that Spalding University has the most marvelous display of nineteenth-century stained glass he had ever seen ."
-p3423
+p3422
 aS"Egan Leadership Center -LRB- edit -RRB- The Egan Leadership Center is located at 901 South Fourth Street and is named after Spalding 's former President , Sister Eileen Egan ."
-p3424
+p3423
 aS"Morrison Hall -LRB- edit -RRB- Morrison Hall , located at the southern boundary of Spalding University 's campus , provides on-campus housing for both undergraduate and graduate students ."
+p3424
+aS'Spalding University Center -LRB- edit -RRB- In 1963 Spalding University purchased the former Columbia Building and since them has used this structure for administrative , recreational , athletic , religious , and cultural events , including public lectures by notable public figures many of which have been open to the public .'
 p3425
 aS'Spalding University Center -LRB- edit -RRB- In 1963 Spalding University purchased the former Columbia Building and since them has used this structure for administrative , recreational , athletic , religious , and cultural events , including public lectures by notable public figures many of which have been open to the public .'
 p3426
-aS'Spalding University Center -LRB- edit -RRB- In 1963 Spalding University purchased the former Columbia Building and since them has used this structure for administrative , recreational , athletic , religious , and cultural events , including public lectures by notable public figures many of which have been open to the public .'
-p3427
 aS'-LRB- citation needed -RRB- The building was designed by Louisville architect Thomas J. Nolan in 1925 in a classic style in accordance with Vignola .'
+p3427
+aS'The Golden Eagles , formerly known as the Pelicans , are a member of the St. Louis Intercollegiate Athletic Conference -LRB- SLIAC -RRB- .'
 p3428
 aS'The Golden Eagles , formerly known as the Pelicans , are a member of the St. Louis Intercollegiate Athletic Conference -LRB- SLIAC -RRB- .'
 p3429
-aS'The Golden Eagles , formerly known as the Pelicans , are a member of the St. Louis Intercollegiate Athletic Conference -LRB- SLIAC -RRB- .'
-p3430
 aS'Seventy acres of land and six buildings at the Park were donated by the Brown Foundation of Houston and Texas which had purchased the former Shumaker Naval Ammunition Depot for redevelopment .'
-p3431
+p3430
 aS'Today , SAU Tech is a two-year college specializing in technical training and offers the first two years of a university transfer program in General Education , Teacher Education , and Business Administration .'
-p3432
+p3431
 aS'The college also operates the SAU Tech Career Academy , the Ouachita County Adult Education Center , the Arkansas Fire Training Academy , and the Arkansas Environmental Training Academy .'
-p3433
+p3432
 aS'Recently , the Columbia and Dallas County Adult Education Centers joined the SAU Tech list of programs and facilities .'
-p3434
+p3433
 aS'The SAU Tech Chancellor reports directly to the SAU Board of Trustees .'
-p3435
+p3434
 aS'First diploma awarded by Yale College , granted to Nathaniel Chauncey , 1702 .'
-p3436
+p3435
 aS'The feud caused the Mathers to champion the success of the Collegiate School in the hope that it would maintain the Puritan religious orthodoxy in a way that Harvard had not .'
+p3436
+aS"In 1718 , at the behest of either Rector Samuel Andrew or the colony 's Governor Gurdon Saltonstall , Cotton Mather contacted a successful businessman named Elihu Yale , who lived in Wales but had been born in Boston and whose father David had been one of the original settlers in New Haven , to ask him for financial help in constructing a new building for the college ."
 p3437
 aS"In 1718 , at the behest of either Rector Samuel Andrew or the colony 's Governor Gurdon Saltonstall , Cotton Mather contacted a successful businessman named Elihu Yale , who lived in Wales but had been born in Boston and whose father David had been one of the original settlers in New Haven , to ask him for financial help in constructing a new building for the college ."
 p3438
-aS"In 1718 , at the behest of either Rector Samuel Andrew or the colony 's Governor Gurdon Saltonstall , Cotton Mather contacted a successful businessman named Elihu Yale , who lived in Wales but had been born in Boston and whose father David had been one of the original settlers in New Haven , to ask him for financial help in constructing a new building for the college ."
-p3439
 aS"Elihu Yale was away in India when the news of the school 's name change reached his home in Wrexham and Wales , a trip from which he never returned ."
-p3440
+p3439
 aS"Porter objected to Sumner 's use of a textbook by Herbert Spencer that espoused agnostic materialism because it might harm students ."
-p3441
+p3440
 aS"In 1887 , under an act passed by the Connecticut General Assembly , Yale gained its current , and shorter , name of `` Yale University . ''"
-p3442
+p3441
 aS'The fictional , turn-of-the-20th-century Yale man Frank Merriwell embodied the heroic ideal without racial prejudice , and his fictional successor Frank Stover in the novel Stover at Yale -LRB- 1911 -RRB- questioned the business mentality that had become prevalent at the school .'
-p3443
+p3442
 aS'Between 1892 , when Harvard and Yale met in the first intercollegiate debate , and 1909 , the year of the first Triangular Debate of Harvard , Yale , and Princeton , the rhetoric , symbolism , and metaphors used in athletics were used to frame these early debates .'
-p3444
+p3443
 aS'President Arthur Hadley of Yale , A. Lawrence Lowell of Harvard , and Woodrow Wilson of Princeton worked to develop moderate changes to reduce injuries .'
-p3445
+p3444
 aS'In 1887 , as the college continued to grow under the presidency of Timothy DwightV , Yale College was renamed Yale University .'
-p3446
+p3445
 aS'The university would later add the Yale School of Music -LRB- 1894 -RRB- , the Yale School of Forestry & Environmental Studies -LRB- founded by Gifford Pinchot in 1901 -RRB- , the Yale School of Public Health -LRB- 1915 -RRB- , the Yale School of Nursing -LRB- 1923 -RRB- , the Yale School of Drama -LRB- 1955 -RRB- , the Yale Physician Associate Program -LRB- 1973 -RRB- , and the Yale School of Management -LRB- 1976 -RRB- .'
-p3447
+p3446
 aS'Behavioral sciences -LRB- edit -RRB- Between 1925 and 1940 , philanthropic foundations , especially ones connected with the Rockefellers , contributed about $ 7 to support the Yale Institute of Human Relations and the affiliated Yerkes Laboratories of Primate Biology .'
-p3448
+p3447
 aS'The behavioral scientists at Yale , led by President James R. Angell and psychobiologist Robert M. Yerkes , tapped into foundation largesse by crafting research programs aimed to investigate , then suggest , ways to control , sexual and social behavior .'
-p3449
+p3448
 aS'Medicine -LRB- edit -RRB- Milton Winternitz led the Yale Medical School as its dean from 1920 to 1935 .'
-p3450
+p3449
 aS'History and American Studies -LRB- edit -RRB- The American studies program reflected the worldwide anti-Communist ideological struggle .'
+p3450
+aS'Norman Holmes Pearson , who worked for the Office of Strategic Studies in London during World War II , returned to Yale and headed the new American studies program , in which scholarship quickly became an instrument of promoting liberty .'
 p3451
 aS'Norman Holmes Pearson , who worked for the Office of Strategic Studies in London during World War II , returned to Yale and headed the new American studies program , in which scholarship quickly became an instrument of promoting liberty .'
 p3452
 aS'Norman Holmes Pearson , who worked for the Office of Strategic Studies in London during World War II , returned to Yale and headed the new American studies program , in which scholarship quickly became an instrument of promoting liberty .'
 p3453
-aS'Norman Holmes Pearson , who worked for the Office of Strategic Studies in London during World War II , returned to Yale and headed the new American studies program , in which scholarship quickly became an instrument of promoting liberty .'
-p3454
 aS'Also during the 1940s and 1950s , Wyoming millionaire William R. Coe made large contributions to the American studies programs at Yale University and at the University of Wyoming .'
-p3455
+p3454
 aS'In 1966 , Yale began discussions with its sister school Vassar College about merging to foster coeducation at the undergraduate level .'
-p3456
+p3455
 aS"While unsuccessful in the courts , the legal reasoning behind the case changed the landscape of sex discrimination law and resulted in the establishment of Yale 's Grievance Board and the Yale Women 's Center ."
-p3457
+p3456
 aS"Under President Levin , Yale has financially supported many of New Haven 's efforts to reinvigorate the city ."
-p3458
+p3457
 aS"In 2007 outgoing Yale President Rick Levin characterized Yale 's institutional priorities : `` First , among the nation 's finest research universities , Yale is distinctively committed to excellence in undergraduate education ."
-p3459
+p3458
 aS'Yale-educated Presidents since the end of the Vietnam War include Gerald Ford , George H.W. Bush , Bill Clinton , and George W. Bush , and major-party nominees during this period include John Kerry -LRB- 2004 -RRB- , Joseph Lieberman -LRB- Vice President , 2000 -RRB- , and Sargent Shriver -LRB- Vice President , 1972 -RRB- .'
+p3459
+aS"Richard H. Brodhead , former dean of Yale College and now president of Duke University , stated : `` We do give very significant attention to orientation to the community in our admissions , and there is a very strong tradition of volunteerism at Yale . ''"
 p3460
 aS"Richard H. Brodhead , former dean of Yale College and now president of Duke University , stated : `` We do give very significant attention to orientation to the community in our admissions , and there is a very strong tradition of volunteerism at Yale . ''"
 p3461
-aS"Richard H. Brodhead , former dean of Yale College and now president of Duke University , stated : `` We do give very significant attention to orientation to the community in our admissions , and there is a very strong tradition of volunteerism at Yale . ''"
+aS"Yale historian Gaddis Smith notes `` an ethos of organized activity '' at Yale during the 20th century that led John Kerry to lead the Yale Political Union 's Liberal Party , George Pataki the Conservative Party , and Joseph Lieberman to manage the Yale Daily News ."
 p3462
 aS"Yale historian Gaddis Smith notes `` an ethos of organized activity '' at Yale during the 20th century that led John Kerry to lead the Yale Political Union 's Liberal Party , George Pataki the Conservative Party , and Joseph Lieberman to manage the Yale Daily News ."
 p3463
-aS"Yale historian Gaddis Smith notes `` an ethos of organized activity '' at Yale during the 20th century that led John Kerry to lead the Yale Political Union 's Liberal Party , George Pataki the Conservative Party , and Joseph Lieberman to manage the Yale Daily News ."
-p3464
 aS'New York Times correspondent Elisabeth Bumiller and The Atlantic Monthly correspondent James Fallows credit the culture of community and cooperation that exists between students , faculty , and administration , which downplays self-interest and reinforces commitment to others .'
+p3464
+aS"When challenged on the distinction between Dukakis 's Harvard connection and his own Yale background , he said that , unlike Harvard , Yale 's reputation was `` so diffuse , there is n't a symbol , I do n't think , in the Yale situation , any symbolism in it '' and said Yale did not share Harvard 's reputation for `` liberalism and elitism '' ."
 p3465
 aS"When challenged on the distinction between Dukakis 's Harvard connection and his own Yale background , he said that , unlike Harvard , Yale 's reputation was `` so diffuse , there is n't a symbol , I do n't think , in the Yale situation , any symbolism in it '' and said Yale did not share Harvard 's reputation for `` liberalism and elitism '' ."
 p3466
 aS"When challenged on the distinction between Dukakis 's Harvard connection and his own Yale background , he said that , unlike Harvard , Yale 's reputation was `` so diffuse , there is n't a symbol , I do n't think , in the Yale situation , any symbolism in it '' and said Yale did not share Harvard 's reputation for `` liberalism and elitism '' ."
 p3467
-aS"When challenged on the distinction between Dukakis 's Harvard connection and his own Yale background , he said that , unlike Harvard , Yale 's reputation was `` so diffuse , there is n't a symbol , I do n't think , in the Yale situation , any symbolism in it '' and said Yale did not share Harvard 's reputation for `` liberalism and elitism '' ."
-p3468
 aS"In 2009 , former British Prime Minister Tony Blair picked Yale as one location the others are Britain 's Durham University and Universiti Teknologi Mara for the Tony Blair Faith Foundation 's United States Faith and Globalization Initiative ."
-p3469
+p3468
 aS"As of 2009 , former Mexican President Ernesto Zedillo is the director of the Yale Center for the Study of Globalization and teaches an undergraduate seminar , `` Debating Globalization '' ."
-p3470
+p3469
 aS'New international Yale initiatives launched included -LRB- among many others -RRB- : Jackson Institute for Global Affairs , promoting international education University-wide ; Global Health Initiative , uniting and expanding global health efforts across campus ; Yale India Initiative , expanding the study of and engagement with India ; Yale Center for the Study of Globalization , bridging the gap between academia and the world of public policy ; andYale China Law Center , promoting the rule of law in China .'
-p3471
+p3470
 aS'The most ambitious international partnership to date is Yale-NUS College in Singapore , a joint effort with the National University of Singapore to create a new liberal arts college in Asia featuring an innovative curriculum that weaves Western and Asian traditions , set to open in August 2013 .'
-p3472
+p3471
 aS"Finally , in 1921 , the Board and voters approved a 55-acre -LRB- 220,000 -RRB- site at the school 's current campus in central Evanston ."
-p3473
+p3472
 aS'There are two Associate Superintendents , Marcus Campbell , Principal -LRB- in charge of the associate principals -RRB- and Pete Bavis , Curriculum and instruction .'
-p3474
+p3473
 aS'There are three associate principals , Vernon Clark -LRB- Educational Services -RRB- , Marcus Campbell -LRB- TeachingLearning -RRB- , and Paula Miller -LRB- Student Services -RRB- .'
-p3475
+p3474
 aS'Evanston is a member of the Central Suburban League , and participates in state championship tournaments sponsored by the Illinois High School Association -LRB- IHSA -RRB- .'
-p3476
+p3475
 aS"Originally housed on the Robert E. Lee High School campus , Lee College severed its initial integration with the Goose Creek Independent School District under the leadership of the college 's first dean , Walter Rundell ."
-p3477
+p3476
 aS'In 1948 , the Southern Association of Colleges and Schools granted Lee College accreditation and recommended that the college developed its own campus apart from the local high school .'
+p3477
+aS'In 2013-2014 , the newly re-founded Lee College Debate Team won the 2013-2014 IPDA Community College Championship as well as the 2014 IPDA National Championship Tournament Community College Championship , as well as having the # 1 and # 2 ranked IPDA Novice debaters in the United States .'
 p3478
 aS'In 2013-2014 , the newly re-founded Lee College Debate Team won the 2013-2014 IPDA Community College Championship as well as the 2014 IPDA National Championship Tournament Community College Championship , as well as having the # 1 and # 2 ranked IPDA Novice debaters in the United States .'
 p3479
-aS'In 2013-2014 , the newly re-founded Lee College Debate Team won the 2013-2014 IPDA Community College Championship as well as the 2014 IPDA National Championship Tournament Community College Championship , as well as having the # 1 and # 2 ranked IPDA Novice debaters in the United States .'
+aS'University of Louisiana at LafayetteFrom Wikipedia , the free encyclopediaUniversity of Louisiana at LafayetteMottoSouthwestern Louisiana Industrial Institute -LRB- 1898 -RRB- Southwestern Louisiana Institute of Liberal and Technical Learning -LRB- 1921 -RRB- University of Southwestern Louisiana -LRB- 1960 -RRB- French name.edu The University of Louisiana at Lafayette , or UL Lafayette , is a coeducational , public , research university located in Lafayette , in the U.S. state of Louisiana .'
 p3480
 aS'University of Louisiana at LafayetteFrom Wikipedia , the free encyclopediaUniversity of Louisiana at LafayetteMottoSouthwestern Louisiana Industrial Institute -LRB- 1898 -RRB- Southwestern Louisiana Institute of Liberal and Technical Learning -LRB- 1921 -RRB- University of Southwestern Louisiana -LRB- 1960 -RRB- French name.edu The University of Louisiana at Lafayette , or UL Lafayette , is a coeducational , public , research university located in Lafayette , in the U.S. state of Louisiana .'
 p3481
-aS'University of Louisiana at LafayetteFrom Wikipedia , the free encyclopediaUniversity of Louisiana at LafayetteMottoSouthwestern Louisiana Industrial Institute -LRB- 1898 -RRB- Southwestern Louisiana Institute of Liberal and Technical Learning -LRB- 1921 -RRB- University of Southwestern Louisiana -LRB- 1960 -RRB- French name.edu The University of Louisiana at Lafayette , or UL Lafayette , is a coeducational , public , research university located in Lafayette , in the U.S. state of Louisiana .'
-p3482
 aS'- SLII was changed into the Southwestern Louisiana Institute of Liberal and Technical Learning -LRB- SLI -RRB- .'
-p3483
+p3482
 aS'- USL was renamed the University of Louisiana at Lafayette -LRB- UL Lafayette -RRB- .'
-p3484
+p3483
 aS'- Within months of the Brown v. Board of Education decision by the U.S. Supreme Court , SLI admitted 70 African-American students , becoming the first all-white college in the Deep South to desegregate .'
-p3485
+p3484
 aS'- Ray Paul Authement , the UL Lafayette president from 1974 to 2008 , became the longest serving president of a public university in the United States .'
-p3486
+p3485
 aS'Martin Hall , named for late State Senator Robert Martin , who passed the bill founding the institution .'
-p3487
+p3486
 aS'Edith Garland Dupr Library at UL LafayetteThe Judice-Rickels Hall houses the honors program at UL Lafayette .'
-p3488
+p3487
 aS'Also centered in the main campus is Cypress Lake , a swamp-like microcosm of the nearby Atchafalaya Basin , home to alligators , turtles , birds and fish .'
-p3489
+p3488
 aS'Paul and Lulu Hilliard University Art MuseumThe Paul and Lulu Hilliard University Art Museum permanent collection consists of more than 1,500 works of art , including paintings , prints , drawings , sculptures and photographs .'
-p3490
+p3489
 aS'KRVS operates on campus , located in Burke-Hawthorne Hall and plays Louisiana roots music such as Cajun , Zydeco , Swamp Rock , Swamp Pop , Blues , Jazz , and a variety of other programs .'
-p3491
+p3490
 aS'KRVS currently broadcasts to 651,000 residents in the Acadiana area of Louisiana .'
-p3492
+p3491
 aS'Wharton Hall houses Biology and Nursing Departments , as well as television studio labs for the Communications Department at UL Lafayette .'
+p3492
+aS'Broussard Hall , named for former U.S. Senator Robert F. Broussard , houses the physics department at UL Lafayette .'
 p3493
 aS'Broussard Hall , named for former U.S. Senator Robert F. Broussard , houses the physics department at UL Lafayette .'
 p3494
-aS'Broussard Hall , named for former U.S. Senator Robert F. Broussard , houses the physics department at UL Lafayette .'
-p3495
 aS'UL Lafayette is accredited by the Southern Association of Colleges and Schools .'
-p3496
+p3495
 aS'The UL Lafayette Honors Program is an active member of the Louisiana , Southern Regional , and National Honors Councils .'
+p3496
+aS'UL Lafayette has 10 colleges and schools : Colleges and departments -LRB- edit -RRB- College of the ArtsThe only Louisiana university with a separate College of the Arts , it combines architecture , the visual arts and the performing arts .'
 p3497
 aS'UL Lafayette has 10 colleges and schools : Colleges and departments -LRB- edit -RRB- College of the ArtsThe only Louisiana university with a separate College of the Arts , it combines architecture , the visual arts and the performing arts .'
 p3498
-aS'UL Lafayette has 10 colleges and schools : Colleges and departments -LRB- edit -RRB- College of the ArtsThe only Louisiana university with a separate College of the Arts , it combines architecture , the visual arts and the performing arts .'
-p3499
 aS'The departments include : Architecture & Design , Music , Performing Arts and Visual ArtsThe college has accreditation from the Foundation for Interior Design Education and Research -LRB- FIDER -RRB- ; the National Architectural Accrediting Board -LRB- NAAB -RRB- ; the National Association of Schools of Art and Design -LRB- NASAD -RRB- , Commission on Accreditation ; and the National Association of Schools of Music -LRB- NASM -RRB- , Commission on Accreditation .'
-p3500
+p3499
 aS'B.I. Moody III College of Business AdministrationOriginally named the College of Commerce , it was established in 1952 and renamed the College of Business Administration in 1980 .'
-p3501
+p3500
 aS'University of St. ThomasMay we grow in ChristEstablished.stthom.edu The University of St. Thomas -LRB- also referred to as UST or St. Thomas -RRB- in Houston and Texas and United States is a comprehensive Catholic university , grounded in the liberal arts .'
+p3501
+aS"ContentsThe University of St. Thomas around 2008Street signs around the campusOn June 24 , 1944 , the Bishop of the Diocese of Galveston-Houston , Christopher E. Byrne , entered into an agreement with the Houston based members of the Congregation of St. Basil to found a co-educational Roman Catholic university in Houston `` as soon as practicable after the War , if possible by 1947 . ''"
 p3502
 aS"ContentsThe University of St. Thomas around 2008Street signs around the campusOn June 24 , 1944 , the Bishop of the Diocese of Galveston-Houston , Christopher E. Byrne , entered into an agreement with the Houston based members of the Congregation of St. Basil to found a co-educational Roman Catholic university in Houston `` as soon as practicable after the War , if possible by 1947 . ''"
 p3503
-aS"ContentsThe University of St. Thomas around 2008Street signs around the campusOn June 24 , 1944 , the Bishop of the Diocese of Galveston-Houston , Christopher E. Byrne , entered into an agreement with the Houston based members of the Congregation of St. Basil to found a co-educational Roman Catholic university in Houston `` as soon as practicable after the War , if possible by 1947 . ''"
+aS'The Basilian Fathers had previously started several other secondary schools , as well as institutions of higher learning , throughout Texas in the early 20th Century , including St. Thomas High School , also located in Houston .'
 p3504
 aS'The Basilian Fathers had previously started several other secondary schools , as well as institutions of higher learning , throughout Texas in the early 20th Century , including St. Thomas High School , also located in Houston .'
 p3505
-aS'The Basilian Fathers had previously started several other secondary schools , as well as institutions of higher learning , throughout Texas in the early 20th Century , including St. Thomas High School , also located in Houston .'
-p3506
 aS'In addition to the Basilian Fathers on staff , there are also several Franciscan Sisters of the Eucharist who reside in the convent on campus .'
-p3507
+p3506
 aS'The University is named after St. Thomas Aquinas .'
+p3507
+aS"Some of the buildings are historic including the LinkLee House , once the largest home in Houston which is currently the home of the University 's executive office , and Hughes House , the childhood home of Howard Hughes , housing the Theology department ."
 p3508
 aS"Some of the buildings are historic including the LinkLee House , once the largest home in Houston which is currently the home of the University 's executive office , and Hughes House , the childhood home of Howard Hughes , housing the Theology department ."
 p3509
-aS"Some of the buildings are historic including the LinkLee House , once the largest home in Houston which is currently the home of the University 's executive office , and Hughes House , the childhood home of Howard Hughes , housing the Theology department ."
-p3510
 aS'Composed of rectangular buildings , the Academic Mall is the symbolic architecture of Philip Johnson .'
-p3511
+p3510
 aS'UST has many diverse ethnicities , as 61 % of the total number of students are African-American , Hispanic , AsianPacific Islander or American Indian .'
-p3512
+p3511
 aS'The school offers a Bachelor of Business Administration -LRB- BBA -RRB- with majors in Accounting , Economics , Finance , General Business and Marketing ; Master of Business Administration -LRB- MBA -RRB- ; Master of Science in Accounting -LRB- MSA -RRB- ; Master of Science in Finance -LRB- MSF -RRB- ; and five-year BBAMBA .'
-p3513
+p3512
 aS'The Cameron School of Business and its programs are accredited by the Association to Advance Collegiate Schools of Business .'
-p3514
+p3513
 aS'Glassell School of Art -LRB- edit -RRB- The UST Department of Fine and Performing Arts and the Glassell School of Art at the Houston Museum of Fine Arts collaborate in offering BA and BFA majors , a minor and elective courses in Studio Art .'
-p3515
+p3514
 aS"Study Abroad -LRB- edit -RRB- The Institute for International Education Exchange has consistently ranked UST as one of the top 20 master 's schools in the United States for study abroad participation by undergraduate students ."
-p3516
+p3515
 aS'In Fall 2006 , the NAIA informed UST that its application to join had been accepted , bringing varsity intercollegiate athletics back to campus for the first time in 20 years .'
-p3517
+p3516
 aS"History -LRB- edit -RRB- Background and founding -LRB- edit -RRB- On December 16 , 1861 , Justin Morrill -LRB- VT -RRB- introduced a bill into the U.S. House of Representatives , `` to establish at least one college in each state upon a sure and perpetual foundation , accessible to all , but especially to the sons of toil ... '' President Abraham Lincoln signed the Morrill Land-Grant Colleges Act into effect in July of the following year ."
-p3518
+p3517
 aS'Upon returning to the states , Lund heard about the Morrill Act , and pitched a vision for the college that would receive widespread support among the Territorial Legislature , who was at the time seeking to reapply for statehood .'
-p3519
+p3518
 aS"According to historian Joel Ricks in 1938 , '' Provo had received the Insane Asylum , Salt Lake City had the University and Capitol , and the majority of the legislature felt that the new institutions should be given to Weber and Cache Counties . ''"
-p3520
+p3519
 aS'The ETP Primary School continued at Utah State until August 1944 , graduating about 2,750 students in 30 classes .'
-p3521
+p3520
 aS'In 2010 , USU acquired both the Swaner EcoCenter outside Park City as well as the former College of Eastern Utah , with its two campuses and various undergraduate and vocational programs .'
-p3522
+p3521
 aS'System -LRB- edit -RRB- USU Regional Campuses and USU Eastern provide education throughout the State of Utah .'
-p3523
+p3522
 aS'In 2005 , University President Stan Albrecht established USU Regional Campuses and Distance Education .'
-p3524
+p3523
 aS'In 2012 , RCDE completed construction of the Distance Education Building which houses broadcast classrooms , RCDE offices , and the Utah Education Network .'
-p3525
+p3524
 aS'Utah State University Eastern -LRB- edit -RRB- Main article : Utah State University EasternLocated in Price , Utah , the former College of Eastern Utah joined the USU system in 2010 and became Utah State University College of Eastern Utah -LRB- USU Eastern -RRB- .'
-p3526
+p3525
 aS'USU Eastern operates a satellite campus , known as the Blanding campus , in Blanding and Utah .'
-p3527
+p3526
 aS'Before the merger , USU taught courses at the college through Regional Campuses and Distance Education -LRB- RCDE -RRB- .'
-p3528
+p3527
 aS'USU Eastern competes as the Eastern Utah Golden Eagles and is the only campus besides Logan that has an athletics program .'
-p3529
+p3528
 aS'USU has a growing presence in Moab , which had 295 students in 2011 .'
-p3530
+p3529
 aS'Extension operates 30 offices throughout the state , which include Swaner EcoCenter , Thanksgiving Point , and the Utah Botanical Center .'
-p3531
+p3530
 aS'Mount Logan and the Bear River Range rise sharply to the immediate east .'
-p3532
+p3531
 aS'Aggie Ice Cream receives its milk from the Caine Dairy Research and Teaching Center located near the Wellsville Mountains .'
-p3533
+p3532
 aS'At one point recently , USU held the title in the Guinness Book of World Records for the most couples kissing at the same place at the same time .'
-p3534
+p3533
 aS'Colleges -LRB- edit -RRB- Founded in 1888 , Utah State University is the agricultural college and land grant institution for Utah .'
-p3535
+p3534
 aS'In 1903 , USU was divided into five schools : the School of Agriculture , the School of Agricultural Engineering and Mechanical Arts , the School of Home Economics , the School of General Science , and the School of Commerce .'
-p3536
+p3535
 aS'John Tyler is accredited by the Commission on Colleges of the Southern Association of Colleges and Schools , and offers 17 associate degree programs , eight certificate programs , and 36 career studies certificate programs .'
-p3537
+p3536
 aS'John Tyler is the first college in the Virginia Community College System to be recognized for its sustainability efforts .'
-p3538
+p3537
 aS'The college , which opened in 1967 , is named after John Tyler , the tenth president of the United States .'
-p3539
+p3538
 aS"The college 's Nursing Education Center is located on the Johnston-Willis Campus of CJW Medical Center ."
+p3539
+aS'Gradually the university developed the Colleges of Life Sciences and Agriculture -LRB- later to include the School of Forest Resources and the School of Human Development -RRB- , Engineering and Science , and Arts and Sciences .'
 p3540
 aS'Gradually the university developed the Colleges of Life Sciences and Agriculture -LRB- later to include the School of Forest Resources and the School of Human Development -RRB- , Engineering and Science , and Arts and Sciences .'
 p3541
-aS'Gradually the university developed the Colleges of Life Sciences and Agriculture -LRB- later to include the School of Forest Resources and the School of Human Development -RRB- , Engineering and Science , and Arts and Sciences .'
-p3542
 aS'Founded in 1973 , Wilde Stein is named after Oscar Wilde and Gertrude Stein .'
-p3543
+p3542
 aS'According to The Advocate College Guide for LGBT Students , the Wilde Stein Alliance for Sexual Diversity has more than 200 members.Org anization and administration -LRB- edit -RRB- UMaine is the flagship of the University of Maine System .'
-p3544
+p3543
 aS'The original campus plan was designed by landscape architect Frederick Law Olmsted , who also designed Central Park in New York City and the White House grounds in Washington and D.C. Central to campus is the University of Maine Mall , an open grassy area between the Raymond H. Fogler Library and the New Balance Field House .'
-p3545
+p3544
 aS'The northern section includes many of the athletic facilities , including the Alfond Arena -LRB- basketball , hockey -RRB- , Morse Field at the Alfond Sports Stadium -LRB- football , track and field -RRB- , Larry Mahaney Diamond -LRB- baseball -RRB- , Kessock Field -LRB- softball -RRB- , the Field Hockey Complex -LRB- field hockey -RRB- , and the Mahaney athleticrecreational dome .'
-p3546
+p3545
 aS'The southern section of campus includes the Memorial Student Union , the Maynard F. Jordan Observatory , Lengyel Gymnasium and Athletic Field , the Buchanan Alumni House , as well as multiple administrative , residence , and academic halls .'
-p3547
+p3546
 aS'The recently renovated Collins Center for the Arts is also located on the southern part of campus , and not only provides the Hutchins Concert Hall , a 1,435-seat venue for performing artists from around the world , but also houses the Hudson Museum , known for its contemporary Native American art , as well as displays that are culturally specific to the ancient indigenous people of Maine .'
-p3548
+p3547
 aS'The building that CVM previously occupied on Avenida Amazonas , was negotiated with the Federal Technical School .'
-p3549
+p3548
 aS'Unidad Valle De Las PalmasFrom Wikipedia , the free encyclopediaJump to : navigation , searchUnidad Valle de las Palmas is a formal extension of the Autonomous University of Baja California , belonging to the Campus Vicerectorship of Tijuana , located on the Tijuana-Tecate highway , near the height of the Carrizo Dam .'
-p3550
+p3549
 aS'The first phase of the Valle de las Palmas campus facility of the Autonomous University of Baja California -LRB- UABC -RRB- , will be ready for the first group in August 2009 , according to the rector Gabriel Estrella Valenzuela .'
-p3551
+p3550
 aS'The start of work was led by Rector Estrella and Governor Jose Guadalupe Osuna Millan , who was accompanied by the mayors of Tijuana , Jorge Ramos and Tecate , Aldo Pe , as well as state and municipal officials .'
-p3552
+p3551
 aS"-LRB- clarification needed -RRB- For details of education in each dependency , see : References -LRB- edit -RRB- ^ Charles J. Russo , Handbook of Comparative Higher Education Law , p. 151 n. 4 -LRB- `` There is no specific higher education legislation in the British Crown Dependencies -LRB- the Channel Islands and the Isle of Man -RRB- , which are not part of the UK or of the EU '' . -RRB-"
-p3553
+p3552
 aS"^ John Oakland , British Civilization : A Student 's Dictionary , p. 49 -LRB- `` Crown dependency : -LRB- ... -RRB- It has its own ... educational systems . '' -RRB-"
-p3554
+p3553
 aS"Former governor Johns was a key figure among the twenty `` Pork Choppers '' from rural North Florida in the 40-member state senate , who effectively dominated the workings of state government ."
-p3555
+p3554
 aS"One of the Johns Committee 's first tasks was to investigate and reprimand faculty and staff at Florida Agricultural and Mechanical University , a historically black college , for supporting the Tallahassee Bus Boycott of 1956 ."
-p3556
+p3555
 aS'The committee sought to prove communist links to the NAACP , but were rebuffed when the NAACP got a ruling from the United States Supreme Court denying the Johns Committee access to their membership lists .'
-p3557
+p3556
 aS"In 1958 , committee chairman Johns illegally sent a covert investigator to the University of Florida after his son , Jerome Johns , told his father that `` effeminate instructors had perverted the curriculum . ''"
+p3557
+aS"USF suspended Sheldon N. Grebstein , assistant professor of English , after the committee denounced him for handing out `` indecent '' reprints of literary criticism aimed at Beat writers ."
 p3558
 aS"USF suspended Sheldon N. Grebstein , assistant professor of English , after the committee denounced him for handing out `` indecent '' reprints of literary criticism aimed at Beat writers ."
 p3559
-aS"USF suspended Sheldon N. Grebstein , assistant professor of English , after the committee denounced him for handing out `` indecent '' reprints of literary criticism aimed at Beat writers ."
+aS"Jump to : navigation , searchBuckingham Browne & NicholsAddress 80 Gerrys Landing Road Town Cambridge , Massachusetts Country U.S. Browne & Nichols established 1883 The Buckingham School established 1889 Merger 1974 Conference Independent School League Type Private Coeducational Religious Affiliation Secular Grades Pre-K to 12 -LRB- on three campuses -RRB- Enrollment 997 Student-to-Teacher Ratio 4:1 Average SAT score 2000 Accreditation NEASC Nickname BB&N Mascot Knight Colors Blue & Gold Motto Honestas , Litterae , Comitas -LRB- `` Honor , Scholarship , and Kindness '' -RRB- Song Jerusalem Magazine The Point of View Newspaper The Vanguard Yearbook The Perspective Endowment Website www.bbns.org Buckingham Browne & Nichols School , often referred to as BB&N , is a private day school on three campuses in Cambridge and Massachusetts , educating students from pre-Kindergarten -LRB- called `` Beginners '' -RRB- to 12th grade ."
 p3560
 aS"Jump to : navigation , searchBuckingham Browne & NicholsAddress 80 Gerrys Landing Road Town Cambridge , Massachusetts Country U.S. Browne & Nichols established 1883 The Buckingham School established 1889 Merger 1974 Conference Independent School League Type Private Coeducational Religious Affiliation Secular Grades Pre-K to 12 -LRB- on three campuses -RRB- Enrollment 997 Student-to-Teacher Ratio 4:1 Average SAT score 2000 Accreditation NEASC Nickname BB&N Mascot Knight Colors Blue & Gold Motto Honestas , Litterae , Comitas -LRB- `` Honor , Scholarship , and Kindness '' -RRB- Song Jerusalem Magazine The Point of View Newspaper The Vanguard Yearbook The Perspective Endowment Website www.bbns.org Buckingham Browne & Nichols School , often referred to as BB&N , is a private day school on three campuses in Cambridge and Massachusetts , educating students from pre-Kindergarten -LRB- called `` Beginners '' -RRB- to 12th grade ."
 p3561
-aS"Jump to : navigation , searchBuckingham Browne & NicholsAddress 80 Gerrys Landing Road Town Cambridge , Massachusetts Country U.S. Browne & Nichols established 1883 The Buckingham School established 1889 Merger 1974 Conference Independent School League Type Private Coeducational Religious Affiliation Secular Grades Pre-K to 12 -LRB- on three campuses -RRB- Enrollment 997 Student-to-Teacher Ratio 4:1 Average SAT score 2000 Accreditation NEASC Nickname BB&N Mascot Knight Colors Blue & Gold Motto Honestas , Litterae , Comitas -LRB- `` Honor , Scholarship , and Kindness '' -RRB- Song Jerusalem Magazine The Point of View Newspaper The Vanguard Yearbook The Perspective Endowment Website www.bbns.org Buckingham Browne & Nichols School , often referred to as BB&N , is a private day school on three campuses in Cambridge and Massachusetts , educating students from pre-Kindergarten -LRB- called `` Beginners '' -RRB- to 12th grade ."
-p3562
 aS'BB&N was established by the 1974 merger of two independent schools , Buckingham School , founded in 1889 , and Browne & Nichols School , founded in 1883 .'
-p3563
+p3562
 aS'The Middle School , grades 7-8 , is on Sparks Street , and the Lower School , grades pre-K-6 , is on Buckingham Street .'
-p3564
+p3563
 aS'Boston Magazine ranked BB&N # 5 in a list of the top private high schools in greater Boston for 2009 and , in late 2007 , the Wall Street Journal listed BB&N as one of the 50 best schools in the world for its success in preparing students to enter top American universities .'
-p3565
+p3564
 aS'The freshman class is bussed up to the Bivouac location -LRB- the former Camp Marienfeld -RRB- near Mount Monadnock .'
-p3566
+p3565
 aS"The Vanguard -LRB- edit -RRB- BB&N 's newspaper , the Vanguard ."
+p3566
+aS"The official newspaper of BB&N is The Vanguard , which was awarded a gold medal from the Columbia Scholastic Press Association , a for-profit section of Columbia University 's Graduate School of Journalism that offers `` critiques '' of print publications for a yearly fee ."
 p3567
 aS"The official newspaper of BB&N is The Vanguard , which was awarded a gold medal from the Columbia Scholastic Press Association , a for-profit section of Columbia University 's Graduate School of Journalism that offers `` critiques '' of print publications for a yearly fee ."
 p3568
-aS"The official newspaper of BB&N is The Vanguard , which was awarded a gold medal from the Columbia Scholastic Press Association , a for-profit section of Columbia University 's Graduate School of Journalism that offers `` critiques '' of print publications for a yearly fee ."
+aS'The Vanguard has featured interviews with Bill Clinton , Howard Dean and Sylvia Poggioli , an alumna of the school .'
 p3569
 aS'The Vanguard has featured interviews with Bill Clinton , Howard Dean and Sylvia Poggioli , an alumna of the school .'
 p3570
-aS'The Vanguard has featured interviews with Bill Clinton , Howard Dean and Sylvia Poggioli , an alumna of the school .'
-p3571
 aS'Stephen Burgard , director of the Northeastern Univ. .'
-p3572
+p3571
 aS"School of Journalism , was among the staffers for the paper 's B&N predecessor , The B&N News ."
-p3573
+p3572
 aS"Probably BB&N 's most well known alum for his athletics , Zak Farkes , is currently in the Boston Red Sox minor league organization at Single A Greenville , SC ."
-p3574
+p3573
 aS'History -LRB- edit -RRB- Lander University was founded by Methodist clergyman Samuel Lander in 1872 as Williamston Female College in Williamston and South Carolina .'
+p3574
+aS'In 1951 , the Greenwood County obtained the College name and property from the Methodist Conference .'
 p3575
 aS'In 1951 , the Greenwood County obtained the College name and property from the Methodist Conference .'
 p3576
-aS'In 1951 , the Greenwood County obtained the College name and property from the Methodist Conference .'
+aS'The South Carolina General Assembly created the Greenwood County Education Commission , known as the Lander Foundation , to serve as the board of control of the College .'
 p3577
 aS'The South Carolina General Assembly created the Greenwood County Education Commission , known as the Lander Foundation , to serve as the board of control of the College .'
 p3578
-aS'The South Carolina General Assembly created the Greenwood County Education Commission , known as the Lander Foundation , to serve as the board of control of the College .'
+aS'A member of the NCAA Division II , Lander plays in the Peach Belt Conference and fields teams in men and women basketball , soccer and tennis ; men baseball and golf ; and women cross country , softball and volleyball .'
 p3579
 aS'A member of the NCAA Division II , Lander plays in the Peach Belt Conference and fields teams in men and women basketball , soccer and tennis ; men baseball and golf ; and women cross country , softball and volleyball .'
 p3580
 aS'A member of the NCAA Division II , Lander plays in the Peach Belt Conference and fields teams in men and women basketball , soccer and tennis ; men baseball and golf ; and women cross country , softball and volleyball .'
 p3581
-aS'A member of the NCAA Division II , Lander plays in the Peach Belt Conference and fields teams in men and women basketball , soccer and tennis ; men baseball and golf ; and women cross country , softball and volleyball .'
-p3582
 aS"In March 2007 , Lander won the Peach Belt Conference Men 's Basketball tournament ."
-p3583
+p3582
 aS"-LRB- April 2012 -RRB- Lander is accredited by the Commission on Colleges of the Southern Association of Colleges and Schools to award bachelor 's and master 's level degrees ."
-p3584
+p3583
 aS"The President 's office -LRB- edit -RRB- The College is governed by policies set by the State Board for Community Colleges with support and advice from the Germanna Community College Board ."
-p3585
+p3584
 aS'Daniel Technology Center -LRB- edit -RRB- Located at the junction of U.S. Route 29 and State Route 3 adjacent to the town of Culpeper , Germanna Joseph R. Daniel Technology Center occupies 34 acres .'
-p3586
+p3585
 aS'Stafford County Center -LRB- edit -RRB- Germanna Stafford County Center is located on Jefferson Davis Hwy at Aquia Park .'
-p3587
+p3586
 aS'Harris began the Writing Lab by collaborating with a team of graduate assistants , who worked one-to-one with student writers and often developed handouts to reinforce the lessons the students learned in the Writing Lab .'
-p3588
+p3587
 aS'The writing tutors and Harris sent paper copies of their materials to individuals beyond Purdue University who contacted the Writing Lab requesting information on writing , citation , or research .'
-p3589
+p3588
 aS'Later , these resources became available electronically through email requests and through GOPHER in 1993 , a precursor to the World Wide Web .'
-p3590
+p3589
 aS'Harris and the Purdue Writing Lab launched its OWL on the web in 1995 , making it one of the first OWLs on the Internet .'
-p3591
+p3590
 aS'The university was established on February 28 , 1850 , as the University of Deseret by the General Assembly of the provisional State of Deseret , and Orson Spencer was appointed as the first chancellor of the university .'
-p3592
+p3591
 aS'Following years of intermittent classes in the Salt Lake City Council House , the university began to be re-established in 1867 under the direction of David O. Calder , who was followed by John R. Park in 1869 .'
-p3593
+p3592
 aS'Major libraries on lower campus include the J. Willard Marriott Library and the S.J. Quinney Law Library .'
-p3594
+p3593
 aS'Kingsbury Hall at the Presidents Circle is a center for the performing artsLower campus is also home to most public venues , such as the RiceEccles Stadium , the Jon M. Huntsman Center , and the Utah Museum of Fine Arts , a museum with rotating exhibitions and a permanent collection of American , European , African , and Asian art .'
-p3595
+p3594
 aS'Venues for performing arts include Kingsbury Hall , used for touring companies and concerts , Pioneer Memorial Theatre , used by the professional Pioneer Theatre Company , David P. Gardner Hall , used by the School of Music and for musical performances , and the Marriott Center for Dance .'
-p3596
+p3595
 aS"The complex consists of seven housing areas : Chapel Glen , Gateway Heights , Sage Point , Officer 's Circle , Benchmark Plaza , Shoreline Ridge , and the Donna Garff Marriott Honors Residential Scholars Community ."
-p3597
+p3596
 aS'History -LRB- edit -RRB- Redeemer Seminary in Dallas was originally founded by Westminster Theological Seminary as a Texas campus in 1999 before officially becoming an independent institution in 2009 with an inaugural address by Dr. Timothy J. Keller of New York .'
-p3598
+p3597
 aS'The CFU later moved to Warner Bros. .'
-p3599
+p3598
 aS"Exhibition and Distribution -LRB- edit -RRB- Several films by the Children 's Film Unit received Royal Premieres , including : Under The Bed at the Odeon Leicester Square , on Saturday 17 September 1988 Doombeach at BAFTA , Piccadilly , on Sunday 4 November 1990 How 's Business at the Odeon West End , Leicester Square , on Sunday 15 March 1992 . -RRB-"
-p3600
+p3599
 aS"Cast includes : Oliver Hicks , Jack May , Frank Middlemass , Douglas StormMister Skeeter -LRB- 1984 -RRB- Lisa and Jamie are residents in a children 's home , which is threatened with closure ."
-p3601
+p3600
 aS"Cast includes : Jenni Barrand , Jeremy Coster , Peter Bayliss , Sebastian KnappUnder The Bed -LRB- 1988 -RRB- Adapted from a story by Bill Oddie and Laura Beaumont , this is the story of Felicity , whose habit of throwing things under her bed , including an uneaten bowl of cereal , moldy apples cores , family heirlooms , and even elderly relatives , leads to the birth of `` Heap '' , a monster with an insatiable appetite ."
-p3602
+p3601
 aS"Cast includes : Francesca Camillo , Max Rennie , John Louis Mansi , Amanda Murray , Peter Bayliss , Jenni Barrand , Luke JonesInfantile Disorders -LRB- 1988 -RRB- Cast includes : Mark Heatley , Gavin MayDoombeach -LRB- 1989 -RRB- When an administrative error causes 12-year-old Gavin to be sent to the wrong school , he begins truanting with a `` gang '' of younger kids ."
+p3602
+aS"Cast includes : Ian Hogg , Susan Curnow , Michael Bond , Damian Hodges , David Issacs , Danny Joy , Russell Lyesight , Hayden Peters , Carlton Taylor , Ben WheelerHow 's Business -LRB- 1991 -RRB- Adapted from the book by Alison Prince , this wartime drama follows young Howard Grainger as he is evacuated from London during the Blitz and relocated to the countryside , where he begins a series of schemes to try and accrue sufficient funds to return home ."
 p3603
 aS"Cast includes : Ian Hogg , Susan Curnow , Michael Bond , Damian Hodges , David Issacs , Danny Joy , Russell Lyesight , Hayden Peters , Carlton Taylor , Ben WheelerHow 's Business -LRB- 1991 -RRB- Adapted from the book by Alison Prince , this wartime drama follows young Howard Grainger as he is evacuated from London during the Blitz and relocated to the countryside , where he begins a series of schemes to try and accrue sufficient funds to return home ."
 p3604
-aS"Cast includes : Ian Hogg , Susan Curnow , Michael Bond , Damian Hodges , David Issacs , Danny Joy , Russell Lyesight , Hayden Peters , Carlton Taylor , Ben WheelerHow 's Business -LRB- 1991 -RRB- Adapted from the book by Alison Prince , this wartime drama follows young Howard Grainger as he is evacuated from London during the Blitz and relocated to the countryside , where he begins a series of schemes to try and accrue sufficient funds to return home ."
-p3605
 aS"Cast includes : Ben Brazier , Ron Moody , Paul Brightwell , Paul Copley , Sara Clee , Richard Digance , Don Henderson , Brett Fancy , Emily Richard , Ann Way , Carol MacReadyEmily 's Ghost -LRB- 1992 -RRB- Edwardian drama about a girl who dreams of becoming a doctor , but is unable to pursue her ambitions due to the social constraints of the era ."
-p3606
+p3605
 aS"Cast includes : Jemima Rooper , Gordon Griffin , Susannah York , Patsy Byrne , Tat Whalley , John Altman , Paula WilcoxWillie 's War -LRB- 1994 -RRB- 10-year-old Willie is evacuated from East London to the posh country house of 13-year-old Zander , where he is forced to endure Zander 's snobbery and bullying ."
-p3607
+p3606
 aS'Cast includes : Lee Turnbull , Jean Alexander , Philip Boddy , Gordon Griffin , Edward Highmore , Jemima Rooper , Tat WhalleyNightshade -LRB- 1995 -RRB- A break in the country has sinister repercussions for the Brady Family .'
-p3608
+p3607
 aS"Jump to : navigation , searchThe `` Subversive Proposal '' was an Internet posting by Stevan Harnad on June 27 1994 -LRB- presented orally at the 1994 Network Services Conference in London on November 28 , 1994 -RRB- calling on all authors of `` esoteric '' writings only for research impact , not for royalty income archive them free for all online -LRB- in anonymous FTP archives or websites -RRB- ."
-p3609
+p3608
 aS'An online interview of Steven Harnard was conducted by Richard Poynder on the occasion of the 20th anniversary of the subversive proposal .'
-p3610
+p3609
 aS"FormationMarch 2010The European Higher Education Area -LRB- EHEA -RRB- was launched along with the Bologna Process ' decade anniversary , in March 2010 , during the Budapest-Vienna Ministerial Conference ."
-p3611
+p3610
 aS'Between 1999 - 2010 , all the efforts of the Bologna Process members were targeted to creating the European Higher Education Area , which became reality with the Budapest-Vienna Declaration of March 2010 .'
-p3612
+p3611
 aS'Newscaster David Brinkley was scheduled to give the first Vance lecture in 1983 , but was replaced only days before the lecture by Benjamin Bradlee .'
-p3613
+p3612
 aS'In addition , the Board of Trustees for the Connecticut State University System has identified William Buckley and George McGovern among the Vance lecturers , although there are no records of either having participated in the series .'
+p3613
+aS'The six foreign heads of government were evenly split on ideology -LRB- Wilson , Schmidt , and Peres represented left-center parties , while Mulroney , Wa , and de Klerk were members of right-center parties -RRB- .'
 p3614
 aS'The six foreign heads of government were evenly split on ideology -LRB- Wilson , Schmidt , and Peres represented left-center parties , while Mulroney , Wa , and de Klerk were members of right-center parties -RRB- .'
 p3615
-aS'The six foreign heads of government were evenly split on ideology -LRB- Wilson , Schmidt , and Peres represented left-center parties , while Mulroney , Wa , and de Klerk were members of right-center parties -RRB- .'
-p3616
 aS'^ Lech Walesa To Speak At CCSU .'
-p3617
+p3616
 aS'Former President Bush To Give R.C. Vance Lecture at University .'
-p3618
+p3617
 aS'At CCSU , Peres Makes Appeal For Peace ; Nobel Laureate Criticizes Sharon , U.N. .'
-p3619
+p3618
 aS'Hugh Downs To Speak At CCSU .'
-p3620
+p3619
 aS'Gates speaks at CCSU ; Students protest .'
-p3621
+p3620
 aS'Transylvania UniversityIn Lumine Illo Tradimus LumenMotto in EnglishIn That Light , We Pass On The LightEstablished : www.transy.eduT ransylvania University is a private university in Lexington and Kentucky and United States .'
+p3621
+aS'Transylvania has educated two U.S. vice presidents , two U.S. Supreme Court justices , fifty U.S. senators , 101 U.S. representatives , 36 U.S. governors , and 34 U.S. ambassadors , making it a large producer of U.S. statesmen .'
 p3622
 aS'Transylvania has educated two U.S. vice presidents , two U.S. Supreme Court justices , fifty U.S. senators , 101 U.S. representatives , 36 U.S. governors , and 34 U.S. ambassadors , making it a large producer of U.S. statesmen .'
 p3623
@@ -7253,342 +7253,340 @@ aS'Transylvania has educated two U.S. vice presidents , two U.S. Supreme Court j
 p3626
 aS'Transylvania has educated two U.S. vice presidents , two U.S. Supreme Court justices , fifty U.S. senators , 101 U.S. representatives , 36 U.S. governors , and 34 U.S. ambassadors , making it a large producer of U.S. statesmen .'
 p3627
-aS'Transylvania has educated two U.S. vice presidents , two U.S. Supreme Court justices , fifty U.S. senators , 101 U.S. representatives , 36 U.S. governors , and 34 U.S. ambassadors , making it a large producer of U.S. statesmen .'
-p3628
 aS'It also educated Confederate President Jefferson Davis , prior to his transfer to the United States Military Academy at West Point .'
-p3629
+p3628
 aS'ContentsHistory -LRB- edit -RRB- Transylvania was the first college west of the Allegheny Mountains .'
-p3630
+p3629
 aS'Thomas Jefferson was governor of Virginia when the Virginia Assembly chartered Transylvania Seminary .'
-p3631
+p3630
 aS"Transylvania University was initially sponsored by the Christ Episcopal Church 's rector , the Reverend Moore , and later became affiliated with the Presbyterian Church ."
-p3632
+p3631
 aS"Old Morrison , the only campus building at the time , was constructed 1830 , under the supervision of Henry Clay , who both taught law and was a member of Transylvania 's Board ."
+p3632
+aS'The original seal of Transylvania UniversityAn institution that aided in the creation of Transylvania University at this time was Bacon College , named after Sir Francis Bacon , which would later be known as Kentucky University .'
 p3633
 aS'The original seal of Transylvania UniversityAn institution that aided in the creation of Transylvania University at this time was Bacon College , named after Sir Francis Bacon , which would later be known as Kentucky University .'
 p3634
-aS'The original seal of Transylvania UniversityAn institution that aided in the creation of Transylvania University at this time was Bacon College , named after Sir Francis Bacon , which would later be known as Kentucky University .'
-p3635
 aS'Following the American Civil War , Kentucky University was devastated by fire , and both it and Transylvania University were in dire financial straits .'
-p3636
+p3635
 aS"Kentucky University 's College of the Bible , which traced its roots to Bacon College 's Department of Hebrew Literature , received a separate charter in 1878 ."
-p3637
+p3636
 aS"In 1903 , Hamilton College , a Lexington-based women 's college founded in 1869 , merged into Kentucky University ."
-p3638
+p3637
 aS"-LRB- citation needed -RRB- Representation in popular culture -LRB- edit -RRB- Robert Penn Warren set part of his novel , All the King 's Men , at Transylvania University ."
-p3639
+p3638
 aS'Old MorrisonThe Haupt Humanities Building and the Transylvania LawnBuilt in 1833 under the supervision of Henry Clay who was serving as Transylvania law professor , Old Morrison is the main administration building for the university .'
-p3640
+p3639
 aS'During the Civil War , Old Morrison served as a hospital for Union and Confederate soldiers .'
-p3641
+p3640
 aS'Located adjacent to Old Morrison , the Haupt Humanities building houses the faculties of English , philosophy , history , political science , and classics .'
-p3642
+p3641
 aS"It contains a large concert hall , a small theater , a recital hall , the Morlan Gallery , the Rafskeller -LRB- sic see `` Traditions '' -RRB- dining facility , the music technology classroom , and the Career Development Center ."
-p3643
+p3642
 aS"Formerly located in the basement of Henry Clay Hall but moved to the ground floor of Thomson Hall in 2008 , the 1780 Caf , formerly referred to as Sandella 's , offers students a place to eat after the campus dining center closes for the night ."
-p3644
+p3643
 aS'Primary source of funding is from Scottish Enterprise , Scotland economic development agency .'
-p3645
+p3644
 aS'History -LRB- edit -RRB- In 1976 , the International Wittgenstein Symposium was founded by Elisabeth Leinfellner , Werner Leinfellner , Rudolf Haller , Paul Weingartner , and Adolf H in Kirchberg am Wechsel and Lower Austria .'
-p3646
+p3645
 aS'The proceedings published at ontos verlag are available Open Access online at a site prepared by the Wittgenstein Archives at the University of Bergen .'
-p3647
+p3646
 aS"Examples of such series include `` Antwerp Working Papers in Linguistics '' ; `` Early English Manuscripts in Facsimile '' -LRB- Rosenkilde & Bagger , Copenhagen -RRB- ; Garland reference library ; `` Canterbury Tales Project '' -LRB- see The Canterbury Tales -RRB- ; Early English Text Society ."
-p3648
+p3647
 aS'The Loeb Classical Library is a series of editions of Greek and Latin texts in which the original texts are accompanied by translations into English ; the series was begun by James Loeb and is published by Harvard University Press , Cambridge and Mass. .'
-p3649
+p3648
 aS'orgEstablished in 2003 , the Youth Congress on Information Technology -LRB- formerly known as the Philippine Youth Congress on Information Technology -RRB- known as Y4iT an annual information technology event in the Philippines , organized by the UP System Information Technology Foundation -LRB- UP SITF -RRB- .'
-p3650
+p3649
 aS'Beginnings -LRB- edit -RRB- In 1907 , Toccoa Falls College was founded by R. A. Forrest in Golden and North Carolina , as the Golden Valley Institute .'
-p3651
+p3650
 aS'Men : Soccer , Baseball , Cross country , and BasketballWomen : Soccer , Basketball , Cross country , and VolleyballBaseball Team won the NCCAA Division II National Championship in 2009 , 2011 , 2012 , and 2013 .'
-p3652
+p3651
 aS"Women 's Soccer Team won the NCCAA Division II Regional Championship in 2010 ."
-p3653
+p3652
 aS'For the community college in Tennessee , see Cleveland State Community College .'
-p3654
+p3653
 aS'For the community college and public university in Cleveland and Ohio , see Cuyahoga Community College and Cleveland State University , respectively .'
-p3655
+p3654
 aS"In 1999 , researchers Martin Schwartz and Molly Leggett found that most victims did not report the incident and did not consider it as `` rape '' both in cases of being physically forced while alert and of being intoxicated ."
-p3656
+p3655
 aS'In 1997 , The National Institute of Justice -LRB- NIJ -RRB- and the United States Bureau of Justice Statistics -LRB- BJS -RRB- conducted the National College Women Sexual Victimization -LRB- NCWSV -RRB- survey .'
-p3657
+p3656
 aS'In 2014 , President Barack Obama established the White House Task Force to Protect Students from Sexual Assault , which published a report reiterating the interpretation of Title IX in the Dear Colleague letter and proposing a number of other measures to prevent and respond to sexual assault on campus , such as campus climate surveys and bystander intervention programs .'
-p3658
+p3657
 aS'In early 2014 , RAINN , the nation largest non-profit dedicated to preventing rape , wrote an open letter to the White House calling for campus hearings to be de-emphasized due to their lack of accountability for survivors and victims of sexual violence .'
-p3659
+p3658
 aS'The College of Arts & Sciences offers several programs , which include internships and most notably a joint archeological program -LRB- with Saint Anselm College of Goffstown and New Hampshire -RRB- in Orvieto and Italy .'
-p3660
+p3659
 aS'Smaller schools include the Colleges of Architecture and Atmospheric and Geographic Sciences , Earth and Energy , the Weitzenhoffer Family College of Fine Arts , and the College of Law .'
+p3660
+aS'Main campus -LRB- edit -RRB- The main campus is bordered by Boyd Street on the north , Timberdell Road on the south , Chautauqua Avenue on the west , and Jenkins Avenue on the east .'
 p3661
 aS'Main campus -LRB- edit -RRB- The main campus is bordered by Boyd Street on the north , Timberdell Road on the south , Chautauqua Avenue on the west , and Jenkins Avenue on the east .'
 p3662
-aS'Main campus -LRB- edit -RRB- The main campus is bordered by Boyd Street on the north , Timberdell Road on the south , Chautauqua Avenue on the west , and Jenkins Avenue on the east .'
-p3663
 aS'The Parrington Oval -LRB- or North Oval as it is more commonly called -RRB- is anchored on the south by Evans Hall , the main administrative building .'
-p3664
+p3663
 aS'The North Oval is bordered on the east by the Oklahoma Memorial Union .'
-p3665
+p3664
 aS'Goddard comprises the OU Health Services laboratory , Counseling Services , Health Promotion , and a pharmacy .'
-p3666
+p3665
 aS'The Van Vleet Oval -LRB- or South Oval -RRB- is anchored on the north by the Bizzell Memorial Library and flanked by academic buildings .'
-p3667
+p3666
 aS"South Oval with Bizzell Library in the BackgroundThe portion of OU 's main campus south of Lindsey Street includes three Colleges , University housing , student activity and fitness facilities , and the Oklahoma Center for Continuing Education ."
-p3668
+p3667
 aS'The Joe C. and Carole Kerr McClendon Honors College is located in David L. Boren Hall , which serves as an Academic Arts Community where residential rooms , faculty offices , classrooms , a computer center and library are all available in the same building .'
-p3669
+p3668
 aS'The Oklahoma Center for Continuing Education -LRB- OCCE -RRB- is one of eleven W. K. Kellogg Foundation-funded centers in the United States and Britain .'
-p3670
+p3669
 aS'It is home to OU Outreach , which consists of the College of Continuing Education and the College of Liberal Studies , and includes a conference center able to host events of up to 1500 participants .'
-p3671
+p3670
 aS'The Anne and Henry Zarrow School of Social Work was completed on the Norman campus in 2011 and houses state of the art facilities for the training of undergraduate and graduate social workers .'
-p3672
+p3671
 aS'North campus -LRB- edit -RRB- On the far north side of Norman is the OU Research Park , which includes University of Oklahoma Max Westheimer Airport -LRB- ICAO : KOUN -RRB- , the Radar Operations Center , the old National Severe Storms Laboratory facility , the OU OKDHS Training and Research Center , the OU ITS Lab , and Merrick Computer and Technology Center .'
-p3673
+p3672
 aS'The Aviation Accreditation Board has accredited the College of Aviation at North Base one of the most prestigious establishments of its type in the United States as one of only 29 accredited colleges in the world .'
-p3674
+p3673
 aS'South of student housing is Timberdell Road , the approximate southern boundary of the University .'
-p3675
+p3674
 aS'With approximately 600 students and 600 residents and fellows training in specialties and subspecialties of medicine , the College of Medicine is the largest component of the Health Sciences Center .'
-p3676
+p3675
 aS'The University of Oklahoma campus in Tulsa houses the new Research and Medical Clinic.OU-Tulsa -LRB- edit -RRB- Established in 1972 as a branch of the main Health Sciences Center campus in Oklahoma City , the OU School of Community Medicine , formerly the College of MedicineTulsa , has enabled the University to use hospital training facilities in Tulsa to establish medical residencies and provide for expanded health care capabilities in the state .'
+p3676
+aS'The Museum of Art was founded in 1936 and originally headed by Oscar Jacobson , the director of the School of Art at the time .'
 p3677
 aS'The Museum of Art was founded in 1936 and originally headed by Oscar Jacobson , the director of the School of Art at the time .'
 p3678
-aS'The Museum of Art was founded in 1936 and originally headed by Oscar Jacobson , the director of the School of Art at the time .'
-p3679
 aS'Since then , the museum has acquired many renowned works of Native American art and , in 2000 , received the Weitzenhoffer Collection of French Impressionism which includes works by Degas , Gauguin , Monet , Pissarro , Renoir , Toulouse-Lautrec , Van Gogh , and Vuillard .'
-p3680
+p3679
 aS'Other notable campus libraries include the Architecture Library , the Engineering Library , the Fine Arts Library , the Physics and Astronomy Library , and the Geology Library .'
-p3681
+p3680
 aS'The School of Library and Information Studies -LRB- SLIS -RRB- , the only American Library Association - accredited program in Oklahoma , offers two graduate degrees -LRB- Master of Library and Information Studies and Master of Science in Knowledge Management -RRB- and one undergraduate degree -LRB- Bachelor of Arts in Information Studies -RRB- .'
-p3682
+p3681
 aS'The impact of OU and SLIS on the history of libraries in Oklahoma is shown in the recent list of 100 Oklahoma Library Legends as produced by the Oklahoma Library Association .'
-p3683
+p3682
 aS'Adams Center is split into four towers , Johnson , McCasland , Muldrow , and Tarman , all united by a common ground floor .'
-p3684
+p3683
 aS'The Academic Arts Community , more commonly referred to as Cate 5 or Honors is located directly above the honors college , David L. Boren Hall .'
-p3685
+p3684
 aS'Headington Hall , completed in the Summer of 2013 , is the fifth major residence hall on campus and is located on the corner of Lindsey and Jenkins street .'
+p3685
+aS'This new facility is named after Jim Headington , OU graduate and former OU tennis player .'
 p3686
 aS'This new facility is named after Jim Headington , OU graduate and former OU tennis player .'
 p3687
-aS'This new facility is named after Jim Headington , OU graduate and former OU tennis player .'
-p3688
 aS"Oklahoma 's Department of Continuing Education operates KROU and KGOU , a public radio station broadcasting on 106.3 FM ."
-p3689
+p3688
 aS'KGOU is affiliated with NPR .'
-p3690
+p3689
 aS"Khosravi buildings -LRB- edit -RRB- The main campus of the Art University has an area of 36 ' 000 square meters and includes the enrolment office , gymnasium , self-service , and library ."
-p3691
+p3690
 aS'In 1994 , MSA was approved by the IRS as a 501 -LRB- c -RRB- 3 not-for profit , professional educational association .'
-p3692
+p3691
 aS'Originally located in Houston and TX , MSA relocated its office to Washington and D.C. in 2000 .'
+p3692
+aS"The elementary Magnet Schools of Excellence award is sponsored by Magnet Schools of America , and named after Dr. Donald Waldrip , founder and MSA 's first Executive Director ."
 p3693
 aS"The elementary Magnet Schools of Excellence award is sponsored by Magnet Schools of America , and named after Dr. Donald Waldrip , founder and MSA 's first Executive Director ."
 p3694
-aS"The elementary Magnet Schools of Excellence award is sponsored by Magnet Schools of America , and named after Dr. Donald Waldrip , founder and MSA 's first Executive Director ."
-p3695
 aS'Main article : Junior college -LRB- Singapore -RRB- In Singapore , a Junior College -LRB- JC -RRB- is equivalent to a sixth form college in the United Kingdom .'
-p3696
+p3695
 aS"The first `` successful and persistent '' junior college in the United States was the Auburndale Female Seminary founded by Edward Lasell -LRB- now called Lasell College -RRB- , which offered a two-year college education as early as 1852 -LRB- in 1989 , however , it began offering four-year bachelor 's degrees and no longer offers any two-year degrees -RRB- ."
-p3697
+p3696
 aS'Texas A&M UniversitySan Antonio is the first Texas A&M System institution to be established in a major urban center .'
-p3698
+p3697
 aS'The University is housed in two locations : the School of Arts and Sciences and School of Education and Kinesiology at TAMU-SA Main Campus , One University Way , San Antonio and TX 78224 ; and the School of Business at Brooks City-Base Campus , 2601 Louis Bauer Drive , San Antonio and TX 78235 .'
+p3698
+aS"Texas A&M - San Antonio also offers classes at The Alamo Colleges ' Alamo University Center on the city 's northeast side at 8300 Pat Booker Road , Live Oak , TX 78233 ."
 p3699
 aS"Texas A&M - San Antonio also offers classes at The Alamo Colleges ' Alamo University Center on the city 's northeast side at 8300 Pat Booker Road , Live Oak , TX 78233 ."
 p3700
-aS"Texas A&M - San Antonio also offers classes at The Alamo Colleges ' Alamo University Center on the city 's northeast side at 8300 Pat Booker Road , Live Oak , TX 78233 ."
-p3701
 aS'Solon , an Athenian leader who lived during the 7th to mid 6th centuries BCE , did much to reform his polis , and encouraged poor fathers to provide their sons with a vocational education .'
-p3702
+p3701
 aS'Toward the end of this phase of the agoge , the trainees were expected to hunt down and kill a Helot , a Greek slave .'
-p3703
+p3702
 aS'Caldwell School , a former African American elementary school built in 1947 is located on the campus .'
-p3704
+p3703
 aS'It is named after Dr. Dabney S. Lancaster , a prominent Virginia educator who held a number of positions in education , having an impact on students at all levelsK-12 through college .'
-p3705
+p3704
 aS'Luther Academy , later named Luther College , combined with Midland College as Midland Lutheran College in 1962 .'
-p3706
+p3705
 aS'The HLC called for Midland to file final reports in 2014 , demonstrating that these concerns had been resolved .'
-p3707
+p3706
 aS"UT Southwestern is located in Southwestern Medical District , a 231-acre -LRB- 0.93 -RRB- campus in Dallas incorporating UT Southwestern Medical School , UT Southwestern Graduate School of Biomedical Sciences , UT Southwestern School of Health Professions , and four affiliated hospitals : Parkland Memorial Hospital , Children 's Medical Center , Zale Lipshy University Hospital , and St. Paul University Hospital ."
+p3707
+aS'Under the leadership of Dr. Edward H. Cary and Karl Hoblitzelle , a group of prominent Dallas citizens organized Southwestern Medical Foundation in 1939 to promote medical education and research in Dallas and the region .'
 p3708
 aS'Under the leadership of Dr. Edward H. Cary and Karl Hoblitzelle , a group of prominent Dallas citizens organized Southwestern Medical Foundation in 1939 to promote medical education and research in Dallas and the region .'
 p3709
-aS'Under the leadership of Dr. Edward H. Cary and Karl Hoblitzelle , a group of prominent Dallas citizens organized Southwestern Medical Foundation in 1939 to promote medical education and research in Dallas and the region .'
-p3710
 aS'When Baylor University elected to move its school of medicine from Dallas to Houston in 1943 , the foundation formally established Southwestern Medical College as the 68th medical school in the United States .'
-p3711
+p3710
 aS'The medical center encompasses Southwestern Medical School , Southwestern Graduate School of Biomedical Sciences and Southwestern Allied Health Sciences School .'
-p3712
+p3711
 aS'In 1987 the John D. and Catherine T. MacArthur Foundation gave the university 30 acres -LRB- 120,000 -RRB- near the South Campus for future expansion .'
-p3713
+p3712
 aS'Three research towers and an elevated campus connector , linking the South Campus with the North Campus , were completed in the 1990s .'
-p3714
+p3713
 aS'UT Southwestern Medical School -LRB- edit -RRB- UT Southwestern Medical School admits approximately 230 students each year ; admission to the school is highly competitive .'
-p3715
+p3714
 aS'UTSW students also have the opportunity to volunteer at the Agape Clinic , a free weekly dermatology clinic in Dallas , and Camp Sweeney , a summer camp in North Texas for children with diabetes .'
-p3716
+p3715
 aS'Graduate School of Biomedical Sciences -LRB- edit -RRB- According to the 2010 U.S. News and World Report containing the latest ranking for graduate schools of life sciences as of June 2013 , UT Southwestern is ranked 20th in the Nation in Biological Sciences .'
-p3717
+p3716
 aS'No other institution surveyed ranked at the top of more than 1 category , and only three other institutions Harvard University , the University of California , San Francisco , and Johns Hopkins University ranked among the top 10 in four or more fields .'
-p3718
+p3717
 aS'The resulting TECHWR-L site included a clever -LRB- albeit clunky -RRB- Javascript-based design , information about subscribing to and participating in the TECHWR-L list , a few Topic Summaries -LRB- which summarized topics discussed on the list -RRB- , and two databases -LRB- a Contractors database and an Education database -RRB- that I developed using Perl scripts .'
-p3719
+p3718
 aS'The two brothers were the sons of Edward Molineaux Waldo , a Staten Island paint manufacturer , and Christine Hamilton Dicker , a British writer and political activist .'
-p3720
+p3719
 aS'Their parents divorced when they were children and in 1927 their mother married William Dickie Sturgeon , an emigrant Scottish college professor .'
+p3720
+aS'Christine and her children relocated to Philadelphia where Peter and his brother Ted were educated in public schools .'
 p3721
 aS'Christine and her children relocated to Philadelphia where Peter and his brother Ted were educated in public schools .'
 p3722
-aS'Christine and her children relocated to Philadelphia where Peter and his brother Ted were educated in public schools .'
-p3723
 aS'After high school Peter joined the Communist Party .'
-p3724
+p3723
 aS'The writer William Tenn has stated that Sturgeon became involved with POUM while in Spain and fell into disfavor with his superiors .'
+p3724
+aS'After returning to the United States Sturgeon resigned from the Communist Party and associated with the Trotskyist Socialist Workers Party .'
 p3725
 aS'After returning to the United States Sturgeon resigned from the Communist Party and associated with the Trotskyist Socialist Workers Party .'
 p3726
-aS'After returning to the United States Sturgeon resigned from the Communist Party and associated with the Trotskyist Socialist Workers Party .'
-p3727
 aS'The Milan Conference was organized by the Pereire Society , an organization formed by the family of Jacob Rodrigues Pereira of France and financed by their numerous railroad and bank holdings -LRB- including Soci G du Cr Mobilier -RRB- .'
-p3728
+p3727
 aS'Nine of the twelve speakers gave an oralist view and three -LRB- the Gallaudet brothers , and Richard Elliot , a teacher from England -RRB- supported the use of sign language .'
-p3729
+p3728
 aS'Edward Miner Gallaudet and Reverend Thomas Gallaudet were among the protesters who fought against the oralist method .'
-p3730
+p3729
 aS'The National Association of the Deaf was also formed in the United States in response to the Milan Conference and was dedicated toward preserving American Sign Language .'
-p3731
+p3730
 aS"Rather than seek to directly overturn the 1880s resolutions , the Congress put forward `` Recommendations '' for informational purposes , including the following : `` Recommended that this International Congress on Education of the Deaf , in convocation gathered at Hamburg and West Germany , in August 1980 , affirms and declares that all deaf children have the right to flexible communication in the mode or combination of modes which best meets their individual needs . ''"
-p3732
+p3731
 aS"Main article : Backward designUnderstanding by Design relies on what Wiggins and McTighe call `` backward design '' -LRB- also known as `` backwards planning '' -RRB- ."
-p3733
+p3732
 aS"Wiggins and McTighe clarify that : `` It is not a prescriptive program . ''"
-p3734
+p3733
 aS'The Imperial Lyceum in Tsarskoye Selo near Saint Petersburg , also known historically as the Imperial Alexander Lyceum after its founder Tsar Alexander I , was an educational institution which was founded in 1811 with the object of educating youths of the best families who would afterwards occupy important posts in the Imperial service .'
-p3735
+p3734
 aS'The first graduates included Alexander Pushkin and Alexander Gorchakov .'
-p3736
+p3735
 aS'In 1977 for the Third Symposium , the Naval Academy History Department decided to expand the concept and model it along the lines of the academic conferences sponsored by the American Historical Association and the Organization of American Historians The conference that had been planned to open on 12 September 2001 was abruptly canceled by the attacks that occurred in New York and Washington and D.C. , on September 11 , 2001 and left the future of the conference in grave doubt .'
-p3737
+p3736
 aS'New Interpretations in Naval History : Selected Papers from the Thirteenth Naval History Symposium held at Annapolis , 2 October 1997 .'
-p3738
+p3737
 aS"^ John B. Hattendorf , `` The Uses of Maritime History in and for the Navy , '' Naval War College Review , vol ."
-p3739
+p3738
 aS'The next year expansion of facilities began in earnest with the construction of two new buildings Washington Hall , a 70 foot long edifice containing classrooms and a lecture hall , and Boarding Hall , a two story building which included a kitchen and dining hall , a laundry , and dormitories for 30 female students .'
-p3740
+p3739
 aS'The cost of two teachers at the school for five months were paid by the county boards of education of Hinds and Madison Counties ; all additional operating funds were provided by the American Missionary Association .'
+p3740
+aS'In the spring a brickyard was established on campus and on May 31 , 1881 the foundation was laid for a new classroom building , a three-storey facility named Strieby Hall after Reverend M.E. Strieby of New York , a venerated leader of the American Missionary Association .'
 p3741
 aS'In the spring a brickyard was established on campus and on May 31 , 1881 the foundation was laid for a new classroom building , a three-storey facility named Strieby Hall after Reverend M.E. Strieby of New York , a venerated leader of the American Missionary Association .'
 p3742
-aS'In the spring a brickyard was established on campus and on May 31 , 1881 the foundation was laid for a new classroom building , a three-storey facility named Strieby Hall after Reverend M.E. Strieby of New York , a venerated leader of the American Missionary Association .'
-p3743
 aS'Woodworth Chapel , originally known as Woodworth Church , was built in 1901 by students under the direction of Walker Frazier , head carpenter .'
-p3744
+p3743
 aS'In September 2004 , the National Trust for Historic Preservation awarded Tougaloo College the National Preservation Honor Award for the restoration of Woodworth Chapel .'
-p3745
+p3744
 aS'The restoration was also recognized by the Mississippi Chapter of the American Institute of Architects , who bestowed its Honor Award .'
-p3746
+p3745
 aS'Woodworth Chapel houses the Union Church , founded alongside the college as a Congregational Church .'
-p3747
+p3746
 aS'Built in 1947 , the building was named in honor of Dr. Fred L. Brownlee , former general secretary of the American Missionary Association .'
-p3748
+p3747
 aS'Begun in 1997 under the leadership of former College trustee , Jane Hearn , the Tougaloo Art Colony affords its participants exposure to and intensive instruction by nationally and internationally renowned artists .'
-p3749
+p3748
 aS'Past instructors include David Driskell , David R. MacDonald , John McDaniel , Akemi Nakana Cohn , Moe Booker , Jamaal Sheats , Jerre Allen , Kevin Cole , Gail Shaw-Clemons , and Hyun Chong Kim .'
-p3750
+p3749
 aS"Today , more than 40 % of Mississippi 's practicing African-American physicians , dentists , other health professionals , and attorneys are graduates of Tougaloo College ."
-p3751
+p3750
 aS'CPSI was the brain child of Alex Osborn , the inventor of brainstorming and Creative Problem Solving , the founder of Creative Education Foundation , and more commonly known as the cofounder of advertising firm BBDO .'
-p3752
+p3751
 aS"The Carnegie Foundation classifies UTPA as a `` doctoral research university '' ."
-p3753
+p3752
 aS'Pan American College -LRB- edit -RRB- Hidalgo County permitted to hold referendum for a four-year university in 1951 ; school became Pan American Regional College on December 20 , 1951 .'
-p3754
+p3753
 aS'Pan American University -LRB- edit -RRB- Achieved full university status and changed name to PAU .'
-p3755
+p3754
 aS'On the northeast corner of campus is the Edinburg Baseball Stadium , which is also the home of the Edinburg Roadrunners an independent baseball team .'
-p3756
+p3755
 aS"Coastal Studies Laboratory -LRB- edit -RRB- Established in 1973 , the Coastal Studies Laboratory -LRB- CSL -RRB- is UTPA 's marine biology laboratory located in the city of South Padre Island , which is located approximately 70 miles east of main campus ."
-p3757
+p3756
 aS"The University includes the following seven academic divisions : College of Arts and HumanitiesCollege of Business AdministrationCollege of Engineering and Computer ScienceCollege of Health Sciences and Human ServicesCollege of Science and MathematicsCollege of Social and Behavioral SciencesCollege of Physics and GeologyReserve Officers ' Training Corps -LRB- edit -RRB- The University of TexasPan American host the college-based Army ROTC program ."
-p3758
+p3757
 aS'In 2009 UTPA ranked behind only Florida International University for bachelor degrees awarded to Hispanic students .'
-p3759
+p3758
 aS'Like its sister-program the SIT Graduate Institute , the program is accredited by the New England Association of Schools and Colleges through its Commission on Institutions of Higher Education .'
-p3760
+p3759
 aS'^ Threshold Concepts within the Disciplines , edited by Ray Land , Jan H. F. Meyer and Jan Smith Sense Publishers , Rotterdam , 2008 -LRB- Educational Futures : Rethinking Theory and Practice , Michael Peters -LRB- Ed . -RRB-'
-p3761
+p3760
 aS'^ a b Land , R. , Cousin , G. , Meyer , J.H.F. and Davies , P. -LRB- 2005 -RRB- , Threshold concepts and troublesome knowledge -LRB- 3 -RRB- : implications for course design and evaluation , in C. Rust -LRB- ed . -RRB-'
-p3762
+p3761
 aS'A new residence hall - Andrews Hall , named after former Dean of Students Rev. Ira Andrews - opened in fall 2011 .'
-p3763
+p3762
 aS'RandolphMacon College plays in the Old Dominion Athletic Conference -LRB- ODAC -RRB- , a member of Division III of the National Collegiate Athletic Association -LRB- NCAA -RRB- .'
-p3764
+p3763
 aS'The Yellow Jacket football team is currently coached by Pedro Arruza and won the ODAC championship in 2008 .'
+p3764
+aS'htmlDublin Core to MARC21 -LRB- Library of Congress -RRB- http : www.loc.govmarcdccross.html Dublin Core to UNIMARC -LRB- UKOLN -RRB- http : www.ukoln.ac.ukmetadatainteroperabilitydc_unimarc.html TEI to and from MARC http : purl.oclc.org NETteiinlibrariesFGDC to USMARC -LRB- Alexandria -RRB- http : www.alexandria.ucsb.edupublic-documentsmetadatafgdc2marc.html ONIX to MARC21 -LRB- LC -RRB- http : www.loc.govmarconix2marc.html VRA to MARC -LRB- Indiana University -RRB- http : php.indiana.edu % 7Efrypmarcmap .'
 p3765
 aS'htmlDublin Core to MARC21 -LRB- Library of Congress -RRB- http : www.loc.govmarcdccross.html Dublin Core to UNIMARC -LRB- UKOLN -RRB- http : www.ukoln.ac.ukmetadatainteroperabilitydc_unimarc.html TEI to and from MARC http : purl.oclc.org NETteiinlibrariesFGDC to USMARC -LRB- Alexandria -RRB- http : www.alexandria.ucsb.edupublic-documentsmetadatafgdc2marc.html ONIX to MARC21 -LRB- LC -RRB- http : www.loc.govmarconix2marc.html VRA to MARC -LRB- Indiana University -RRB- http : php.indiana.edu % 7Efrypmarcmap .'
 p3766
-aS'htmlDublin Core to MARC21 -LRB- Library of Congress -RRB- http : www.loc.govmarcdccross.html Dublin Core to UNIMARC -LRB- UKOLN -RRB- http : www.ukoln.ac.ukmetadatainteroperabilitydc_unimarc.html TEI to and from MARC http : purl.oclc.org NETteiinlibrariesFGDC to USMARC -LRB- Alexandria -RRB- http : www.alexandria.ucsb.edupublic-documentsmetadatafgdc2marc.html ONIX to MARC21 -LRB- LC -RRB- http : www.loc.govmarconix2marc.html VRA to MARC -LRB- Indiana University -RRB- http : php.indiana.edu % 7Efrypmarcmap .'
-p3767
 aS'Canada -LRB- edit -RRB- Lisgar Collegiate Institute in OttawaIn Canada , collegiate institute has a specific meaning .'
-p3768
+p3767
 aS'ContentsHistory -LRB- edit -RRB- The School and Observatory for Earth Sciences was created by decree in 1997 from the fusion of the Geology and Earth Physics institutes of the Faculty of Sciences of the University of Strasbourg .'
+p3768
+aS"Between 1939 and 1945 , the IPGS was relocated in Clermont-Ferrand , were the Dipl d'Ing were signed by Louis Cagnard , a famous French geophysicist ."
 p3769
 aS"Between 1939 and 1945 , the IPGS was relocated in Clermont-Ferrand , were the Dipl d'Ing were signed by Louis Cagnard , a famous French geophysicist ."
 p3770
-aS"Between 1939 and 1945 , the IPGS was relocated in Clermont-Ferrand , were the Dipl d'Ing were signed by Louis Cagnard , a famous French geophysicist ."
-p3771
 aS"Emmanuel de Margerie -LRB- 1862 -RRB- , Director of the Service de la Carte G d'Alsace et de Lorraine -LRB- Alsace-Lorraine Geological Survey -RRB- ."
+p3771
+aS'Edmond Roth -LRB- 1873 -RRB- , Director of both the Institute and the Bureau Central Sismologique pour la France et ses Colonies -LRB- Seismological Central Bureau of France and its Colonies -RRB- Xavier Le Pichon -LRB- 1937 - -RRB- , Chair of Geodynamics at the Coll de France , pioneer of plate tectonics for which he proposed a model in 1968 .'
 p3772
 aS'Edmond Roth -LRB- 1873 -RRB- , Director of both the Institute and the Bureau Central Sismologique pour la France et ses Colonies -LRB- Seismological Central Bureau of France and its Colonies -RRB- Xavier Le Pichon -LRB- 1937 - -RRB- , Chair of Geodynamics at the Coll de France , pioneer of plate tectonics for which he proposed a model in 1968 .'
 p3773
-aS'Edmond Roth -LRB- 1873 -RRB- , Director of both the Institute and the Bureau Central Sismologique pour la France et ses Colonies -LRB- Seismological Central Bureau of France and its Colonies -RRB- Xavier Le Pichon -LRB- 1937 - -RRB- , Chair of Geodynamics at the Coll de France , pioneer of plate tectonics for which he proposed a model in 1968 .'
-p3774
 aS'EOST is also responsible for the Gravimetric observatory of Strasbourg .'
-p3775
+p3774
 aS'BCMT -LRB- Terres australes , Antarctique et Madagascar -RRB- Landslides processes -LRB- edit -RRB- LObservatoire multidisciplinaire des instabilit des versants OMIV -LRB- Multidisciplinary observatory for landsides processes -RRB- follows the evolution of several landslides in France through geophysics , geodesic , geochemical and hydrologic data .'
-p3776
+p3775
 aS'Edgar W. Bethany , Karl M. Gygax , Helen B. Stewart , and Myrtle G. Eason composed the original faculty .'
-p3777
+p3776
 aS'SEBI continued classes in New Brockton until 1940 when a decision was made to consolidate the school with Beulah Heights Bible Institute in Atlanta and Georgia .'
-p3778
+p3777
 aS'The College of Arts & Sciences houses the Department of Communication , Department of English & Foreign Languages , Department of Music , and Department of Natural Sciences & Mathematics .'
+p3778
+aS'Department of Communication -LRB- edit -RRB- Hands-on training through Southeastern Department of Communication equips students for inspired , professional , and responsible service in broadcasting , journalism , public relations , film studies , and theater .'
 p3779
 aS'Department of Communication -LRB- edit -RRB- Hands-on training through Southeastern Department of Communication equips students for inspired , professional , and responsible service in broadcasting , journalism , public relations , film studies , and theater .'
 p3780
-aS'Department of Communication -LRB- edit -RRB- Hands-on training through Southeastern Department of Communication equips students for inspired , professional , and responsible service in broadcasting , journalism , public relations , film studies , and theater .'
+aS'Department of Music -LRB- edit -RRB- Southeastern Department of Music offers challenging technical training and instruction in music theory and history to the serious students who are looking to perform music .'
 p3781
 aS'Department of Music -LRB- edit -RRB- Southeastern Department of Music offers challenging technical training and instruction in music theory and history to the serious students who are looking to perform music .'
 p3782
-aS'Department of Music -LRB- edit -RRB- Southeastern Department of Music offers challenging technical training and instruction in music theory and history to the serious students who are looking to perform music .'
-p3783
 aS"College of Business and Legal Studies -LRB- edit -RRB- Southeastern 's College of Business and Legal Studies is composed of the Department of Business Administration and Department of Historical , Legal , and Leadership Studies ."
-p3784
+p3783
 aS'Southeastern University has received specialized accreditation for its business programs through the International Assembly for Collegiate Business Education -LRB- IACBE -RRB- , located in Olathe and Kansas .'
-p3785
+p3784
 aS'College of Christian Ministries & Religion -LRB- edit -RRB- Southeastern , which has a 70-year heritage of training pastors , missionaries and other church workers , offers undergraduate programs in church ministries and a Master of Arts degree in Ministerial Leadership .'
-p3786
+p3785
 aS'The Malek Plaza is a gathering area between the two buildings and features a statue of Sister Majella Berg , RSHM , who was president of Marymount from 1960 to 1993 .'
-p3787
+p3786
 aS'Academics & Accreditation -LRB- edit -RRB- Marymount University is accredited by the Commission on Colleges of the Southern Association of Colleges and Schools to award doctoral , master , and bachelor degrees .'
-p3788
+p3787
 aS'In addition , Marymount is a member of the Consortium of Universities of the Washington Metropolitan Area , which allows students to take courses at any of the other 13 member institutions and to borrow books from their libraries .'
-p3789
+p3788
 aS'Member institutions include Georgetown University , The George Washington University , The Catholic University of America , and the Corcoran College of Art and Design .'
-p3790
+p3789
 aS"Main Campus -LRB- edit -RRB- Marymount 's main campus is located on 21 acres -LRB- 85,000 -RRB- in the North Arlington area of Arlington and Virginia ."
-p3791
+p3790
 aS"The campus includes six residence halls : Rose Bent Lee Ostapenko Hall , Rowley Hall , Butler Hall , St. Joeseph 's Hall , Berg Hall , and Gerard Phelan Hall ; three academic buildings : Rowley Academic Center , Caruthers Hall , and Gailhac Hall ; St. Joeseph 's Hall computer labs ; the Rose Bent Lee Center which includes two gyms , the campus bookstore , Bernie 's Cafe , mail facilities , and recreational and meeting spaces ; the Gerard Phelan Cafeteria ; the Emerson G. Reinsch Library and Auditorium ; the Lodge ; Ireton Hall ; the Main House ; the Chapel of the Sacred Heart of Mary ; and the synthetic-turf practice field ."
+p3791
+aS"Ballston Center -LRB- edit -RRB- Marymount 's Ballston Center is 2 miles -LRB- 3.2 -RRB- away from the main campus in Arlington and houses the School of Business Administration and the Counseling , Forensic Psychology , and Physical Therapy programs ."
 p3792
 aS"Ballston Center -LRB- edit -RRB- Marymount 's Ballston Center is 2 miles -LRB- 3.2 -RRB- away from the main campus in Arlington and houses the School of Business Administration and the Counseling , Forensic Psychology , and Physical Therapy programs ."
 p3793
-aS"Ballston Center -LRB- edit -RRB- Marymount 's Ballston Center is 2 miles -LRB- 3.2 -RRB- away from the main campus in Arlington and houses the School of Business Administration and the Counseling , Forensic Psychology , and Physical Therapy programs ."
-p3794
 aS'Reston Center -LRB- edit -RRB- Marymount also has a Reston center .'
-p3795
+p3794
 aS'The Student Government Association , Co-Curricular Council , and Activities Programming Board provide students with additional campus leadership opportunities .'
-p3796
+p3795
 a.
