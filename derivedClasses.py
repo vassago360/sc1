@@ -267,6 +267,11 @@ class cursor(sqlite3.Cursor):
             if self.sameSupportDifferentDB(tPWithSameTP, otherC):
                 tPsWithSameTPAndSameSI.append(tPWithSameTP)
         return tPsWithSameTPAndSameSI
+    def getTPsWithSameTP(self, otherC):
+        tPs = self.getTPs()
+        otherTPs = otherC.getTPs()
+        tPsWithSameTP = list(set(tPs).intersection(set(otherTPs)))
+        return tPsWithSameTP
     def getTPsWithSameVerb(self):
         textualPatternsWithSameVerb = [] #ex. [ [tp1, tp2], [t6], ... ]
         tPs = self.getTPs()
