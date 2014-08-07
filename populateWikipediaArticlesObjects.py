@@ -95,7 +95,7 @@ def getWikipediaArticles(wikipediaCategories):
             if (len(lenURLs) > 20) and (float(numpy.mean(lenURLs[-20:])) == float(len(urls))):
                 break
             pickle.dump( urls, open('wikipediaArticlesObjects.p', 'wb'))
-            if len(urls) > 660:
+            if len(urls) > 440:
                 return urls
             time.sleep(3)
     return urls
@@ -119,6 +119,11 @@ def deleteInputTextFolderFiles():
         os.remove(os.getcwd() + '/exemplar-master/inputText/' + f)
 
 def getSentences(urls):
+    try:
+        while True:
+            urls.remove('')
+    except:
+        pass
     #go from urls to boilerpipe to exemplar to sentence
     sentences = []
     for count, url in enumerate(urls):
