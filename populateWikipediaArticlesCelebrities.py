@@ -95,7 +95,7 @@ def getWikipediaArticles(wikipediaCategories):
             if (len(lenURLs) > 20) and (float(numpy.mean(lenURLs[-20:])) == float(len(urls))):
                 break
             pickle.dump( urls, open('wikipediaArticlesCelebrities.p', 'wb'))
-            if len(urls) > 660:
+            if len(urls) > 1300:
                 return urls
             time.sleep(3)
     return urls
@@ -152,7 +152,7 @@ def main():
     import pdb ; pdb.set_trace()
     open("printOuts.txt", "w+").close()
     open('exceptions', 'w+').close()
-    wikipediaCategories = 'American_female_pop_singers|American_film_actresses|21st-century American actresses|American_dance_musicians|American_hip_hop_singers|21st-century_American_male_actors|American male pop singers|Forbes_lists'
+    wikipediaCategories = '21st-century_American_actresses|American_dance_musicians|American_hip_hop_singers|21st-century_American_male_actors|American male pop singers|Forbes_lists|American_female_pop_singers|American_film_actresses'
     #wikipediaCategories = 'Geography of the United States|Historic_districts_in_the_United_States|Geography of the United States by city|Categories_by_region|Lists_of_cities_in_the_United_States_by_population|Territorial_disputes|Towers|Festivals|Conventions_in_the_United_States|Places|Religious_places|Visitor_attractions|Historic_districts'
     # wikipediaCategories = 'Tools|Cutting_tools|Machines|Cooking|Kitchenware|Cooking_appliances|Domestic_implements'
     urls = getWikipediaArticles(wikipediaCategories)
