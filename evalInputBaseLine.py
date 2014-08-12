@@ -526,6 +526,7 @@ def run():
     #BaseLine approach is simple-- For every input TP,  if there's one already in taxonomyRelations -- add to that wordSense.  Otherwise, create a new wordSense
     tPsThatChangeC2 = []
     tPsThatChangeC2 += findAndAddWordSenses(c1,c2, c3)
+    c1.copyOverURLsProcessed(c3)
     ####################################
     conn1.commit()
     c1.close()
