@@ -51,6 +51,9 @@ def convertListToSentence(sent):
 def getAmbigiousSentences():
     #url = sentence.  I left things "url" out of convenience.
     urls = pickle.load( open(sys.argv[1], 'rb') )
+    for url in urls:
+        if "245" in url:
+            urls.remove(url)
     #urlLargeChunks = divideURLsInChunks(urls, int(len(urls)/2))
     #return urlLargeChunks[1]
     return urls
