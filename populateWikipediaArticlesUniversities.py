@@ -58,13 +58,21 @@ def reCombineWikipediaCategories(wikipediaCategories):
     return wikipediaString
 
 def getWikipediaArticles(wikipediaCategories):
+    urls = pickle.load( open('wikipediaArticlesUniversities.p', 'rb') )
+    try:
+        while True:
+            urls.remove('')
+    except:
+        pass
+    return urls[:1500]
+    #####
     wikipediaCategoriesInChunks = divideURLsInChunks(convertToList(wikipediaCategories), 2) #list of lists
     for wikipediaCategoriesInChunk in wikipediaCategoriesInChunks:
         print("now processing " + str(wikipediaCategoriesInChunk))
         masterURL = "http://tools.wmflabs.org/erwin85/randomarticle.php?lang=en&family=wikipedia&categories=" + reCombineWikipediaCategories(wikipediaCategoriesInChunk) + "&namespaces=0&subcats=1&d=9"
         try:
             urls = pickle.load( open('wikipediaArticlesUniversities.p', 'rb') )
-            return urls[:1000]
+            return urls
         except:
             print("Error loading wikipedia urls.  Recreating urls list...")
             urls = []
@@ -119,7 +127,7 @@ def deleteInputTextFolderFiles():
     for f in filelist:
         os.remove(os.getcwd() + '/exemplar-master/inputText/' + f)
 
-def getSentences(urls):
+def _hack__getSentences(urls):
     sentences = []
     #extract relations and features
     print("using Exemplar for relation extraction...")
@@ -133,6 +141,40 @@ def getSentences(urls):
             sentences.append(sentence)
     os.chdir(osCwd)
     deleteInputTextFolderFiles()
+    return sentences
+
+
+def getSentences(urls):
+    #go from urls to boilerpipe to exemplar to sentence
+    sentences = []
+    for count, url in enumerate(urls):
+        #get and preprocess url text ( takes 3 mins :( )
+        try:
+            extractedText = boilerpipe.extract.Extractor(extractor='ArticleExtractor', url=url)
+            extractedText = extractedText.getText()
+            extractedText = extractedText.encode('unicode_escape')
+            extractedText = re.sub(r"""(\\[0a-z1-9]*)|(\[[0a-z1-9]{0,20}\])""", '', extractedText)
+            extractedText = extractedText.replace('\\', '')
+            extractedText = extractedText.replace('/', '')
+            extractedText = removeLongSentences(extractedText)
+            f = open(os.getcwd() + '/exemplar-master/inputText/inputText_' + str(count) + '.txt', 'w+')
+            f.write(extractedText)
+            f.close()
+        except:
+            print("failed to extract: " + str(url))
+    if inputTextFolderHasFiles():
+        #extract relations and features
+        print("using Exemplar for relation extraction...")
+        osCwd = os.getcwd()
+        os.chdir(os.getcwd() + "/exemplar-master")
+        subprocess.call(r'./exemplar.sh stanford inputText exemplarTempOutput.txt > exemplarTerminalOutput.txt', shell=True)
+        with open("exemplarTempOutput.txt") as tsv:
+            tsv.readline() #read past the first line: "Subjects    Relation    Objects    Normalized Relation    Sentence"
+            for line in csv.reader(tsv, dialect="excel-tab"):
+                sentence = line[4]
+                sentences.append(sentence)
+        os.chdir(osCwd)
+        deleteInputTextFolderFiles()
     return sentences
 
 def main():
